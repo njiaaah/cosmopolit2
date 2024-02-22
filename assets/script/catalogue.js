@@ -4,20 +4,21 @@ const cardContent = $('.card__content')
 
 // toggling card view
 
-    cardViewToggle.addEventListener('change', function(event) {
-        if (event.target.checked && $(window).width() < 600) {
-            $('.card__content').slideUp(250)
-        } else {
-            $('.card__content').slideDown(250)
-        }
-    });
+cardViewToggle.addEventListener('change', function(event) {
+    if (event.target.checked && $(window).width() < 600) {
+        $('.card__content').slideUp(250)
+    } else {
+        $('.card__content').slideDown(250)
+    }
+});
 
-    contentToggles.each(function(index){
-        $(this).click(function(){
-            $(this).toggleClass('flip')
-            cardContent.eq(index).slideToggle(250)
-        })
+contentToggles.each(function(index){
+    $(this).click(function(){
+        $(this).toggleClass('flip')
+        cardContent.eq(index).slideToggle(250)
     })
+})
+
 
 // Hide menu elements on scroll
 
@@ -26,6 +27,7 @@ const cardContent = $('.card__content')
 
         $(window).scroll(function() {
             const currentScroll = $(this).scrollTop();
+
             // always visible if not scrolled 160px from top
             // 160px - sticky header height + its distance from top
             if (currentScroll > 160) {
@@ -63,18 +65,46 @@ $('.catalogue-filter__sort-list-item').click(function(){
     setTimeout(function() {
         $('#catalogue-filter__sort-checkbox').prop('checked', false);
         $('#catalogue-result__sort-checkbox').prop('checked', false);
-        $('body').css('overflow', 'auto');
+        $('html').css('overflow', 'auto');
     }, 200);
 });
 
-$('.body__is-filter-visible-label').click(function(){
-    $('body').css('overflow', 'auto');
-})
+// checkboxes that precent scroll on html
 
-$('.sort-checkbox').change(function(){
-    if ($(this).prop('checked')) {
-        $('body').css('overflow', 'hidden');
+const scrollDisableChb = [
+    '.body__is-filter-visible-label',
+    '.sort-checkbox',
+    '#catalogue-result__sort-checkbox',
+    '#body__is-nav-menu-visible-checkbox',
+    // '#body__is-filter-visible-checkbox',
+    'catalogue-filter__sort-checkbox'
+]
+
+
+scrollDisableChb.forEach(function(selector) {
+    $(selector).change(function() {
+        disableScroll($(this).prop('checked'))
+    });
+  });
+
+// disable scroll on these chb state change
+function disableScroll(param) {
+    if(param) {
+        $("html").css("overflow-y", "hidden")
     } else {
-        $('body').css('overflow', 'auto');
+        $("html").css("overflow-y", "auto")
     }
-});
+}
+
+// uncheck on reaching desktop view
+
+$(window).resize(handleViewportChange);
+
+function handleViewportChange() {
+    const viewportHeight = $(window).outerHeight();
+    const checkboxes = scrollDisableChb.map(selector => $(selector));
+  
+    if (viewportHeight > 950) {
+      checkboxes.prop("checked", false).trigger("change");
+    }
+  }

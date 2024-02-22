@@ -6,43 +6,54 @@
     <title>Результат поиска</title>
 
     <!-- lib -->
-    <link rel="stylesheet" href="lib/nouislider.min.css">
-    <script src="lib/nouislider.min.js"></script>
-    <script src="lib/jquery.js"></script>
+    <link rel="stylesheet" href="assets/lib/nouislider.min.css">
+    <script src="assets/lib/nouislider.min.js"></script>
+    <script src="assets/lib/jquery.js"></script>
 
     <!-- defaults -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/default.css">
-    <script src="script/sliders.js" defer></script>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <script src="assets/script/sliders.js" defer></script>
 
     <!-- project -->
-    <link rel="stylesheet" href="css/sliders.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="script/catalogue.js" defer></script>
+    <link rel="stylesheet" href="assets/css/sliders.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/script/catalogue.js" defer></script>
 </head>
 <body>
 
     <input hidden type="checkbox" id="body__is-filter-visible-checkbox">
     <input hidden type="checkbox" id="body__is-nav-menu-visible-checkbox">
-
-
-
     
-    <main class="main main_catalogue-result">
+    <main class="main main_content">
 
-        <!-- desktop headers -->
+        <div class="main__cosmetic">
+
+            <!-- gradient under the header -->
+    
+            <!-- offscreen color splashes -->
+
+            <!-- double splashes -->
+            <div class="gradient-splash gradient-splash_orange main_content__gradient-splash_orange gradient-splash_moving gradient-splash_moving gradient-splash_moving-fast-down"></div>
+            <div class="gradient-splash gradient-splash_violet main_content__gradient-splash_violet gradient-splash_moving gradient-splash_moving gradient-splash_moving-medium-down"></div>
+            <!-- orange bottom splash -->
+            <div class="gradient-splash gradient-splash_orange main_content__gradient-splash_orange-2 gradient-splash_moving gradient-splash_moving gradient-splash_moving-fast-up"></div>
+            
+        </div>
+
+        <!-- headers -->
             
         <div class="header header_desktop catalogue__header_desktop catalogue__header_desktop__top-header">
 
             <div class="header_desktop__wrapper">
 
-                <div class="logo header_desktop__logo">
-                    <svg width="155" height="30" viewBox="0 0 155 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="#" class="logo header_desktop__logo header_desktop__wrapper__item">
+                    <svg class="header_desktop__logo__svg" width="155" height="30" viewBox="0 0 155 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M133.323 29.5917H138.423V1.02629H133.323V29.5917ZM62.8 1.02629L59.4956 18.1268H59.4133L56.1476 1.02871H49.2532V29.5942H54.3538V12.007H54.4361L57.6993 29.5917H61.2095L64.5575 12.007V29.5917H69.6581V1.02629H62.8ZM93.0842 5.10776H95.7858C97.8265 5.10776 98.3567 6.90399 98.3567 9.18681C98.3567 13.3506 97.4174 13.7573 94.113 13.7573H93.0939L93.0842 5.10776ZM88.0223 1.02871V29.5942H93.0842V18.0857C93.4086 18.0857 95.4905 18.1268 95.8173 18.1268C99.6518 18.1268 103.162 15.1081 103.162 9.18923C103.162 4.61876 100.836 1.02871 95.9795 1.02871H88.0223ZM120.589 1.02871V29.5942H132.381V25.5127H125.69V1.02871H120.589ZM139.363 1.02871V5.06903H144.584V29.5917H149.687V5.06903H154.95V1.02871H139.363ZM0.408671 7.08071V23.6075C0.40625 26.452 2.51961 29.9645 8.15281 29.9645C13.2946 29.9645 15.6186 26.4568 15.6186 23.5591V18.5868H10.4768V23.5543C10.4768 24.4112 9.61982 25.8782 8.15039 25.8782C7.50321 25.9035 6.87183 25.6745 6.39136 25.2402C5.91089 24.8058 5.61949 24.2007 5.5795 23.5543V7.06861C5.61949 6.42152 5.91115 5.81579 6.39207 5.38101C6.873 4.94623 7.50499 4.71695 8.15281 4.74222C9.62224 4.74222 10.4792 6.21164 10.4792 7.06861V12.0361H15.6161V7.06861C15.6161 4.17091 13.2922 0.672852 8.15281 0.672852C2.51961 0.672852 0.40625 4.17091 0.40625 7.06861M21.8279 23.4284V6.9863C21.8701 6.34784 22.1564 5.75009 22.6273 5.31697C23.0983 4.88385 23.7179 4.64857 24.3577 4.65991C25.8271 4.65991 26.6429 6.21165 26.6429 7.08071V23.4284C26.6429 24.2853 25.8271 25.8758 24.3577 25.8758C24.0305 25.8826 23.7052 25.8244 23.4007 25.7049C23.0961 25.5853 22.8182 25.4066 22.583 25.179C22.3478 24.9515 22.16 24.6797 22.0304 24.3792C21.9008 24.0787 21.832 23.7556 21.8279 23.4284ZM16.7273 7.02746V23.5131C16.7273 26.452 18.7269 29.9597 24.3577 29.9597C29.4583 29.9597 31.7435 26.452 31.7435 23.5131V7.02746C31.7435 4.0886 29.4559 0.672852 24.3577 0.672852C18.7269 0.672852 16.7273 4.0886 16.7273 7.02746ZM32.8886 7.02746C32.8886 10.9443 34.0312 11.8424 36.7231 15.0161L40.9668 19.3735C42.0271 20.5985 42.6395 21.7411 42.6395 23.2468C42.6395 24.9196 41.6204 25.8564 40.3567 25.8564C39.0495 25.8564 38.0715 25.0019 38.0715 23.2468V19.2549H32.9297V23.5954C32.9297 27.6745 36.2341 30.0009 40.3567 30.0009C44.4358 30.0009 47.9048 27.7156 47.9048 23.5954C47.9048 20.2063 46.6387 18.657 44.598 16.333L39.4973 10.4989C38.316 9.15292 38.0715 8.21365 38.0715 6.98872C38.0647 6.68917 38.1192 6.39139 38.2317 6.11367C38.3442 5.83596 38.5122 5.58417 38.7256 5.37378C38.9389 5.16339 39.193 4.99883 39.4723 4.89023C39.7515 4.78162 40.05 4.73125 40.3495 4.74222C41.572 4.74222 42.6323 5.84368 42.6323 7.84327V10.3899H47.7329V7.02746C47.7402 3.23406 44.6803 0.672852 40.3495 0.672852C35.992 0.672852 32.8813 3.15901 32.8813 7.03714M76.4315 23.4284V6.9863C76.4743 6.34805 76.7607 5.75065 77.2315 5.31765C77.7024 4.88464 78.3217 4.64917 78.9612 4.65991C80.4307 4.65991 81.2465 6.21165 81.2465 7.08071V23.4284C81.2465 24.2853 80.4307 25.8758 78.9612 25.8758C78.6342 25.8822 78.3091 25.8239 78.0046 25.7042C77.7002 25.5845 77.4224 25.4058 77.1873 25.1783C76.9522 24.9508 76.7644 24.6791 76.6347 24.3788C76.505 24.0785 76.4359 23.7555 76.4315 23.4284ZM71.3357 7.02746V23.5131C71.3357 26.452 73.3353 29.9597 78.9661 29.9597C84.0667 29.9597 86.352 26.452 86.352 23.5131V7.02746C86.3447 4.0886 84.0619 0.672852 78.9612 0.672852C73.3305 0.672852 71.3357 4.0886 71.3357 7.02746ZM108.999 23.4284V6.9863C109.041 6.34932 109.327 5.75299 109.796 5.32018C110.265 4.88736 110.883 4.65104 111.521 4.65991C112.99 4.65991 113.806 6.21165 113.806 7.08071V23.4284C113.806 24.2853 112.99 25.8758 111.521 25.8758C111.195 25.8813 110.87 25.8222 110.567 25.7021C110.263 25.5819 109.986 25.4031 109.752 25.1757C109.517 24.9483 109.33 24.6769 109.201 24.3771C109.072 24.0773 109.003 23.7549 108.999 23.4284ZM103.898 7.02746V23.5131C103.898 26.452 105.897 29.9597 111.528 29.9597C116.629 29.9597 118.914 26.452 118.914 23.5131V7.02746C118.914 4.0886 116.629 0.672852 111.521 0.672852C105.89 0.672852 103.891 4.09829 103.891 7.03714" fill="#202020"/>
                     </svg> 
-                </div>
+                </a>
 
-                <nav class="header-desktop__nav">
+                <nav class="header-desktop__nav header_desktop__wrapper__item">
                     <ul class="header-desktop__list list">
                         
                         <li class="header-desktop__list-item">
@@ -60,8 +71,8 @@
 
                 <div class="header-deskotp__icons-wrap header-deskotp__icons-wrap_favorite">
 
-                    <a class="header-desktop__favorite-icon" href="catalogue-favorite.html">
-                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="header-desktop__favorite-icon header-desktop__icon header_desktop__wrapper__item" href="catalogue-favorite.html">
+                        <svg class="header-desktop__icons__svg" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.4" d="M19.7413 9.49292H8.07123C5.50623 9.49292 3.40625 11.5929 3.40625 14.1579V31.1979C3.40625 33.3729 4.96625 34.3029 6.87125 33.2379L12.7662 29.9529C13.3962 29.6079 14.4163 29.6079 15.0312 29.9529L20.9262 33.2379C22.8312 34.3029 24.3912 33.3729 24.3912 31.1979V14.1579C24.4062 11.5929 22.3063 9.49292 19.7413 9.49292Z" fill="#9D9D9D"/>
                             <path d="M33.4062 8.33783V25.3779C33.4062 27.5529 31.8463 28.4678 29.9413 27.4178L24.4062 24.3278V14.1578C24.4062 11.5928 22.3063 9.49286 19.7413 9.49286H12.4062V8.33783C12.4062 5.77283 14.5062 3.67285 17.0712 3.67285H28.7413C31.3063 3.67285 33.4062 5.77283 33.4062 8.33783Z" fill="#193D23"/>
                         </svg>     
@@ -71,15 +82,15 @@
 
                 <div class="header-deskotp__icons-wrap">
 
-                    <a class="header-desktop__favorite-icon" href="#">
-                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="header-desktop__favorite-icon header-desktop__icon header_desktop__wrapper__item" href="#">
+                        <svg class="header-desktop__icons__svg" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.4" d="M18.0903 21.9879L13.1853 26.8929C12.6453 26.4129 12.1203 25.9179 11.6103 25.4079C10.0653 23.8479 8.67027 22.2129 7.42527 20.5029C6.19527 18.7929 5.20527 17.0829 4.48527 15.3879C3.76527 13.6779 3.40527 12.0429 3.40527 10.4829C3.40527 9.46285 3.58527 8.48785 3.94527 7.58785C4.30527 6.67285 4.87527 5.83285 5.67027 5.08285C6.63027 4.13785 7.68027 3.67285 8.79027 3.67285C9.21027 3.67285 9.63027 3.76285 10.0053 3.94285C10.3953 4.12285 10.7403 4.39285 11.0103 4.78285L14.4903 9.68785C14.7603 10.0629 14.9553 10.4079 15.0903 10.7379C15.2253 11.0529 15.3003 11.3679 15.3003 11.6529C15.3003 12.0129 15.1953 12.3729 14.9853 12.7179C14.7903 13.0629 14.5053 13.4229 14.1453 13.7829L13.0053 14.9679C12.8403 15.1329 12.7653 15.3279 12.7653 15.5679C12.7653 15.6879 12.7803 15.7929 12.8103 15.9129C12.8553 16.0329 12.9003 16.1229 12.9303 16.2129C13.2003 16.7079 13.6653 17.3529 14.3253 18.1329C15.0003 18.9129 15.7203 19.7079 16.5003 20.5029C17.0403 21.0279 17.5653 21.5379 18.0903 21.9879Z" fill="#292D32"/>
                             <path d="M33.3616 28.1679C33.3616 28.5879 33.2866 29.0229 33.1366 29.4429C33.0916 29.5629 33.0466 29.6829 32.9866 29.8029C32.7316 30.3429 32.4016 30.8529 31.9666 31.3329C31.2316 32.1429 30.4216 32.7279 29.5066 33.1029C29.4916 33.1029 29.4766 33.1179 29.4616 33.1179C28.5766 33.4779 27.6166 33.6729 26.5816 33.6729C25.0516 33.6729 23.4166 33.3129 21.6916 32.5779C19.9666 31.8429 18.2416 30.8529 16.5316 29.6079C15.9466 29.1729 15.3616 28.7379 14.8066 28.2729L19.7116 23.3679C20.1316 23.6829 20.5066 23.9229 20.8216 24.0879C20.8966 24.1179 20.9866 24.1629 21.0916 24.2079C21.2116 24.2529 21.3316 24.2679 21.4666 24.2679C21.7216 24.2679 21.9166 24.1779 22.0816 24.0129L23.2216 22.8879C23.5966 22.5129 23.9566 22.2279 24.3016 22.0479C24.6466 21.8379 24.9916 21.7329 25.3666 21.7329C25.6516 21.7329 25.9516 21.7929 26.2816 21.9279C26.6116 22.0629 26.9566 22.2579 27.3316 22.5129L32.2966 26.0379C32.6866 26.3079 32.9566 26.6229 33.1216 26.9979C33.2716 27.3729 33.3616 27.7479 33.3616 28.1679Z" fill="#193D23"/>
                         </svg>  
                     </a>
 
-                    <a class="header-desktop__favorite-icon" href="#">
-                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="header-desktop__favorite-icon header-desktop__icon header_desktop__wrapper__item" href="#">
+                        <svg class="header-desktop__icons__svg" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.5709 9.61302L25.1009 5.09802C31.1759 3.07302 34.4759 6.38802 32.4659 12.463L27.9509 25.993C24.9209 35.098 19.9409 35.098 16.9109 25.993L15.5759 21.973L11.5559 20.638C2.46586 17.623 2.46586 12.658 11.5709 9.61302Z" fill="#193D23"/>
                             <path d="M19.0859 18.1179L24.8009 12.3879L19.0859 18.1179Z" fill="#193D23"/>
                             <path d="M19.0871 19.2429C18.8021 19.2429 18.5171 19.1379 18.2921 18.9128C17.8571 18.4779 17.8571 17.7579 18.2921 17.3229L23.9921 11.5929C24.4271 11.1579 25.1471 11.1579 25.5821 11.5929C26.0171 12.0279 26.0171 12.7479 25.5821 13.1829L19.8821 18.9128C19.6571 19.1228 19.3721 19.2429 19.0871 19.2429Z" fill="#EBCCC2"/>
@@ -125,24 +136,10 @@
         <!-- catalog page -->
         <div class="main__result-wrapper">
 
-            <div class="cosmetic">
 
-                <!-- gradient under the header -->
-
-                <div class="header-gradient header-gradient_desktop-hidden"></div>
-        
-                <!-- offscreen color splashes -->
-
-                <!-- double splashes -->
-                <div class="gradient-splash gradient-splash_orange main_catalogue-result__gradient-splash_orange"></div>
-                <div class="gradient-splash gradient-splash_violet main_catalogue-result__gradient-splash_violet"></div>
-                <!-- orange bottom splash -->
-                <div class="gradient-splash gradient-splash_orange main_catalogue-result__gradient-splash_orange-2"></div>
-                
-            </div>
 
             <!-- filter body -->
-            <div class="content-wrapper main_catalogue-result__content-wrapper">
+            <div class="content-wrapper main_content__content-wrapper">
 
 
                     <input hidden type="checkbox" id="header-sticky__view-toggle">
@@ -287,7 +284,7 @@
                             <!-- hideble with list view -->
                             <a href="lot.html" class="card__content">
 
-                                <img class="card__plan-image" src="img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
+                                <img class="card__plan-image" src="assets/img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
                                 
                             </a>
 
@@ -341,7 +338,7 @@
                             <!-- hideble with list view -->
                             <div class="card__content">
 
-                                <img class="card__plan-image" src="img/catalogue/apart_plan/tall-plan.webp" alt="План квартиры ага">
+                                <img class="card__plan-image" src="assets/img/catalogue/apart_plan/tall-plan.webp" alt="План квартиры ага">
                                 
                             </div>
 
@@ -397,7 +394,7 @@
                             <!-- hideble with list view -->
                             <a href="lot.html" class="card__content">
 
-                                <img class="card__plan-image" src="img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
+                                <img class="card__plan-image" src="assets/img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
                                 
                             </a>
 
@@ -451,7 +448,7 @@
                             <!-- hideble with list view -->
                             <a href="lot.html" class="card__content">
 
-                                <img class="card__plan-image" src="img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
+                                <img class="card__plan-image" src="assets/img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
                                 
                             </a>
 
@@ -505,7 +502,7 @@
                             <!-- hideble with list view -->
                             <a href="lot.html" class="card__content">
 
-                                <img class="card__plan-image" src="img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
+                                <img class="card__plan-image" src="assets/img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
                                 
                             </a>
 
@@ -563,7 +560,7 @@
                             <!-- hideble with list view -->
                             <a href="lot.html" class="card__content">
 
-                                <img class="card__plan-image" src="img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
+                                <img class="card__plan-image" src="assets/img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
                                 
                             </a>
 
@@ -618,7 +615,7 @@
             <li class="menu-bottom__item">
                 <a href="catalogue.html" class="menu-bottom__item-link menu-bottom__item-link_active">
 
-                    <img class="footer_nav-menu__svg footer_nav-menu__appartments" src="img/icons/nav_menu_apartments_on.svg" alt="">   
+                    <img class="footer_nav-menu__svg footer_nav-menu__appartments" src="assets/img/icons/nav_menu_apartments_on.svg" alt="">   
                     Квартиры   
 
                 </a>
@@ -627,7 +624,7 @@
             <li class="menu-bottom__item">
                 <a href="catalogue-mortgage.html" class="menu-bottom__item-link">
 
-                    <img class="footer_nav-menu__svg footer_nav-menu__mortgage" src="img/icons/nav_menu_mortgage_off.svg" alt="">   
+                    <img class="footer_nav-menu__svg footer_nav-menu__mortgage" src="assets/img/icons/nav_menu_mortgage_off.svg" alt="">   
                     Ипотека       
 
                 </a>
@@ -636,236 +633,22 @@
             <li class="menu-bottom__item">
                 <a href="catalogue-favorite.html" class="menu-bottom__item-link">
 
-                    <img class="footer_nav-menu__svg footer_nav-menu__favorite" src="img/icons/nav_menu_favorite_off.svg" alt="">   
+                    <img class="footer_nav-menu__svg footer_nav-menu__favorite" src="assets/img/icons/nav_menu_favorite_off.svg" alt="">   
                     Избранное                      
                 </a>
             </li>
 
             <li class="menu-bottom__item">
                 <label for="body__is-nav-menu-visible-checkbox" class="menu-bottom__item-link menu-bottom__item-link_menu">
-                    <img class="footer_nav-menu__svg footer_nav-menu__menu" src="img/icons/nav_menu_menu_off.svg" alt="">   
+                    <img class="footer_nav-menu__svg footer_nav-menu__menu" src="assets/img/icons/nav_menu_menu_off.svg" alt="">   
                     Меню                      
                 </label>
             </li>
 
         </ul>
 
-        <!-- filter pop-up -->
-        <div class="main main_catalogue main_catalogue-filter">
-
-            <!-- cosmetic -->
-
-            <div class="cosmetic">
-
-                <!-- offscreen color splashes -->
-
-                <!-- double splashes -->
-                <div class="gradient-splash main_catalogue-filter__gradiend-splash_blue"></div>
-                <div class="gradient-splash main_catalogue-filter__gradiend-splash_violet"></div>
-                
-                <!-- orange bottom splash -->
-
-            </div>
-            
-            <!-- filter body -->
-
-            <div class="content-wrapper">
-
-                <section class="section-filter section-filter_grid">
-
-                    <h2 hidden>Параметры поиска</h2>
-                    
-                    <section class="section-filter__rooms section-filter__item">
-
-                        <h3 class="section-filter__subtitle">Количество комнат</h3>
-
-                        <div class="section-filter__rooms-labels-wrap">
-                            <input hidden class="filter-rooms-checkbox" type="checkbox" id="filter-rooms-checkbox-0">
-                            <label class="filter-rooms__label" for="filter-rooms-checkbox-0">Студия</label>
-                            <input hidden class="filter-rooms-checkbox" type="checkbox" id="filter-rooms-checkbox-1">
-                            <label class="filter-rooms__label filter-rooms__label_number" for="filter-rooms-checkbox-1">1</label>
-                            <input hidden class="filter-rooms-checkbox" type="checkbox" id="filter-rooms-checkbox-2">
-                            <label class="filter-rooms__label filter-rooms__label_number" for="filter-rooms-checkbox-2">2</label>
-                            <input hidden class="filter-rooms-checkbox" type="checkbox" id="filter-rooms-checkbox-3">
-                            <label class="filter-rooms__label filter-rooms__label_number" for="filter-rooms-checkbox-3">3</label>
-                            <input hidden class="filter-rooms-checkbox" type="checkbox" id="filter-rooms-checkbox-4">
-                            <label class="filter-rooms__label filter-rooms__label_number" for="filter-rooms-checkbox-4">4</label>
-                            <input hidden class="filter-rooms-checkbox" type="checkbox" id="filter-rooms-checkbox-5">
-                            <label class="filter-rooms__label filter-rooms__label_number" for="filter-rooms-checkbox-5">5</label>
-
-                        </div>
-
-
-
-                    </section>
-                    <section class="section-filter__square section-filter__item">
-                        <h3 class="section-filter__subtitle">Общая площадь, м2</h3>
-
-                        <div id="slider1" class="double-slider"></div>
-                        <div class="selected-values double-slider__values">
-                            <span class="double-slider__value double-slider__value-min" id="min-value1"></span><span class="double-slider__value double-slider__value-max" id="max-value1"></span>
-                        </div>
-
-
-                    </section>
-                    <section class="section-filter__floor section-filter__item">
-                        <h3 class="section-filter__subtitle">Этаж </h3>
-
-                        <div id="slider2" class="double-slider"></div>
-                        <div class="selected-values double-slider__values">
-                            <span class="double-slider__value double-slider__value-min" id="min-value2"></span><span class="double-slider__value double-slider__value-max" id="max-value2"></span>
-                        </div>
-                    </section>
-                    <section class="section-filter__tower section-filter__item">
-                        <h3 class="section-filter__subtitle">Башня </h3>
-
-                        <div class="section-filter__tower-wrap">
-
-                            <input hidden type="checkbox" id="section-filter__tower-checkbox-1" class="section-filter__tower-checkbox">
-                            <label for="section-filter__tower-checkbox-1" class="section-filter__tower-label">Гонгконг</label>
-
-                            <input hidden type="checkbox" id="section-filter__tower-checkbox-2" class="section-filter__tower-checkbox">
-                            <label for="section-filter__tower-checkbox-2" class="section-filter__tower-label">Сингапур</label>
-                        </div>
-
-                    </section>
-                    <section class="section-filter__price section-filter__item section-filter__item_price">
-                        <h3 class="section-filter__subtitle">Стоимость, млн ₽ </h3>
-
-                        <div id="slider3" class="double-slider"></div>
-                        <div class="selected-values double-slider__values">
-                            <span class="double-slider__value double-slider__value-min" id="min-value3"></span><span class="double-slider__value double-slider__value-max" id="max-value3"></span>
-                        </div>
-                    </section>
-
-                    
-                    <section class="section-filter__promo section-filter__item">
-                        <h3 hidden>Акция</h3>
-                        <input hidden type="checkbox" id="section-filter__button_promo">
-                        <label for="section-filter__button_promo" class="button button-outline button-full-wifth section-filter__button_promo">
-                            Акция
-                        </label>
-                    </section>
-
-                    <!-- sort popup start -->
-                    <!-- label for sort popup -->
-                    <input hidden type="checkbox" class="catalogue-filter__sort-checkbox sort-checkbox" id="catalogue-filter__sort-checkbox">
-                    <!-- shadow for sort popup -->
-                    <label for="catalogue-filter__sort-checkbox" class="catalogue-filter__sort-backdrop"></label>
-                    <label class="section-filter__sort-label catalogue-filter__sort-label" for="catalogue-filter__sort-checkbox">
-                        <svg class="catalogue-filter__sort-label__icon-sort" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.03333 5.44621L4.52946 2.94238L2.02563 5.44621" stroke="#193D23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M4.52954 15.0578V2.94238" stroke="#193D23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9.11987 12.5538L11.6237 15.0577L14.1276 12.5538" stroke="#9D9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.624 2.94238V15.0578" stroke="#9D9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-
-                        <span class="catalogue-filter__sort-label__text sort-label__text">
-                            Сначала большей площади
-                        </span>
-
-                        <svg class="catalogue-filter__sort-label__icon-arrow"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21.9998 7L21.9998 17C21.9998 19.7614 19.7612 22 16.9998 22L6.99976 22C4.23833 22 1.99976 19.7614 1.99976 17L1.99976 7C1.99976 4.23858 4.23833 2 6.99976 2L16.9998 2C19.7612 2 21.9998 4.23858 21.9998 7Z" fill="#193D23"/>
-                            <path d="M8.99976 11L11.2926 13.2929C11.6832 13.6834 12.3163 13.6834 12.7069 13.2929L14.9998 11" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                    </label>
-
-                    <!-- sort popup body -->
-                    <div class="catalogue-filter__sort-list-wrapper catalogue-filter__sort-list-popup">
-
-                    <label class="catalogue-filter__sort-label catalogue-filter__sort-label_inside" for="catalogue-filter__sort-checkbox">
-                        <svg class="catalogue-filter__sort-label__icon-sort" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.03333 5.44621L4.52946 2.94238L2.02563 5.44621" stroke="#193D23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M4.52954 15.0578V2.94238" stroke="#193D23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9.11987 12.5538L11.6237 15.0577L14.1276 12.5538" stroke="#9D9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M11.624 2.94238V15.0578" stroke="#9D9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-
-                        <span class="catalogue-filter__sort-label__text sort-label__text">
-                            Сначала большей площади
-                        </span>
-
-                        <svg class="catalogue-filter__sort-label__icon-arrow"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21.9998 7L21.9998 17C21.9998 19.7614 19.7612 22 16.9998 22L6.99976 22C4.23833 22 1.99976 19.7614 1.99976 17L1.99976 7C1.99976 4.23858 4.23833 2 6.99976 2L16.9998 2C19.7612 2 21.9998 4.23858 21.9998 7Z" fill="#193D23"/>
-                            <path d="M8.99976 11L11.2926 13.2929C11.6832 13.6834 12.3163 13.6834 12.7069 13.2929L14.9998 11" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                    </label>
-
-                    <div class="catalogue-filter__sort-list">
-
-                        <input hidden type="radio" class="catalogue-filter__sort-radio" name="catalogue-filter__sort-radio" id="catalogue-filter__sort-radio-01">
-                        <div class="catalogue-filter__sort-list-item">
-                            <label for="catalogue-filter__sort-radio-01" class="catalogue-filter__sort-list-item__label">
-                                <span class="catalogue-filter__sort-list-item__text">Сначала дешевле</span>
-                                <span class="catalogue-filter__sort-list-item__cosmetic-checkbox"></span>
-                            </label> 
-                        </div>
-                        
-
-                        <input hidden type="radio" class="catalogue-filter__sort-radio" name="catalogue-filter__sort-radio" id="catalogue-filter__sort-radio-02">
-                        <div class="catalogue-filter__sort-list-item">
-                            <label for="catalogue-filter__sort-radio-02" class="catalogue-filter__sort-list-item__label">
-                                <span class="catalogue-filter__sort-list-item__text">Сначала дороже</span>
-                                <span class="catalogue-filter__sort-list-item__cosmetic-checkbox"></span>
-                            </label> 
-                        </div>
-
-                        <input checked hidden type="radio" class="catalogue-filter__sort-radio" name="catalogue-filter__sort-radio" id="catalogue-filter__sort-radio-03">
-                        <div class="catalogue-filter__sort-list-item">
-                            <label for="catalogue-filter__sort-radio-03" class="catalogue-filter__sort-list-item__label">
-                                <span class="catalogue-filter__sort-list-item__text">Сначала большей площади</span>
-                                <span class="catalogue-filter__sort-list-item__cosmetic-checkbox"></span>
-                            </label> 
-                        </div>
-
-                        <input hidden type="radio" class="catalogue-filter__sort-radio" name="catalogue-filter__sort-radio" id="catalogue-filter__sort-radio-04">
-                        <div class="catalogue-filter__sort-list-item">
-                            <label for="catalogue-filter__sort-radio-04" class="catalogue-filter__sort-list-item__label">
-                                <span class="catalogue-filter__sort-list-item__text">Сначала меньшей площади</span>
-                                <span class="catalogue-filter__sort-list-item__cosmetic-checkbox"></span>
-                            </label> 
-                        </div>
-
-                    </div>
-                    <!-- sort popup end -->
-
-                    </div>
-
-                    <footer class="footer section-filter__footer">
-                        <label for="body__is-filter-visible-checkbox" class="button button-solid button-secondary section-filter__show-result-button">
-                            <span class="button-wrap">
-                                <span>
-                                    143 квартиры
-                                </span>
-                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.5583 12.3068L10.5 17.3651L5.44165 12.3068" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10.5 3.19836V17.2234" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span> 
-                        </label>
-                    </footer>
-
-                </section>
-                        
-            </div>
-
-        </div>
-
         <!-- menu pop-up -->
         <div class="main_catalogue-menu">
-
-            <!-- cosmetic -->
-
-                    <!-- gradient under the header -->
-
-                    <div class="header-gradient"></div>
-            
-                    <!-- offscreen color splashes -->
-
-                    <div class="gradient-splash gradient-splash_orange main_catalogue-menu__gradient-splash_orange"></div>
-                    <div class="gradient-splash gradient-splash_violet main_catalogue-menu__gradient-splash_violet"></div>
-
-            <!-- menu -->
 
             <div class="content-wrapper">
 
@@ -898,7 +681,211 @@
 
         </div>
 
+        <!-- filter popup -->
+        <div class="main_catalogue-filter">
 
+            <div class="main__cosmetic main_catalogue-filter__cosmetic">
+
+                <!-- gradient under the header -->
+        
+                <!-- offscreen color splashes -->
+    
+                <!-- double splashes -->
+                <div class="gradient-splash gradient-splash_orange main_catalogue-filter__gradient-splash_blue"></div>
+                <div class="gradient-splash gradient-splash_violet main_catalogue-filter__gradient-splash_violet"></div>
+                <!-- orange bottom splash -->
+                
+            </div>
+
+            <label for="body__is-filter-visible-checkbox" class="header section-filter__header">
+
+                <div class="content-wrapper section-filter__header-wrapper">
+
+                    <h4 class="title">КВАРТИРЫ</h4>
+
+                    <svg class="header-desktop__icons__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4" d="M14.9 2H9.10001C8.42001 2 7.46 2.4 6.98 2.88L2.88 6.98001C2.4 7.46001 2 8.42001 2 9.10001V14.9C2 15.58 2.4 16.54 2.88 17.02L6.98 21.12C7.46 21.6 8.42001 22 9.10001 22H14.9C15.58 22 16.54 21.6 17.02 21.12L21.12 17.02C21.6 16.54 22 15.58 22 14.9V9.10001C22 8.42001 21.6 7.46001 21.12 6.98001L17.02 2.88C16.54 2.4 15.58 2 14.9 2Z" fill="#292D32"/>
+                        <path d="M13.0599 11.9999L16.0299 9.02994C16.3199 8.73994 16.3199 8.25994 16.0299 7.96994C15.7399 7.67994 15.2599 7.67994 14.9699 7.96994L11.9999 10.9399L9.02994 7.96994C8.73994 7.67994 8.25994 7.67994 7.96994 7.96994C7.67994 8.25994 7.67994 8.73994 7.96994 9.02994L10.9399 11.9999L7.96994 14.9699C7.67994 15.2599 7.67994 15.7399 7.96994 16.0299C8.11994 16.1799 8.30994 16.2499 8.49994 16.2499C8.68994 16.2499 8.87994 16.1799 9.02994 16.0299L11.9999 13.0599L14.9699 16.0299C15.1199 16.1799 15.3099 16.2499 15.4999 16.2499C15.6899 16.2499 15.8799 16.1799 16.0299 16.0299C16.3199 15.7399 16.3199 15.2599 16.0299 14.9699L13.0599 11.9999Z" fill="#292D32"/>
+                        </svg>
+
+                </div>
+
+
+                    
+
+            </label>
+
+            <h2 hidden>Параметры поиска</h2>
+
+            <div class="content-wrapper main_catalogue-filter__content-wrapper">
+                <section class="section-filter__rooms section-filter__item">
+
+                    <h3 class="section-filter__subtitle">Количество комнат</h3>
+    
+                    <div class="section-filter__rooms-labels-wrap">
+                        <input hidden class="filter-rooms-checkbox" type="checkbox" id="filter-rooms-checkbox-0">
+                        <label class="filter-rooms__label" for="filter-rooms-checkbox-0">Студия</label>
+                        <input hidden class="filter-rooms-checkbox" type="checkbox" id="filter-rooms-checkbox-1">
+                        <label class="filter-rooms__label filter-rooms__label_number" for="filter-rooms-checkbox-1">1</label>
+                        <input hidden class="filter-rooms-checkbox" type="checkbox" id="filter-rooms-checkbox-2">
+                        <label class="filter-rooms__label filter-rooms__label_number" for="filter-rooms-checkbox-2">2</label>
+                        <input hidden class="filter-rooms-checkbox" type="checkbox" id="filter-rooms-checkbox-3">
+                        <label class="filter-rooms__label filter-rooms__label_number" for="filter-rooms-checkbox-3">3</label>
+                        <input hidden class="filter-rooms-checkbox" type="checkbox" id="filter-rooms-checkbox-4">
+                        <label class="filter-rooms__label filter-rooms__label_number" for="filter-rooms-checkbox-4">4</label>
+                        <input hidden class="filter-rooms-checkbox" type="checkbox" id="filter-rooms-checkbox-5">
+                        <label class="filter-rooms__label filter-rooms__label_number" for="filter-rooms-checkbox-5">5</label>
+    
+                    </div>
+    
+    
+    
+                </section>
+                <section class="section-filter__square section-filter__item">
+                    <h3 class="section-filter__subtitle">Общая площадь, м2</h3>
+    
+                    <div id="slider1" class="double-slider"></div>
+                    <div class="selected-values double-slider__values">
+                        <span class="double-slider__value double-slider__value-min" id="min-value1"></span><span class="double-slider__value double-slider__value-max" id="max-value1"></span>
+                    </div>
+    
+    
+                </section>
+                <section class="section-filter__floor section-filter__item">
+                    <h3 class="section-filter__subtitle">Этаж </h3>
+    
+                    <div id="slider2" class="double-slider"></div>
+                    <div class="selected-values double-slider__values">
+                        <span class="double-slider__value double-slider__value-min" id="min-value2"></span><span class="double-slider__value double-slider__value-max" id="max-value2"></span>
+                    </div>
+                </section>
+                <section class="section-filter__tower section-filter__item">
+                    <h3 class="section-filter__subtitle">Башня </h3>
+    
+                    <div class="section-filter__tower-wrap">
+    
+                        <input hidden type="checkbox" id="section-filter__tower-checkbox-1" class="section-filter__tower-checkbox">
+                        <label for="section-filter__tower-checkbox-1" class="section-filter__tower-label">Гонгконг</label>
+    
+                        <input hidden type="checkbox" id="section-filter__tower-checkbox-2" class="section-filter__tower-checkbox">
+                        <label for="section-filter__tower-checkbox-2" class="section-filter__tower-label">Сингапур</label>
+                    </div>
+    
+                </section>
+                <section class="section-filter__price section-filter__item section-filter__item_price">
+                    <h3 class="section-filter__subtitle">Стоимость, млн ₽ </h3>
+    
+                    <div id="slider3" class="double-slider"></div>
+                    <div class="selected-values double-slider__values">
+                        <span class="double-slider__value double-slider__value-min" id="min-value3"></span><span class="double-slider__value double-slider__value-max" id="max-value3"></span>
+                    </div>
+                </section>
+    
+                <section class="section-filter__promo section-filter__item">
+                    <h3 hidden>Акция</h3>
+                    <input hidden type="checkbox" id="section-filter__button_promo">
+                    <label for="section-filter__button_promo" class="button button-outline button-full-wifth section-filter__button_promo">
+                        Акция
+                    </label>
+                </section>
+    
+                <!-- sort popup start -->
+                <!-- label for sort popup -->
+                <input hidden type="checkbox" class="catalogue-filter__sort-checkbox sort-checkbox" id="catalogue-filter__sort-checkbox">
+                <!-- shadow for sort popup -->
+                <label for="catalogue-filter__sort-checkbox" class="catalogue-filter__sort-backdrop"></label>
+                <label class="section-filter__sort-label catalogue-filter__sort-label" for="catalogue-filter__sort-checkbox">
+                    <svg class="catalogue-filter__sort-label__icon-sort" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.03333 5.44621L4.52946 2.94238L2.02563 5.44621" stroke="#193D23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.52954 15.0578V2.94238" stroke="#193D23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.11987 12.5538L11.6237 15.0577L14.1276 12.5538" stroke="#9D9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.624 2.94238V15.0578" stroke="#9D9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+    
+                    <span class="catalogue-filter__sort-label__text sort-label__text">
+                        Сначала большей площади
+                    </span>
+    
+                    <svg class="catalogue-filter__sort-label__icon-arrow"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.9998 7L21.9998 17C21.9998 19.7614 19.7612 22 16.9998 22L6.99976 22C4.23833 22 1.99976 19.7614 1.99976 17L1.99976 7C1.99976 4.23858 4.23833 2 6.99976 2L16.9998 2C19.7612 2 21.9998 4.23858 21.9998 7Z" fill="#193D23"/>
+                        <path d="M8.99976 11L11.2926 13.2929C11.6832 13.6834 12.3163 13.6834 12.7069 13.2929L14.9998 11" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </label>
+    
+                <!-- sort popup body -->
+                <div class="catalogue-filter__sort-list-wrapper">
+    
+                    <label class="catalogue-filter__sort-label catalogue-filter__sort-label_inside" for="catalogue-filter__sort-checkbox">
+                        <svg class="catalogue-filter__sort-label__icon-sort" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.03333 5.44621L4.52946 2.94238L2.02563 5.44621" stroke="#193D23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.52954 15.0578V2.94238" stroke="#193D23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.11987 12.5538L11.6237 15.0577L14.1276 12.5538" stroke="#9D9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.624 2.94238V15.0578" stroke="#9D9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+    
+                        <span class="catalogue-filter__sort-label__text sort-label__text">
+                            Сначала большей площади
+                        </span>
+    
+                        <svg class="catalogue-filter__sort-label__icon-arrow"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.9998 7L21.9998 17C21.9998 19.7614 19.7612 22 16.9998 22L6.99976 22C4.23833 22 1.99976 19.7614 1.99976 17L1.99976 7C1.99976 4.23858 4.23833 2 6.99976 2L16.9998 2C19.7612 2 21.9998 4.23858 21.9998 7Z" fill="#193D23"/>
+                            <path d="M8.99976 11L11.2926 13.2929C11.6832 13.6834 12.3163 13.6834 12.7069 13.2929L14.9998 11" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </label>
+    
+                    <div class="catalogue-filter__sort-list">
+    
+                        <input hidden type="radio" class="catalogue-filter__sort-radio" name="catalogue-filter__sort-radio" id="catalogue-filter__sort-radio-01">
+                        <div class="catalogue-filter__sort-list-item">
+                            <label for="catalogue-filter__sort-radio-01" class="catalogue-filter__sort-list-item__label">
+                                <span class="catalogue-filter__sort-list-item__text">Сначала дешевле</span>
+                                <span class="catalogue-filter__sort-list-item__cosmetic-checkbox"></span>
+                            </label> 
+                        </div>
+                        
+    
+                        <input hidden type="radio" class="catalogue-filter__sort-radio" name="catalogue-filter__sort-radio" id="catalogue-filter__sort-radio-02">
+                        <div class="catalogue-filter__sort-list-item">
+                            <label for="catalogue-filter__sort-radio-02" class="catalogue-filter__sort-list-item__label">
+                                <span class="catalogue-filter__sort-list-item__text">Сначала дороже</span>
+                                <span class="catalogue-filter__sort-list-item__cosmetic-checkbox"></span>
+                            </label> 
+                        </div>
+    
+                        <input checked hidden type="radio" class="catalogue-filter__sort-radio" name="catalogue-filter__sort-radio" id="catalogue-filter__sort-radio-03">
+                        <div class="catalogue-filter__sort-list-item">
+                            <label for="catalogue-filter__sort-radio-03" class="catalogue-filter__sort-list-item__label">
+                                <span class="catalogue-filter__sort-list-item__text">Сначала большей площади</span>
+                                <span class="catalogue-filter__sort-list-item__cosmetic-checkbox"></span>
+                            </label> 
+                        </div>
+    
+                        <input hidden type="radio" class="catalogue-filter__sort-radio" name="catalogue-filter__sort-radio" id="catalogue-filter__sort-radio-04">
+                        <div class="catalogue-filter__sort-list-item">
+                            <label for="catalogue-filter__sort-radio-04" class="catalogue-filter__sort-list-item__label">
+                                <span class="catalogue-filter__sort-list-item__text">Сначала меньшей площади</span>
+                                <span class="catalogue-filter__sort-list-item__cosmetic-checkbox"></span>
+                            </label> 
+                        </div>
+    
+                    </div>
+                <!-- sort popup end -->
+                </div>
+            </div>
+            
+            
+
+            <footer class="catalogue-filter__footer">
+                <label for="body__is-filter-visible-checkbox" class="button button-solid button-secondary section-filter__show-result-button section-filter-result__footer">
+                    143 квартиры
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5583 12.025L10.5 17.0834L5.44165 12.025" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 2.91663V16.9416" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                </label>
+            </footer>
+
+        </div>
 
     </main>
 
@@ -907,3 +894,5 @@
 
 </body>
 </html>
+
+
