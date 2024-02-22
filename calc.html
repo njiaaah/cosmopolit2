@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>MSR</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <script src="lib/nouislider.min.js"></script>
+    <link rel="stylesheet" href="lib/nouislider.min.css">
+    <link rel="stylesheet" href="style/calc.css">
+</head>
+<body>
+
+    <div class="calc">
+        <h2>Рассчитайте 
+            ипотеку</h2>
+        <div class="calc-wrap">
+            <div class="calc-input">
+                <div class="calc-input-wrap">
+                    <div class="calc-programms-wrap">
+                        <span class="calc-input-label-info">Выберите программу</span>
+                        <button class="calc-button-programms">Все программы<img id="calc-all-programms-arrow" src="img/calc/arrow.svg" alt=""></button>
+                        <ul id="calc-programms-drop-down">
+                            <li class="program-name">Программа 1</li>
+                            <li class="program-name">Программа 2</li>
+                            <li class="program-name">Программа 3</li>
+                            <li class="program-name">Программа 4</li>
+                            <li class="program-name">Программа 5</li>
+                            <li class="program-name">Программа 6</li>
+                        </ul>
+                    </div>
+
+                    <div class="calc-slider-container">
+                        <span class="calc-input-label-info">Стоимость квартиры</span>
+                        <div class="calc-slider-wrap">  
+                            <div class="calc-slider-val-wrap">
+                                <span id="calc01-lower" class="slider-val calc-lower"></span>
+                                <span id="calc01-upper" class="slider-val"></span>
+                            </div>
+
+                            <div id="calc01" class="slider"></div>
+                            
+                        </div>
+                       
+                    </div>
+
+                    <div class="calc-slider-container">
+                        <span class="calc-input-label-info">Первоначальный взнос</span>
+                        <div class="calc-slider-wrap">  
+                            <div class="calc-slider-val-wrap">
+                                <span id="calc02-lower" class="slider-val calc-lower"></span>
+                                <span id="calc02-upper" class="slider-val"></span>
+                            </div>
+
+                            <div id="calc02" class="slider"></div>
+                            
+                        </div>
+                       
+                    </div>
+
+                    <div class="calc-slider-container">
+                        <span class="calc-input-label-info">Срок кредита</span>
+                        <div class="calc-slider-wrap">  
+                            <div class="calc-slider-val-wrap">
+                                <span id="calc03-lower" class="slider-val calc-lower"></span>
+                                <span id="calc03-upper" class="slider-val"></span>
+                            </div>
+
+                            <div id="calc03" class="slider"></div>
+                            
+                        </div>
+                       
+                    </div>
+
+                </div> 
+                
+                <button class="calc-input-button-confirm">Получить одобрение</button>
+
+            </div>
+
+            <div class="calc-info"> 
+
+                <div class="calc-info-sort">
+                    <div class="calc-info-sort-label">
+                        <img class="calc-img-sort calc-img-mobile" src="img/calc/sort.svg" alt="">
+                        <span class="calc-sort-label" id="calc-sort-label">Сортировать</span>
+                    </div>
+                    <img class="calc-img-sort-img calc-img-hide" src="img/calc/arrow.svg" alt="">
+                    <ul class="calc-sort-list">
+                        <li class="calc-sort-list-item">Платеж по возрастанию</li>
+                        <li class="calc-sort-list-item">Платеж по убыванию</li>
+                        <li class="calc-sort-list-item">Ставка по возрастанию</li>
+                        <li class="calc-sort-list-item">Ставка по убыванию</li>
+                        <li class="calc-sort-list-item">Срок по возрастанию</li>
+                        <li class="calc-sort-list-item">Срок по убыванию</li>
+                    </ul>
+                </div>
+
+                <div class="calc-info-container">
+                    <div class="calc-info-bank">
+                        <span>Транскапиталбанк</span>
+                    </div>
+                    <span class="calc-price calc-info-price">45 000 000</span>
+                    <div class="calc-info-last">
+                        <span class="calc-info-proc">15</span>
+                        <span class="calc-info-years">1-30</span>
+                    </div>
+                    
+                </div>
+
+                <div class="calc-info-container">
+                    <div class="calc-info-bank">
+                        <span>Транскапиталбанк</span>
+                    </div>
+                    <span class="calc-price calc-info-price">5 000 000</span>
+                    <div class="calc-info-last">
+                        <span class="calc-info-proc">15</span>
+                        <span class="calc-info-years">1-30</span>
+                    </div>
+                    
+                </div>
+                
+                <div class="calc-info-container">
+                    <div class="calc-info-bank">
+                        <span>Сбер</span>
+                    </div>
+                    <span class="calc-price calc-info-price">45 000 000</span>
+                    <div class="calc-info-last">
+                        <span class="calc-info-proc">15</span>
+                        <span class="calc-info-years">1-30</span>
+                    </div>
+                    
+                </div>
+
+                <div class="calc-info-container">
+                    <div class="calc-info-bank">
+                        <span>Транскапиталбанк</span>
+                    </div>
+                    <span class="calc-price calc-info-price">45 000 000</span>
+                    <div class="calc-info-last">
+                        <span class="calc-info-proc">5</span>
+                        <span class="calc-info-years">1-5</span>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script/calc.js"></script>
+
+</body>
+</html>
