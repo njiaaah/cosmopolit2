@@ -37,7 +37,12 @@ body {
     src: url('../font/Unbounded-Regular.ttf') format('truetype');
 }
 
+label {
+    cursor: pointer;
+}
+
 button {
+    cursor: pointer;
     border: none;
     outline: none;
 }

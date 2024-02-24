@@ -29,31 +29,45 @@ contentToggles.each(function(index){
     let lastScrollTop = 0;
     let timeout;
 
-        $(window).scroll(function() {
-            const currentScroll = $(this).scrollTop();
+    $(window).scroll(function() {
+        const currentScroll = $(this).scrollTop();
 
-            // always visible if not scrolled 160px from top
-            // 160px - sticky header height + its distance from top
-            if (currentScroll > 160) {
-                if (currentScroll != lastScrollTop) {
-                    $('.section-filter-result__header-sticky').addClass('hidden-above');
-                    $('.menu-bottom').addClass('hidden-below');
-                } else {
-                    $('.section-filter-result__header-sticky').removeClass('hidden-above');
-                    $('.menu-bottom').removeClass('hidden-below');
-                }
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    $('.section-filter-result__header-sticky').removeClass('hidden-above');
-                    $('.menu-bottom').removeClass('hidden-below');
-                }, 1000); //timeout to toggle view
+        // always visible if not scrolled 160px from top
+        // 160px - sticky header height + its distance from top
+        if (currentScroll > 160) {
+            if (currentScroll != lastScrollTop) {
+                $('.section-filter-result__header-sticky').addClass('hidden-above');
+                $('.menu-bottom').addClass('hidden-below');
             } else {
                 $('.section-filter-result__header-sticky').removeClass('hidden-above');
                 $('.menu-bottom').removeClass('hidden-below');
             }
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+                $('.section-filter-result__header-sticky').removeClass('hidden-above');
+                $('.menu-bottom').removeClass('hidden-below');
+            }, 1000); //timeout to toggle view
+        } else {
+            $('.section-filter-result__header-sticky').removeClass('hidden-above');
+            $('.menu-bottom').removeClass('hidden-below');
+        }
 
-            lastScrollTop = currentScroll;
-        });
+        lastScrollTop = currentScroll;
+
+        // add wiggle to 'show more' button at the end of search result when scrolled to end of the page
+        var windowHeight = $(window).height();
+        var documentHeight = $(document).height();
+        var scrollPosition = $(window).scrollTop();
+        var bottomDistance = documentHeight - (scrollPosition + windowHeight);
+        // px before bottom
+        var threshold = 50; 
+    
+        if (bottomDistance <= threshold) {
+            $('.section-filter__show-result-button').addClass('animation_snake-bottom');
+        } else {
+            $('.section-filter__show-result-button').removeClass('animation_snake-bottom');
+        }
+    });
 
 // sliders
 
@@ -80,20 +94,24 @@ $('.catalogue-filter__sort-list-item').click(function(){
 // checkboxes that precent scroll on html
 
 const scrollDisableChb = [
-    '.body__is-filter-visible-label',
-    '.sort-checkbox',
+    // '.body__is-filter-visible-label',
+    // '.sort-checkbox',
+    '#catalogue-filter__sort-checkbox',
     '#catalogue-result__sort-checkbox',
     '#body__is-nav-menu-visible-checkbox',
-    // '#body__is-filter-visible-checkbox',
-    'catalogue-filter__sort-checkbox'
-]
+    '#body__is-filter-visible-checkbox',
+];
 
 
 scrollDisableChb.forEach(function(selector) {
     $(selector).change(function() {
-        disableScroll($(this).prop('checked'))
+        if($(window).width() < 950){
+            disableScroll($(this).prop('checked'))
+        }
+       
     });
   });
+
 
 // disable scroll on these chb state change
 function disableScroll(param) {
@@ -102,17 +120,27 @@ function disableScroll(param) {
     } else {
         $("html").css("overflow-y", "auto")
     }
-}
+};
+
+//   hide sort on filter popup if opt out of filter page without closing it, enable scroll also
+$('#body__is-filter-visible-checkbox').change(function(){
+    if(!$(this).prop('checked')) {
+           $('#catalogue-filter__sort-checkbox').prop('checked', false)
+           disableScroll($('#catalogue-filter__sort-checkbox').prop('checked'))
+    }
+});
+
 
 // uncheck on reaching desktop view
 
 $(window).resize(handleViewportChange);
 
-function handleViewportChange() {
-    const viewportHeight = $(window).outerHeight();
-    const checkboxes = scrollDisableChb.map(selector => $(selector));
-  
-    if (viewportHeight > 950) {
-      checkboxes.prop("checked", false).trigger("change");
+function handleViewportChange() { 
+    if ($(window).width() > 950) {
+        scrollDisableChb.forEach(function(selector) {
+            $(selector).prop('checked', false)
+            console.log($(selector).prop('checked'))
+        })
+        $("html").css("overflow-y", "auto")
     }
-  }
+};
