@@ -1520,6 +1520,9 @@ body:has(#body__is-filter-visible-checkbox:checked)::-webkit-scrollbar {
 .footer-desktop {
     display: none;
 }
+.lot__content-wrapper {
+    width: 100%;
+}
 
 
 
@@ -2113,8 +2116,13 @@ body:has(#body__is-filter-visible-checkbox:checked)::-webkit-scrollbar {
         z-index: 110;
     }
     .results-wrap {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
+        @media only screen and (min-width: 1150px) {
+            .results-wrap {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
     .main_catalogue-filter {
         width: var(--content-width);
         margin: 0 auto;
@@ -2180,8 +2188,8 @@ body:has(#body__is-filter-visible-checkbox:checked)::-webkit-scrollbar {
     .foooter-desktop__menu{
       display: flex;
       justify-content: space-between;
-      margin-right: 150px;
-      gap: 2rem;
+      margin-right: auto;
+      gap: 4rem;
     }
     .foooter-desktop__menu_list-item{
         margin-bottom: 12px;
