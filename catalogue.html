@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/lib/nouislider.min.css">
     <script src="assets/lib/nouislider.min.js"></script>
     <script src="assets/lib/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- defaults -->
     <link rel="stylesheet" href="assets/css/normalize.css">
@@ -20,9 +22,12 @@
     <link rel="stylesheet" href="assets/css/sliders.css">
     <link rel="stylesheet" href="style.css">
     <script src="assets/script/catalogue.js" defer></script>
+    <script src="assets/script/tower-plan.js" defer></script>
+    <script src="assets/script/lot.js" defer></script>
 </head>
 <body>
 
+    <input hidden checked type="checkbox" id="body__is-tower-desktop-view-visible">
     <input hidden type="checkbox" id="body__is-filter-visible-checkbox">
     <input hidden type="checkbox" id="body__is-nav-menu-visible-checkbox">
     
@@ -138,9 +143,13 @@
 
         </div>
 
-        <h1 class="title main__tower-switch-wrapper">
-            Квартиры
-        </h1>
+        <div class="main__title-and-tower-switch-wrap">
+            <h1 class="title main__title-and-tower-switch-wrap__title" >Квартиры</h1>
+            <label for="body__is-tower-desktop-view-visible" class="tower-switch-wrapper__label">
+                <span class="tower-switch-wrapper__text">На плане башни</span>
+                <span class="tower-switch-wrapper__switch"></span>
+            </label>
+        </div>
 
         <!-- filter popup -->
         <div class="main_catalogue-filter">
@@ -936,7 +945,143 @@
 
         </div>
 
-        <!-- bottom mobile/tablet only -->
+        <!-- desktop only -->
+        <div class="main__tower-plan-view-wrap">
+            <div class="content-wrapper ">
+                
+                <header class="tower-plan-view__legend">
+
+                    <div class="tower-plan-view__legend__item tower-plan-view__legend__item_on-sale">
+                        <span class="tower-plan-view__legend__text">В ПРОДАЖЕ</span>
+                        <img src="assets/img/icons/tower_on-sale.svg" alt="">
+                    </div>
+
+                    <div class="tower-plan-view__legend__item tower-plan-view__legend__item_booked">
+                        <span class="tower-plan-view__legend__text">ЗАБРОНИРОВАНО</span>
+                        <img src="assets/img/icons/tower_booked.svg" alt="">
+                             
+                    </div>
+
+                    <div class="tower-plan-view__legend__item tower-plan-view__legend__item_out-of-stock">
+                        <span class="tower-plan-view__legend__text">НЕТ В НАЛИЧИИ</span>
+                        <img src="assets/img/icons/tower_out-of-stock.svg" alt=""> 
+                    </div>
+
+                    <div class="tower-plan-view__legend__item tower-plan-view__legend__item_sold">
+                        <span class="tower-plan-view__legend__text">ПРОДАНО</span>
+                        <img src="assets/img/icons/tower_sold.svg" alt="">
+                             
+                    </div>
+
+                </header>
+
+                <div class="tower-plan-view__container">
+
+                    <div class="tower-plan-view__tower tower-plan-view__tower_left">
+                        <!-- tower plan goes here -->
+                        <span class="tower-plan-view__name">СИНГАПУР</span>
+                    </div>
+                    <div class="tower-plan-view__tower  tower-plan-view__tower_right">
+                        <!-- tower plan goes here -->
+                        <span class="tower-plan-view__name">ГОНКОНГ</span>
+                    </div>
+
+                    <!--  -->
+
+                    <article class="card tower-plan-view_card section-filter__card section-filter__card_promo">
+
+                        <header class="card__header">
+
+                            <h4 class="card__number">218</h4>
+
+                            <span class="card__price card__price_promo-active">6 500 600 ₽</span>
+                        
+                            <span class="card__old-price">16 500 600 ₽</span>
+
+                        </header>
+
+                        <div class="card__favorite-icon">
+
+                            <input hidden type="checkbox" class="card__favorite-checkbox" id="card__favorite-checkbox-001">
+                            <label for="card__favorite-checkbox-001" class="card__favorite-label">
+                                <svg class="card__favorite_svg"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="card__favorite-checkbox-icon" opacity="0.4" d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z" fill="#292D32"/>
+                                    <path d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z" fill="#193D23"/>
+                                </svg>    
+                            </label>
+
+                        </div>
+
+                        <!-- hideble with list view -->
+                        <div class="card__content">
+                               <a href="lot.html" class="card__content__link">
+                            <img class="card__plan-image" src="assets/img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
+                             </a>                       
+                        </div>
+
+                        <footer class="card__footer">
+
+                            <div class="card__info-wrap">
+                                <span class="card__rooms card__info-wrap__item">3 комнаты</span>
+                                <span class="card__|">|</span>
+                                <span class="card__square card__info-wrap__item">150 м2</span>
+                            </div>
+
+                            <div class="card__info-wrap">
+                                <span class="card__tower card__info-wrap__item">башня Гонгконг</span>
+                                <span class="card__|">|</span>
+                                <span class="card__floor card__info-wrap__item">18 этаж</span>
+                            </div>
+
+                        </footer>
+                        
+                        <div class="card__plan-toggle-wrap">
+                            <svg class="card__toggle-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 7.95752L22 17.9575C22 20.7189 19.7614 22.9575 17 22.9575L7 22.9575C4.23858 22.9575 2 20.7189 2 17.9575L2 7.95752C2 5.1961 4.23858 2.95752 7 2.95752L17 2.95752C19.7614 2.95752 22 5.1961 22 7.95752Z" fill="#CECECE"/>
+                            <path d="M9 11.9575L11.2929 14.2504C11.6834 14.6409 12.3166 14.6409 12.7071 14.2504L15 11.9575" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>    
+
+                    </article>
+
+
+                    <div class="tower-plan-view__swiper-wrapper card__swiper-wrapper">
+
+                        <div class="card__swiper-wrapper__pagination">
+
+                            
+                            <a data-slide="1" class="swiper__pagination__link pagination__link_active" href="#slide1">Схема этажа</a>
+                            <a data-slide="2" class="swiper__pagination__link " href="#slide1">Генплан</a>
+
+                        </div>
+
+                        <div class="swiper lot__swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide lot__swiper__slide slide__plan-slide">
+                                    <img class="lot__swiper__slide__img" src="assets/img/catalogue/apart_plan/floor_plan.webp" alt="">
+                                </div>
+
+                                <div class="swiper-slide lot__swiper__slide">
+                                    <img class="lot__swiper__slide__img" src="assets/img/catalogue/apart_plan/gen_plan.webp" alt="">
+                                </div>                                
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination card__swiper-pagination">
+                                    
+                                </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- mobile/tablet only -->
         <nav class="menu-bottom">
             <ul class="menu-bottom__list">
             <li class="menu-bottom__item">
@@ -974,7 +1119,7 @@
         </ul>
         </nav>
 
-        <!-- menu pop-up -->
+        <!-- mobile/tablet only -->
         <div class="main_catalogue-menu">
 
             <div class="content-wrapper">
@@ -1008,7 +1153,7 @@
 
         </div>
 
-        <!-- desktop-only footer -->
+        <!-- desktop only -->
 
         <footer class="footer footer-desktop">
 

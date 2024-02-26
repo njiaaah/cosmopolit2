@@ -22,6 +22,7 @@ body {
     font-family: 'Cousine', system-ui, -apple-system, sans-serif;
 
     overflow-x: clip;
+    --max-content-width: 1120px;
    
 }
 

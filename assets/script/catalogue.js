@@ -139,7 +139,6 @@ function handleViewportChange() {
     if ($(window).width() > 950) {
         scrollDisableChb.forEach(function(selector) {
             $(selector).prop('checked', false)
-            console.log($(selector).prop('checked'))
         })
         $("html").css("overflow-y", "auto")
     }
