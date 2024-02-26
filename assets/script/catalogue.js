@@ -55,18 +55,18 @@ contentToggles.each(function(index){
         lastScrollTop = currentScroll;
 
         // add wiggle to 'show more' button at the end of search result when scrolled to end of the page
-        var windowHeight = $(window).height();
-        var documentHeight = $(document).height();
-        var scrollPosition = $(window).scrollTop();
-        var bottomDistance = documentHeight - (scrollPosition + windowHeight);
-        // px before bottom
-        var threshold = 50; 
+
+        // var windowHeight = $(window).height();
+        // var documentHeight = $(document).height();
+        // var scrollPosition = $(window).scrollTop();
+        // var bottomDistance = documentHeight - (scrollPosition + windowHeight);
+        // var threshold = 50; 
     
-        if (bottomDistance <= threshold) {
-            $('.section-filter__show-result-button').addClass('animation_snake-bottom');
-        } else {
-            $('.section-filter__show-result-button').removeClass('animation_snake-bottom');
-        }
+        // if (bottomDistance <= threshold) {
+        //     $('.section-filter__show-result-button').addClass('animation_snake-bottom');
+        // } else {
+        //     $('.section-filter__show-result-button').removeClass('animation_snake-bottom');
+        // }
     });
 
 // sliders

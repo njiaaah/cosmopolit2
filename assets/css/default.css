@@ -19,22 +19,37 @@ body {
     --clr-primary-violet: #6843F4;
     --clr-primary-beidge: #EBCCC2;
 
-    font-family: 'Cousine';
+    font-family: 'Cousine', system-ui, -apple-system, sans-serif;
 
     overflow-x: clip;
    
 }
+
 @font-face {
     font-family: 'Cousine';
-    src: url('../font/Cousine-Bold.ttf') format('truetype');
+    src: url('/assets/font/Cousine-Regular.woff') format('woff'), 
+         url('/assets/font/Cousine-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
     font-family: 'Cousine';
-    src: url('../font/Cousine-Regular.ttf') format('truetype');
+    src: url('/assets/font/Cousine-Bold.woff') format('woff'), 
+         url('/assets/font/Cousine-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
     font-family: 'Unbounded';
-    src: url('../font/Unbounded-Regular.ttf') format('truetype');
+    src: url('/assets/font/Unbounded-Regular.woff') format('woff'), 
+         url('/assets/font/Unbounded-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 label {
