@@ -27,7 +27,7 @@
 </head>
 <body>
 
-    <input hidden checked type="checkbox" id="body__is-tower-desktop-view-visible">
+    <input hidden type="checkbox" id="body__is-tower-desktop-view-visible">
     <input hidden type="checkbox" id="body__is-filter-visible-checkbox">
     <input hidden type="checkbox" id="body__is-nav-menu-visible-checkbox">
     
@@ -124,16 +124,21 @@
                 <nav class="header-desktop__nav">
                     <ul class="header-desktop__list list">
                         
-                        <li class="header-desktop__list-item">
-                            <a class="header-desktop__list-link" href="">Команда проекта</a>
+                        <li class="header-desktop__list-item header-desktop__list-item_active">
+                            <a class="header-desktop__list-link" href="#">Расположение</a>
                         </li>
                         <li class="header-desktop__list-item">
-                            <a class="header-desktop__list-link" href="">Ход строительства</a>
+                            <a class="header-desktop__list-link" href="#">Преимущества</a>
                         </li>
                         <li class="header-desktop__list-item">
-                            <a class="header-desktop__list-link" href="">Контакты</a>
+                            <a class="header-desktop__list-link" href="#">Генплан</a>
                         </li>
-
+                        <li class="header-desktop__list-item">
+                            <a class="header-desktop__list-link" href="#">Редкие форматы</a>
+                        </li>
+                        <li class="header-desktop__list-item">
+                            <a class="header-desktop__list-link" href="#">Как купить</a>
+                        </li>
                     </ul>
                 </nav>
 
@@ -258,13 +263,34 @@
                         Акция
                     </label>
                 </section>
+
+                <label for="header-sticky__view-toggle" class="header-sticky__view-toggle section-filter__view-toggle">
+                    <span class="view-toggle__wrapper">
+                        <span class="view-toggle__wrapper-span-01 view-toggle__wrapper-span"></span>
+                        <span class="view-toggle__wrapper-span-02 view-toggle__wrapper-span"></span>
+                        <span class="view-toggle__wrapper-span-03 view-toggle__wrapper-span"></span>
+                        <span class="view-toggle__wrapper-span-04 view-toggle__wrapper-span"></span>
+                    </span>
+                </label>
+
+                <label class="section-filter__filter-reset">
+
+                    <span class="filter-reset__text">Сбросить фильтр</span>
+
+                    <svg class="filter-reset__svg" width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.8496 3.33325H15.183C14.0496 3.33325 12.4496 3.99993 11.6496 4.79993L4.81628 11.6333C4.01628 12.4333 3.34961 14.0333 3.34961 15.1666V24.8332C3.34961 25.9666 4.01628 27.5666 4.81628 28.3666L11.6496 35.1999C12.4496 35.9999 14.0496 36.6666 15.183 36.6666H24.8496C25.9829 36.6666 27.583 35.9999 28.383 35.1999L35.2163 28.3666C36.0163 27.5666 36.6829 25.9666 36.6829 24.8332V15.1666C36.6829 14.0333 36.0163 12.4333 35.2163 11.6333L28.383 4.79993C27.583 3.99993 25.9829 3.33325 24.8496 3.33325Z" fill="#193D23"/>
+                        <path d="M21.7814 19.9998L26.7314 15.0498C27.2147 14.5665 27.2147 13.7665 26.7314 13.2832C26.248 12.7998 25.448 12.7998 24.9647 13.2832L20.0147 18.2332L15.0647 13.2832C14.5814 12.7998 13.7814 12.7998 13.298 13.2832C12.8147 13.7665 12.8147 14.5665 13.298 15.0498L18.248 19.9998L13.298 24.9498C12.8147 25.4332 12.8147 26.2331 13.298 26.7165C13.548 26.9665 13.8647 27.0832 14.1814 27.0832C14.498 27.0832 14.8147 26.9665 15.0647 26.7165L20.0147 21.7665L24.9647 26.7165C25.2147 26.9665 25.5314 27.0832 25.848 27.0832C26.1647 27.0832 26.4814 26.9665 26.7314 26.7165C27.2147 26.2331 27.2147 25.4332 26.7314 24.9498L21.7814 19.9998Z" fill="white"/>
+                    </svg>
+                        
+                </label>
     
                 <!-- sort popup start -->
                 <!-- label for sort popup -->
                 <input hidden type="checkbox" class="catalogue-filter__sort-checkbox sort-checkbox" id="catalogue-filter__sort-checkbox">
                 <!-- shadow for sort popup -->
                 <label for="catalogue-filter__sort-checkbox" class="catalogue-filter__sort-backdrop"></label>
-                <label class="section-filter__sort-label catalogue-filter__sort-label" for="catalogue-filter__sort-checkbox">
+
+                <label class="section-filter__sort-label catalogue-filter__sort-label catalogue-filter__desktop-sort-label" for="catalogue-filter__sort-checkbox">
                     <svg class="catalogue-filter__sort-label__icon-sort" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.03333 5.44621L4.52946 2.94238L2.02563 5.44621" stroke="#193D23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M4.52954 15.0578V2.94238" stroke="#193D23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -992,7 +1018,7 @@
 
                         <header class="card__header">
 
-                            <h4 class="card__number">218</h4>
+                            <h4 class="card__number">12345</h4>
 
                             <span class="card__price card__price_promo-active">6 500 600 ₽</span>
                         
@@ -1002,8 +1028,8 @@
 
                         <div class="card__favorite-icon">
 
-                            <input hidden type="checkbox" class="card__favorite-checkbox" id="card__favorite-checkbox-001">
-                            <label for="card__favorite-checkbox-001" class="card__favorite-label">
+                            <input hidden type="checkbox" class="card__favorite-checkbox" id="card__favorite-checkbox-000">
+                            <label for="card__favorite-checkbox-000" class="card__favorite-label">
                                 <svg class="card__favorite_svg"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="card__favorite-checkbox-icon" opacity="0.4" d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z" fill="#292D32"/>
                                     <path d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z" fill="#193D23"/>

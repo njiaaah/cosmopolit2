@@ -62,7 +62,9 @@ button {
     border: none;
     outline: none;
 }
-
+.button {
+    user-select: none;
+}
 *, *::after, *::before {
     margin: 0;
     padding: 0;

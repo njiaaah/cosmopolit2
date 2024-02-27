@@ -119,23 +119,28 @@
 
         </div>
 
-        <div class="header header_desktop catalogue__header_desktop catalogue__header_desktop__bottom-header">
+        <div class="header header_desktop catalogue__header_desktop header_desktop__bottom-header catalogue__header_desktop__bottom-header">
 
             <div class="header_desktop__wrapper">
 
                 <nav class="header-desktop__nav">
                     <ul class="header-desktop__list list">
                         
-                        <li class="header-desktop__list-item">
-                            <a class="header-desktop__list-link" href="">Команда проекта</a>
+                        <li class="header-desktop__list-item header-desktop__list-item_active">
+                            <a class="header-desktop__list-link" href="#">Расположение</a>
                         </li>
                         <li class="header-desktop__list-item">
-                            <a class="header-desktop__list-link" href="">Ход строительства</a>
+                            <a class="header-desktop__list-link" href="#">Преимущества</a>
                         </li>
                         <li class="header-desktop__list-item">
-                            <a class="header-desktop__list-link" href="">Контакты</a>
+                            <a class="header-desktop__list-link" href="#">Генплан</a>
                         </li>
-
+                        <li class="header-desktop__list-item">
+                            <a class="header-desktop__list-link" href="#">Редкие форматы</a>
+                        </li>
+                        <li class="header-desktop__list-item">
+                            <a class="header-desktop__list-link" href="#">Как купить</a>
+                        </li>
                     </ul>
                 </nav>
 
@@ -145,12 +150,10 @@
 
         </div>
 
-        <!-- catalog page -->
-        <div class="main__result-wrapper main__content-wrap">
+        <!-- mortgage page -->
+        <div class="main__content-wrap">
 
-
-
-        <!-- filter body -->
+        <!-- mortgage body -->
         <div class="content-wrapper main_content__content-wrapper">
 
 
@@ -162,7 +165,7 @@
                         <div class="calc-input-wrap">
 
                             <div class="calc-programms-wrap">
-                                <h3 class="subtitle section-filter__subtitle section-mortgage__subtitle">Выберите программу.</h3>
+                                <h3 class="subtitle section-filter__subtitle section-mortgage__subtitle">Выберите программу</h3>
                                 <button class="calc-button-programms">Все программы<img id="calc-all-programms-arrow" src="assets/img/icons/calc_arrow.svg" alt=""></button>
                                 <ul id="calc-programms-drop-down">
                                     <li class="program-name">Программа 1</li>
@@ -211,13 +214,13 @@
         
                         </div> 
                         
-                        <button class="calc-input-button-confirm">Получить одобрение</button>
+                        <button hidden class="calc-input-button-confirm">Получить одобрение</button>
         
                     </div>
         
                     <div class="calc-info"> 
         
-                        <div class="calc-info-sort">
+                        <div  class="calc-info-sort">
                             <div class="calc-info-sort-label">
                                 
                                 <span class="calc-sort-label" id="calc-sort-label">Сортировать</span>
@@ -233,53 +236,103 @@
                             </ul>
                         </div>
         
-                        <div class="calc-info-container">
-                            <div class="calc-info-bank">
-                                <span>Транскапиталбанк</span>
+                        <div class="calc__result-item">
+                            <header class="calc__bank-name">
+                                Сбербанк
+                            </header>
+
+                            <div class="calc__bank-text-wrapper">
+                                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.</span>
+                                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
                             </div>
-                            <span class="calc-price calc-info-price">45 000 000</span>
-                            <div class="calc-info-last">
-                                <span class="calc-info-proc">15</span>
-                                <span class="calc-info-years">1-30</span>
-                            </div>
-                            
                         </div>
         
-                        <div class="calc-info-container">
-                            <div class="calc-info-bank">
-                                <span>Транскапиталбанк</span>
+                        <div class="calc__result-item">
+                            <header class="calc__bank-name">
+                                Сбербанк
+                            </header>
+
+                            <div class="calc__bank-text-wrapper">
+                                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес. </span>
+                                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
                             </div>
-                            <span class="calc-price calc-info-price">5 000 000</span>
-                            <div class="calc-info-last">
-                                <span class="calc-info-proc">15</span>
-                                <span class="calc-info-years">1-30</span>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="calc-info-container">
-                            <div class="calc-info-bank">
-                                <span>Сбер</span>
-                            </div>
-                            <span class="calc-price calc-info-price">45 000 000</span>
-                            <div class="calc-info-last">
-                                <span class="calc-info-proc">15</span>
-                                <span class="calc-info-years">1-30</span>
-                            </div>
-                            
                         </div>
         
-                        <div class="calc-info-container">
-                            <div class="calc-info-bank">
-                                <span>Транскапиталбанк</span>
+                        <div class="calc__result-item">
+                            <header class="calc__bank-name">
+                                Сбербанк
+                            </header>
+
+                            <div class="calc__bank-text-wrapper">
+                                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес. </span>
+                                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
                             </div>
-                            <span class="calc-price calc-info-price">45 000 000</span>
-                            <div class="calc-info-last">
-                                <span class="calc-info-proc">5</span>
-                                <span class="calc-info-years">1-5</span>
-                            </div>
-                            
                         </div>
+        
+                        <div class="calc__result-item">
+                            <header class="calc__bank-name">
+                                Сбербанк
+                            </header>
+
+                            <div class="calc__bank-text-wrapper">
+                                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес. </span>
+                                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
+                            </div>
+                        </div>
+        
+                        <div class="calc__result-item">
+                            <header class="calc__bank-name">
+                                Сбербанк
+                            </header>
+
+                            <div class="calc__bank-text-wrapper">
+                                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес. </span>
+                                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
+                            </div>
+                        </div>
+        
+                        <div class="calc__result-item">
+                            <header class="calc__bank-name">
+                                Сбербанк
+                            </header>
+
+                            <div class="calc__bank-text-wrapper">
+                                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес. </span>
+                                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
+                            </div>
+                        </div>
+        
+                        <div class="calc__result-item">
+                            <header class="calc__bank-name">
+                                Сбербанк
+                            </header>
+
+                            <div class="calc__bank-text-wrapper">
+                                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес. </span>
+                                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
+                            </div>
+                        </div>
+        
+                        <div class="calc__result-item">
+                            <header class="calc__bank-name">
+                                Сбербанк
+                            </header>
+
+                            <div class="calc__bank-text-wrapper">
+                                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес. </span>
+                                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
+                            </div>
+                        </div>
+        
+        
         
                     </div>
                 </div>

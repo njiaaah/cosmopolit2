@@ -69,3 +69,10 @@
     pointer-events: none;
     user-select: none;
 }
+
+@media only screen and (min-width: 950px) {
+
+    .double-slider {
+        background-color: transparent;
+    }
+}
