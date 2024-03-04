@@ -1,42 +1,5 @@
-body {
-
-    /* color text button confirm */
-    --clr-grayscale-000: #ffffff;
-
-
-    /* color background */
-
-    --clr-grayscale-200: #F2F4F8;
-
-    /* color slider touch */
-    --clr-primary-darkblue: #16215B;
-
-    /* color text info programs */
-
-    --clr-grayscale-800: #1E2020;
-
-    /* color slider bar/text button sort on mobile */
-    --clr-primary-lightblue: #0373FF; 
-
-    /* width */
-
-    /* --content-width-1280: 76rem; 
-    --content-width-720: 40.8331rem;
-    --content-width-320: 19rem;
-    --content-width: clamp(var(--content-width-720), -4.3886rem + 100.4857vw, var(--content-width-1280)); */
-
-
-}
-
-
 .calc, .calc button {
     font-family: 'Cousine', sans-serif;
-}
-
-@media screen and (max-width: 720px) {
-    body {
-        --content-width: clamp(var(--content-width-320), 1.536rem + 87.32vw, var(--content-width-720));
-    }
 }
 
 .calc {

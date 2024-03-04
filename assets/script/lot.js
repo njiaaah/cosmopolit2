@@ -25,8 +25,8 @@ if (child.offsetParent !== null) {
 });
 });
 
-// handle resizing as there are diff amount of elements in swiper
 
+// handle resizing as there are diff amount of elements in swiper
 handleViewportWidth();
 window.addEventListener('resize', handleViewportWidth);
 

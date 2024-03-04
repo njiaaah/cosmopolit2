@@ -3,6 +3,25 @@ html,body {
     overflow-x: clip;
     scroll-behavior: smooth;
 }
+:root {
+    --font-family: "Cousine", sans-serif;
+    --second-family: "Unbounded", sans-serif;
+
+    --primary-beige: #ebccc2;
+	--primary-violet: #6843f4;
+	--primary-dark-green: #193d23;
+	--primary-green: #338148;
+
+	--grayscale-800: #353535;
+	--grayscale-600: #9d9d9d;
+	--grayscale-400: #cecece;
+	--grayscale-200: #dddee0;
+	--grayscale-000: #fff;
+	--grayscale-1000: #202020;
+	--grayscale-100: #ececec;
+    
+	--stroke-icon: #193d23;
+}
 body {
     /* min-height: 100%; */
     
@@ -22,8 +41,7 @@ body {
     font-family: 'Cousine', system-ui, -apple-system, sans-serif;
 
     overflow-x: clip;
-    --max-content-width: 1120px;
-   
+    --max-content-width: 1120px;  
 }
 
 @font-face {
@@ -85,4 +103,12 @@ transform: translateY(-120%);
 
 .hidden-below {
 transform: translateY(100%);
+}
+
+.invisible-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+.invisible-scrollbar::-webkit-scrollbar{
+    display: none;
 }
