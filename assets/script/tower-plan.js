@@ -21,15 +21,17 @@ function getRandomImageUrl() {
     }
 }
 
+let towerHeight = 34
+let towerWidth = 14
 
 function createTable() {
     $('.tower-plan-view__tower').each(function() {
         var table = $('<table>').addClass('tower-plan-view__table');
-        for (var i = 0; i < 35; i++) {
+        for (var i = 0; i < towerHeight; i++) {
             var row = $('<tr>');
-            var floorCell = $('<td>').addClass('tower-plan-view__table__cell_floor').text(36 - i);
+            var floorCell = $('<td>').addClass('tower-plan-view__table__cell_floor').text(towerHeight - i);
             row.append(floorCell);
-            for (var j = 0; j < 14; j++) {
+            for (var j = 0; j < towerWidth; j++) {
                 var imageUrl = getRandomImageUrl();
                 var cell = $('<td>').addClass('tower-plan-view__table__cell').append($('<img>').attr('src', imageUrl));
                 row.append(cell);
