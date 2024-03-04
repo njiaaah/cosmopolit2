@@ -24,6 +24,7 @@
      
 <body>
 
+
     <input hidden type="checkbox" id="body__is-filter-visible-checkbox">
     <input hidden type="checkbox" id="body__is-nav-menu-visible-checkbox">
 
@@ -148,338 +149,220 @@
 
                 <h3 hidden>Избранные лоты квартир</h3>
 
-                <article class="card section-filter__card section-filter__card_fade-in section-filter__card_fade-out section-filter__card_promo">
+                <ol class="results-wrap__list">
+                    <li class="results-wrap__list__item">
+                        <article class="card section-filter__card section-filter__card_fade-in section-filter__card_fade-out section-filter__card_promo">
 
-                    <header class="card__header">
-
-                        <h4 class="card__number">218</h4>
-
-                        <span class="card__price card__price_promo-active">6 500 600 ₽</span>
-                    
-                        <span class="card__old-price">16 500 600 ₽</span>
-
-                    </header>
-
-                    <div class="card__favorite-icon">
-
-                        <input checked hidden type="checkbox" class="card__favorite-checkbox" id="card__favorite-checkbox-001">
-                        <label for="card__favorite-checkbox-001" class="card__favorite-label">
-                            <svg class="card__favorite_svg"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="card__favorite-checkbox-icon" opacity="0.4" d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z" fill="#292D32"/>
-                                <path d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z" fill="#193D23"/>
-                            </svg>    
-                        </label>
-
-                    </div>
-
-                    <!-- hideble with list view -->
-                    <div class="card__content">
-                            <a href="lot.html" class="card__content__link">
-                        <img class="card__plan-image" src="assets/img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
-                            </a>                       
-                    </div>
-
-                    <footer class="card__footer">
-
-                        <div class="card__info-wrap">
-                            <span class="card__rooms card__info-wrap__item">3 комнаты</span>
-                            <span class="card__|">|</span>
-                            <span class="card__square card__info-wrap__item">150 м2</span>
+                            <header class="card__header">
+        
+                                <h4 class="card__number">218</h4>
+        
+                                <span class="card__price card__price_promo-active">6 500 600 ₽</span>
+                            
+                                <span class="card__old-price">16 500 600 ₽</span>
+        
+                            </header>
+        
+                            <div class="card__favorite-icon">
+        
+                                <input checked hidden type="checkbox" class="card__favorite-checkbox" id="card__favorite-checkbox-001">
+                                <label for="card__favorite-checkbox-001" class="card__favorite-label">
+                                    <svg class="card__favorite_svg"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="card__favorite-checkbox-icon" opacity="0.4" d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z" fill="#292D32"/>
+                                        <path d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z" fill="#193D23"/>
+                                    </svg>    
+                                </label>
+        
+                            </div>
+        
+                            <!-- hideble with list view -->
+                            <div class="card__content">
+                                    <a href="lot.html" class="card__content__link">
+                                <img class="card__plan-image" src="assets/img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
+                                    </a>                       
+                            </div>
+        
+                            <footer class="card__footer">
+        
+                                <div class="card__info-wrap">
+                                    <span class="card__rooms card__info-wrap__item">3 комнаты</span>
+                                    <span class="card__|">|</span>
+                                    <span class="card__square card__info-wrap__item">150 м2</span>
+                                </div>
+        
+                                <div class="card__info-wrap">
+                                    <span class="card__tower card__info-wrap__item">башня Гонгконг</span>
+                                    <span class="card__|">|</span>
+                                    <span class="card__floor card__info-wrap__item">18 этаж</span>
+                                </div>
+        
+                            </footer>
+                            
+                            <div class="card__plan-toggle-wrap">
+                                <svg class="card__toggle-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 7.95752L22 17.9575C22 20.7189 19.7614 22.9575 17 22.9575L7 22.9575C4.23858 22.9575 2 20.7189 2 17.9575L2 7.95752C2 5.1961 4.23858 2.95752 7 2.95752L17 2.95752C19.7614 2.95752 22 5.1961 22 7.95752Z" fill="#CECECE"/>
+                                <path d="M9 11.9575L11.2929 14.2504C11.6834 14.6409 12.3166 14.6409 12.7071 14.2504L15 11.9575" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>    
+        
+                        </article>
+                    </li>
+                    <li class="results-wrap__list__item">
+                      <article
+                        class="card section-filter__card section-filter__card_fade-in section-filter__card_fade-out"
+                      >
+                        <header class="card__header">
+                          <h4 class="card__number">218</h4>
+        
+                          <span class="card__price">6 500 600 ₽</span>
+                        </header>
+        
+                        <div class="card__favorite-icon">
+                          <input
+                            hidden
+                            checked
+                            type="checkbox"
+                            class="card__favorite-checkbox"
+                            id="card__favorite-checkbox-002"
+                          />
+                          <label
+                            for="card__favorite-checkbox-002"
+                            class="card__favorite-label"
+                          >
+                            <svg
+                              class="card__favorite_svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                class="card__favorite-checkbox-icon"
+                                opacity="0.4"
+                                d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z"
+                                fill="#292D32"
+                              />
+                              <path
+                                d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z"
+                                fill="#193D23"
+                              />
+                            </svg>
+                          </label>
                         </div>
-
-                        <div class="card__info-wrap">
-                            <span class="card__tower card__info-wrap__item">башня Гонгконг</span>
-                            <span class="card__|">|</span>
-                            <span class="card__floor card__info-wrap__item">18 этаж</span>
+        
+                        <!-- hideble with list view -->
+                        <div class="card__content">
+                          <img
+                            class="card__plan-image"
+                            src="assets/img/catalogue/apart_plan/tall-plan.webp"
+                            alt="План квартиры ага"
+                          />
                         </div>
-
-                    </footer>
-                    
-                    <div class="card__plan-toggle-wrap">
-                        <svg class="card__toggle-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 7.95752L22 17.9575C22 20.7189 19.7614 22.9575 17 22.9575L7 22.9575C4.23858 22.9575 2 20.7189 2 17.9575L2 7.95752C2 5.1961 4.23858 2.95752 7 2.95752L17 2.95752C19.7614 2.95752 22 5.1961 22 7.95752Z" fill="#CECECE"/>
-                        <path d="M9 11.9575L11.2929 14.2504C11.6834 14.6409 12.3166 14.6409 12.7071 14.2504L15 11.9575" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                    </div>    
-
-                </article>
-
-                <article class="card section-filter__card section-filter__card_fade-in section-filter__card_fade-out">
-
-                    <header class="card__header">
-
-                        <h4 class="card__number">218</h4>
-
-                        <span class="card__price">6 500 600 ₽</span>
-
-                    </header>
-
-                    <div class="card__favorite-icon">
-
-                        <input checked hidden type="checkbox" class="card__favorite-checkbox" id="card__favorite-checkbox-002">
-                        <label for="card__favorite-checkbox-002" class="card__favorite-label">
-                            <svg class="card__favorite_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="card__favorite-checkbox-icon" opacity="0.4" d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z" fill="#292D32"/>
-                                <path d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z" fill="#193D23"/>
-                            </svg>    
-                        </label>
-
-                    </div>
-
-                    <!-- hideble with list view -->
-                    <div class="card__content">
-
-                        <img class="card__plan-image" src="assets/img/catalogue/apart_plan/tall-plan.webp" alt="План квартиры ага">
-                        
-                    </div>
-
-                    <footer class="card__footer">
-
-                        <div class="card__info-wrap">
-                            <span class="card__rooms card__info-wrap__item">3 комнаты</span>
+        
+                        <footer class="card__footer">
+                          <div class="card__info-wrap">
+                            <span class="card__rooms card__info-wrap__item"
+                              >3 комнаты</span
+                            >
                             <span class="card__|">|</span>
-                            <span class="card__square card__info-wrap__item">150 м2</span>
-                        </div>
-
-                        <div class="card__info-wrap">
-                            <span class="card__tower card__info-wrap__item">башня Гонгконг</span>
+                            <span class="card__square card__info-wrap__item"
+                              >150 м2</span
+                            >
+                          </div>
+        
+                          <div class="card__info-wrap">
+                            <span class="card__tower card__info-wrap__item"
+                              >башня Гонгконг</span
+                            >
                             <span class="card__|">|</span>
-                            <span class="card__floor card__info-wrap__item">18 этаж</span>
+                            <span class="card__floor card__info-wrap__item"
+                              >18 этаж</span
+                            >
+                          </div>
+                        </footer>
+        
+                        <div class="card__plan-toggle-wrap">
+                          <svg
+                            class="card__toggle-icon"
+                            width="24"
+                            height="25"
+                            viewBox="0 0 24 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M22 7.95752L22 17.9575C22 20.7189 19.7614 22.9575 17 22.9575L7 22.9575C4.23858 22.9575 2 20.7189 2 17.9575L2 7.95752C2 5.1961 4.23858 2.95752 7 2.95752L17 2.95752C19.7614 2.95752 22 5.1961 22 7.95752Z"
+                              fill="#CECECE"
+                            />
+                            <path
+                              d="M9 11.9575L11.2929 14.2504C11.6834 14.6409 12.3166 14.6409 12.7071 14.2504L15 11.9575"
+                              stroke="white"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                            />
+                          </svg>
                         </div>
+                      </article>
+                    </li>
+                    <li class="results-wrap__list__item">
+                        <article class="card section-filter__card section-filter__card_fade-in section-filter__card_fade-out section-filter__card_promo">
 
-                    </footer>
-                    
-                    <div class="card__plan-toggle-wrap">
-                        <svg class="card__toggle-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 7.95752L22 17.9575C22 20.7189 19.7614 22.9575 17 22.9575L7 22.9575C4.23858 22.9575 2 20.7189 2 17.9575L2 7.95752C2 5.1961 4.23858 2.95752 7 2.95752L17 2.95752C19.7614 2.95752 22 5.1961 22 7.95752Z" fill="#CECECE"/>
-                        <path d="M9 11.9575L11.2929 14.2504C11.6834 14.6409 12.3166 14.6409 12.7071 14.2504L15 11.9575" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                    </div>    
-
-                </article>
-
-                <article class="card section-filter__card section-filter__card_fade-in section-filter__card_fade-out section-filter__card_promo">
-
-                    <header class="card__header">
-
-                        <h4 class="card__number">218</h4>
-
-                        <span class="card__price card__price_promo-active">6 500 600 ₽</span>
-                    
-                        <span class="card__old-price">16 500 600 ₽</span>
-
-                    </header>
-
-                    <div class="card__favorite-icon">
-
-                        <input checked hidden type="checkbox" class="card__favorite-checkbox" id="card__favorite-checkbox-003">
-                        <label for="card__favorite-checkbox-003" class="card__favorite-label">
-                            <svg class="card__favorite_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="card__favorite-checkbox-icon" opacity="0.4" d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z" fill="#292D32"/>
-                                <path d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z" fill="#193D23"/>
-                            </svg>    
-                        </label>
-
-                    </div>
-
-                    <!-- hideble with list view -->
-                    <div class="card__content">
-                            <a href="lot.html" class="card__content__link">
-                        <img class="card__plan-image" src="assets/img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
-                            </a>                       
-                    </div>
-
-                    <footer class="card__footer">
-
-                        <div class="card__info-wrap">
-                            <span class="card__rooms card__info-wrap__item">3 комнаты</span>
-                            <span class="card__|">|</span>
-                            <span class="card__square card__info-wrap__item">150 м2</span>
-                        </div>
-
-                        <div class="card__info-wrap">
-                            <span class="card__tower card__info-wrap__item">башня Гонгконг</span>
-                            <span class="card__|">|</span>
-                            <span class="card__floor card__info-wrap__item">18 этаж</span>
-                        </div>
-
-                    </footer>
-                    
-                    <div class="card__plan-toggle-wrap">
-                        <svg class="card__toggle-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 7.95752L22 17.9575C22 20.7189 19.7614 22.9575 17 22.9575L7 22.9575C4.23858 22.9575 2 20.7189 2 17.9575L2 7.95752C2 5.1961 4.23858 2.95752 7 2.95752L17 2.95752C19.7614 2.95752 22 5.1961 22 7.95752Z" fill="#CECECE"/>
-                        <path d="M9 11.9575L11.2929 14.2504C11.6834 14.6409 12.3166 14.6409 12.7071 14.2504L15 11.9575" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                    </div>    
-
-                </article>
-
-                <article class="card section-filter__card section-filter__card_fade-in section-filter__card_fade-out">
-
-                    <header class="card__header">
-
-                        <h4 class="card__number">218</h4>
-
-                        <span class="card__request-price">Цена по запросу</span>
-
-                    </header>
-
-                    <div class="card__favorite-icon">
-
-                        <input checked hidden type="checkbox" class="card__favorite-checkbox" id="card__favorite-checkbox-004">
-                        <label for="card__favorite-checkbox-004" class="card__favorite-label">
-                            <svg class="card__favorite_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="card__favorite-checkbox-icon" opacity="0.4" d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z" fill="#292D32"/>
-                                <path d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z" fill="#193D23"/>
-                            </svg>    
-                        </label>
-
-                    </div>
-
-                    <!-- hideble with list view -->
-                    <div class="card__content">
-                            <a href="lot.html" class="card__content__link">
-                        <img class="card__plan-image" src="assets/img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
-                            </a>                       
-                    </div>
-
-                    <footer class="card__footer">
-
-                        <div class="card__info-wrap">
-                            <span class="card__rooms card__info-wrap__item">3 комнаты</span>
-                            <span class="card__|">|</span>
-                            <span class="card__square card__info-wrap__item">150 м2</span>
-                        </div>
-
-                        <div class="card__info-wrap">
-                            <span class="card__tower card__info-wrap__item">башня Гонгконг</span>
-                            <span class="card__|">|</span>
-                            <span class="card__floor card__info-wrap__item">18 этаж</span>
-                        </div>
-
-                    </footer>
-                    
-                    <div class="card__plan-toggle-wrap">
-                        <svg class="card__toggle-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 7.95752L22 17.9575C22 20.7189 19.7614 22.9575 17 22.9575L7 22.9575C4.23858 22.9575 2 20.7189 2 17.9575L2 7.95752C2 5.1961 4.23858 2.95752 7 2.95752L17 2.95752C19.7614 2.95752 22 5.1961 22 7.95752Z" fill="#CECECE"/>
-                        <path d="M9 11.9575L11.2929 14.2504C11.6834 14.6409 12.3166 14.6409 12.7071 14.2504L15 11.9575" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                    </div>    
-
-                </article>
-
-                <article class="card section-filter__card section-filter__card_fade-in section-filter__card_fade-out">
-
-                    <header class="card__header">
-
-                        <h4 class="card__number">218</h4>
-
-                        <span class="card__price">6 500 600 ₽</span>
-
-                    </header>
-
-                    <div class="card__favorite-icon">
-
-                        <input checked hidden type="checkbox" class="card__favorite-checkbox" id="card__favorite-checkbox-005">
-                        <label for="card__favorite-checkbox-005" class="card__favorite-label">
-                            <svg class="card__favorite_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="card__favorite-checkbox-icon" opacity="0.4" d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z" fill="#292D32"/>
-                                <path d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z" fill="#193D23"/>
-                            </svg>    
-                        </label>
-
-                    </div>
-
-                    <!-- hideble with list view -->
-                    <div class="card__content">
-                            <a href="lot.html" class="card__content__link">
-                        <img class="card__plan-image" src="assets/img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
-                            </a>                       
-                    </div>
-
-                    <footer class="card__footer">
-
-                        <div class="card__info-wrap">
-                            <span class="card__rooms card__info-wrap__item">3 комнаты</span>
-                            <span class="card__|">|</span>
-                            <span class="card__square card__info-wrap__item">150 м2</span>
-                        </div>
-
-                        <div class="card__info-wrap">
-                            <span class="card__tower card__info-wrap__item">башня Гонгконг</span>
-                            <span class="card__|">|</span>
-                            <span class="card__floor card__info-wrap__item">18 этаж</span>
-                        </div>
-
-                    </footer>
-                    
-                    <div class="card__plan-toggle-wrap">
-                        <svg class="card__toggle-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 7.95752L22 17.9575C22 20.7189 19.7614 22.9575 17 22.9575L7 22.9575C4.23858 22.9575 2 20.7189 2 17.9575L2 7.95752C2 5.1961 4.23858 2.95752 7 2.95752L17 2.95752C19.7614 2.95752 22 5.1961 22 7.95752Z" fill="#CECECE"/>
-                        <path d="M9 11.9575L11.2929 14.2504C11.6834 14.6409 12.3166 14.6409 12.7071 14.2504L15 11.9575" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                    </div>    
-
-                </article>
-
-                <article class="card section-filter__card section-filter__card_fade-in section-filter__card_fade-out section-filter__card_promo">
-
-                    <header class="card__header">
-
-                        <h4 class="card__number">218</h4>
-
-                        <span class="card__price card__price_promo-active">6 500 600 ₽</span>
-
-                        <span hidden class="card__request-price">Цена по запросу</span>
-                    
-                        <span class="card__old-price">16 500 600 ₽</span>
-
-                    </header>
-
-                    <div class="card__favorite-icon">
-
-                        <input checked hidden type="checkbox" class="card__favorite-checkbox" id="card__favorite-checkbox-006">
-                        <label for="card__favorite-checkbox-006" class="card__favorite-label">
-                            <svg class="card__favorite_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="card__favorite-checkbox-icon" opacity="0.4" d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z" fill="#292D32"/>
-                                <path d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z" fill="#193D23"/>
-                            </svg>    
-                        </label>
-
-                    </div>
-
-                    <!-- hideble with list view -->
-                    <div class="card__content">
-                            <a href="lot.html" class="card__content__link">
-                        <img class="card__plan-image" src="assets/img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
-                            </a>                       
-                    </div>
-
-                    <footer class="card__footer">
-
-                        <div class="card__info-wrap">
-                            <span class="card__rooms card__info-wrap__item">3 комнаты</span>
-                            <span class="card__|">|</span>
-                            <span class="card__square card__info-wrap__item">150 м2</span>
-                        </div>
-
-                        <div class="card__info-wrap">
-                            <span class="card__tower card__info-wrap__item">башня Гонгконг</span>
-                            <span class="card__|">|</span>
-                            <span class="card__floor card__info-wrap__item">18 этаж</span>
-                        </div>
-
-                    </footer>
-                    
-                    <div class="card__plan-toggle-wrap">
-                        <svg class="card__toggle-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22 7.95752L22 17.9575C22 20.7189 19.7614 22.9575 17 22.9575L7 22.9575C4.23858 22.9575 2 20.7189 2 17.9575L2 7.95752C2 5.1961 4.23858 2.95752 7 2.95752L17 2.95752C19.7614 2.95752 22 5.1961 22 7.95752Z" fill="#CECECE"/>
-                        <path d="M9 11.9575L11.2929 14.2504C11.6834 14.6409 12.3166 14.6409 12.7071 14.2504L15 11.9575" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                    </div>    
-
-                </article>
-
+                            <header class="card__header">
+        
+                                <h4 class="card__number">218</h4>
+        
+                                <span class="card__price card__price_promo-active">6 500 600 ₽</span>
+                            
+                                <span class="card__old-price">16 500 600 ₽</span>
+        
+                            </header>
+        
+                            <div class="card__favorite-icon">
+        
+                                <input checked hidden type="checkbox" class="card__favorite-checkbox" id="card__favorite-checkbox-003">
+                                <label for="card__favorite-checkbox-003" class="card__favorite-label">
+                                    <svg class="card__favorite_svg"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="card__favorite-checkbox-icon" opacity="0.4" d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z" fill="#292D32"/>
+                                        <path d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z" fill="#193D23"/>
+                                    </svg>    
+                                </label>
+        
+                            </div>
+        
+                            <!-- hideble with list view -->
+                            <div class="card__content">
+                                    <a href="lot.html" class="card__content__link">
+                                <img class="card__plan-image" src="assets/img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага">
+                                    </a>                       
+                            </div>
+        
+                            <footer class="card__footer">
+        
+                                <div class="card__info-wrap">
+                                    <span class="card__rooms card__info-wrap__item">3 комнаты</span>
+                                    <span class="card__|">|</span>
+                                    <span class="card__square card__info-wrap__item">150 м2</span>
+                                </div>
+        
+                                <div class="card__info-wrap">
+                                    <span class="card__tower card__info-wrap__item">башня Гонгконг</span>
+                                    <span class="card__|">|</span>
+                                    <span class="card__floor card__info-wrap__item">18 этаж</span>
+                                </div>
+        
+                            </footer>
+                            
+                            <div class="card__plan-toggle-wrap">
+                                <svg class="card__toggle-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 7.95752L22 17.9575C22 20.7189 19.7614 22.9575 17 22.9575L7 22.9575C4.23858 22.9575 2 20.7189 2 17.9575L2 7.95752C2 5.1961 4.23858 2.95752 7 2.95752L17 2.95752C19.7614 2.95752 22 5.1961 22 7.95752Z" fill="#CECECE"/>
+                                <path d="M9 11.9575L11.2929 14.2504C11.6834 14.6409 12.3166 14.6409 12.7071 14.2504L15 11.9575" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>    
+        
+                        </article>
+                    </li>
+                  </ol>
             </section>
 
         </div>

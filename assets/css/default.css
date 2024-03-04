@@ -112,3 +112,12 @@ transform: translateY(100%);
 .invisible-scrollbar::-webkit-scrollbar{
     display: none;
 }
+
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
