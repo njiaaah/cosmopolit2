@@ -4985,6 +4985,9 @@ body .header_dark-green {
 .progress-gradient-1 {
   display: none;
 }
+.progress__button {
+  display: none;
+}
 
 
 
