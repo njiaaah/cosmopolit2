@@ -34,6 +34,7 @@ body {
     --clr-grayscale-000: #ffffff;
 
     --clr-primary-dark-green: #193D23;
+    --clr-primary-index-dark-green: #142D1F;
     --clr-primary-green: #338148;
     --clr-primary-violet: #6843F4;
     --clr-primary-beidge: #EBCCC2;
@@ -104,6 +105,7 @@ transform: translateY(-120%);
 .hidden-below {
 transform: translateY(100%);
 }
+
 
 .invisible-scrollbar {
     -ms-overflow-style: none;

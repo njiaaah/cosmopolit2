@@ -47,7 +47,8 @@ createTable();
 
 
 
-// not important
+// delete all below code when going to prod :-)
+
 var currentPlayer = 'cross'; 
 var moves = 0; 
 var gameEnded = false; 

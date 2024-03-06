@@ -2,24 +2,30 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Результат поиска</title>
-	<base href="." />
+	<base href=".">
 
 	<!-- lib -->
-	<link rel="stylesheet" href="assets/lib/nouislider.min.css" />
+	<link rel="stylesheet" href="assets/lib/nouislider.min.css">
 	<script src="assets/lib/nouislider.min.js"></script>
 	<script src="assets/lib/jquery.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="assets/lib/dragscroll.js"></script>
 
 	<!-- defaults -->
-	<link rel="stylesheet" href="assets/css/normalize.css" />
-	<link rel="stylesheet" href="assets/css/default.css" />
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/default.css">
+	<script src="assets/script/sliders.js" defer></script>
 
 	<!-- project -->
-	<link rel="stylesheet" href="assets/css/sliders.css" />
-	<link rel="stylesheet" href="style.css" />
-	<script src="assets/script/catalogue.js"></script>
+	<link rel="stylesheet" href="assets/css/sliders.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="assets/script/catalogue.js" defer></script>
+	<script src="assets/script/tower-plan.js" defer></script>
+	<script src="assets/script/lot.js" defer></script>
 	<script src="assets/script/view-change.js" defer></script>
 	<script src="assets/script/back-to-top.js" defer></script>
 </head>
@@ -32,17 +38,39 @@
 			<path d="M1.61279 9.31592L9.199 1.72971L16.7852 9.31592" stroke="white" stroke-width="2" />
 		</svg>
 	</a>
-	<input hidden type="checkbox" id="body__is-filter-visible-checkbox" />
-	<input hidden type="checkbox" id="body__is-nav-menu-visible-checkbox" />
+	<input hidden type="checkbox" id="body__is-tower-desktop-view-visible">
+	<input hidden type="checkbox" id="body__is-filter-visible-checkbox">
+	<input hidden type="checkbox" id="body__is-nav-menu-visible-checkbox">
 
 	<header class="header">
 		<div class="header-wrapper">
 			<a href="#" class="logo header_desktop__logo header_desktop__wrapper__item">
-				<svg class="header_desktop__logo__svg" width="155" height="30" viewBox="0 0 155 30" fill="none"
+				<svg class="header_desktop__logo__svg" width="100" height="14" viewBox="0 0 100 14" fill="none"
 					xmlns="http://www.w3.org/2000/svg">
 					<path
-						d="M133.323 29.5917H138.423V1.02629H133.323V29.5917ZM62.8 1.02629L59.4956 18.1268H59.4133L56.1476 1.02871H49.2532V29.5942H54.3538V12.007H54.4361L57.6993 29.5917H61.2095L64.5575 12.007V29.5917H69.6581V1.02629H62.8ZM93.0842 5.10776H95.7858C97.8265 5.10776 98.3567 6.90399 98.3567 9.18681C98.3567 13.3506 97.4174 13.7573 94.113 13.7573H93.0939L93.0842 5.10776ZM88.0223 1.02871V29.5942H93.0842V18.0857C93.4086 18.0857 95.4905 18.1268 95.8173 18.1268C99.6518 18.1268 103.162 15.1081 103.162 9.18923C103.162 4.61876 100.836 1.02871 95.9795 1.02871H88.0223ZM120.589 1.02871V29.5942H132.381V25.5127H125.69V1.02871H120.589ZM139.363 1.02871V5.06903H144.584V29.5917H149.687V5.06903H154.95V1.02871H139.363ZM0.408671 7.08071V23.6075C0.40625 26.452 2.51961 29.9645 8.15281 29.9645C13.2946 29.9645 15.6186 26.4568 15.6186 23.5591V18.5868H10.4768V23.5543C10.4768 24.4112 9.61982 25.8782 8.15039 25.8782C7.50321 25.9035 6.87183 25.6745 6.39136 25.2402C5.91089 24.8058 5.61949 24.2007 5.5795 23.5543V7.06861C5.61949 6.42152 5.91115 5.81579 6.39207 5.38101C6.873 4.94623 7.50499 4.71695 8.15281 4.74222C9.62224 4.74222 10.4792 6.21164 10.4792 7.06861V12.0361H15.6161V7.06861C15.6161 4.17091 13.2922 0.672852 8.15281 0.672852C2.51961 0.672852 0.40625 4.17091 0.40625 7.06861M21.8279 23.4284V6.9863C21.8701 6.34784 22.1564 5.75009 22.6273 5.31697C23.0983 4.88385 23.7179 4.64857 24.3577 4.65991C25.8271 4.65991 26.6429 6.21165 26.6429 7.08071V23.4284C26.6429 24.2853 25.8271 25.8758 24.3577 25.8758C24.0305 25.8826 23.7052 25.8244 23.4007 25.7049C23.0961 25.5853 22.8182 25.4066 22.583 25.179C22.3478 24.9515 22.16 24.6797 22.0304 24.3792C21.9008 24.0787 21.832 23.7556 21.8279 23.4284ZM16.7273 7.02746V23.5131C16.7273 26.452 18.7269 29.9597 24.3577 29.9597C29.4583 29.9597 31.7435 26.452 31.7435 23.5131V7.02746C31.7435 4.0886 29.4559 0.672852 24.3577 0.672852C18.7269 0.672852 16.7273 4.0886 16.7273 7.02746ZM32.8886 7.02746C32.8886 10.9443 34.0312 11.8424 36.7231 15.0161L40.9668 19.3735C42.0271 20.5985 42.6395 21.7411 42.6395 23.2468C42.6395 24.9196 41.6204 25.8564 40.3567 25.8564C39.0495 25.8564 38.0715 25.0019 38.0715 23.2468V19.2549H32.9297V23.5954C32.9297 27.6745 36.2341 30.0009 40.3567 30.0009C44.4358 30.0009 47.9048 27.7156 47.9048 23.5954C47.9048 20.2063 46.6387 18.657 44.598 16.333L39.4973 10.4989C38.316 9.15292 38.0715 8.21365 38.0715 6.98872C38.0647 6.68917 38.1192 6.39139 38.2317 6.11367C38.3442 5.83596 38.5122 5.58417 38.7256 5.37378C38.9389 5.16339 39.193 4.99883 39.4723 4.89023C39.7515 4.78162 40.05 4.73125 40.3495 4.74222C41.572 4.74222 42.6323 5.84368 42.6323 7.84327V10.3899H47.7329V7.02746C47.7402 3.23406 44.6803 0.672852 40.3495 0.672852C35.992 0.672852 32.8813 3.15901 32.8813 7.03714M76.4315 23.4284V6.9863C76.4743 6.34805 76.7607 5.75065 77.2315 5.31765C77.7024 4.88464 78.3217 4.64917 78.9612 4.65991C80.4307 4.65991 81.2465 6.21165 81.2465 7.08071V23.4284C81.2465 24.2853 80.4307 25.8758 78.9612 25.8758C78.6342 25.8822 78.3091 25.8239 78.0046 25.7042C77.7002 25.5845 77.4224 25.4058 77.1873 25.1783C76.9522 24.9508 76.7644 24.6791 76.6347 24.3788C76.505 24.0785 76.4359 23.7555 76.4315 23.4284ZM71.3357 7.02746V23.5131C71.3357 26.452 73.3353 29.9597 78.9661 29.9597C84.0667 29.9597 86.352 26.452 86.352 23.5131V7.02746C86.3447 4.0886 84.0619 0.672852 78.9612 0.672852C73.3305 0.672852 71.3357 4.0886 71.3357 7.02746ZM108.999 23.4284V6.9863C109.041 6.34932 109.327 5.75299 109.796 5.32018C110.265 4.88736 110.883 4.65104 111.521 4.65991C112.99 4.65991 113.806 6.21165 113.806 7.08071V23.4284C113.806 24.2853 112.99 25.8758 111.521 25.8758C111.195 25.8813 110.87 25.8222 110.567 25.7021C110.263 25.5819 109.986 25.4031 109.752 25.1757C109.517 24.9483 109.33 24.6769 109.201 24.3771C109.072 24.0773 109.003 23.7549 108.999 23.4284ZM103.898 7.02746V23.5131C103.898 26.452 105.897 29.9597 111.528 29.9597C116.629 29.9597 118.914 26.452 118.914 23.5131V7.02746C118.914 4.0886 116.629 0.672852 111.521 0.672852C105.89 0.672852 103.891 4.09829 103.891 7.03714"
-						fill="#202020" />
+						d="M0 13.6392V0.60059H4.4883V10.1038H5.39635V0.60059H9.88466V10.1038H10.7802V0.60059H15.2846V13.6392H0Z"
+						fill="#353535" />
+					<path
+						d="M15.718 0.60059H24.9758V4.43696H20.2063L20.4374 5.31277H24.7967V8.94318H20.4374L20.2063 9.79928H24.9758V13.6392H15.718L16.6404 7.1235L15.718 0.60059Z"
+						fill="#353535" />
+					<path
+						d="M39.5977 0.60059H48.8537V4.43696H45.4687L45.6997 5.31277H48.6729V8.94318H45.6997L45.4687 9.79928H48.8537V13.6392H39.5977L40.5201 7.1235L39.5977 0.60059Z"
+						fill="#353535" />
+					<path
+						d="M60.6369 0.60059V13.6392H55.4572V6.37306L55.6883 4.1092H54.5474L54.7785 6.33545V13.6392H49.5845V0.60059H60.6369Z"
+						fill="#353535" />
+					<path
+						d="M27.0856 0.60059C27.0856 0.60059 28.0009 6.33186 28.1262 7.6017C28.1907 8.23572 28.094 8.67631 27.8934 8.97362C27.6373 9.3569 27.2092 9.51093 26.7221 9.54675C26.0683 9.5969 26.0057 9.44108 25.411 9.35153V13.5228C26.3524 13.796 27.3254 13.9453 28.3053 13.967C29.8904 13.9777 31.2713 13.53 32.1829 12.4393C33.005 11.456 33.4366 9.94973 33.3059 7.78259C33.2647 7.13783 32.7918 3.74384 32.7918 3.74384H33.9596L33.7285 6.26201V13.6392H39.1392V0.60059H27.0856Z"
+						fill="#353535" />
+					<path
+						d="M67.6541 8.49542L65.3741 13.6392H61.1545V0.60059H66.087V2.98444L65.8112 5.72113L68.0499 0.60059H72.2732V13.6392H67.3067V11.3808L67.6541 8.49542Z"
+						fill="#353535" />
+					<path
+						d="M82.3208 7.02499L85.5124 0.973123V0.60059H80.2826L79.5017 2.15878L79.0146 4.18801C78.7101 1.32237 77.3346 0.426861 75.377 0.362384C74.4991 0.355235 73.6226 0.435027 72.7603 0.60059L72.7764 5.04233C74.3508 5.07815 75.7245 5.04233 75.7048 7.03036L72.4702 13.2255V13.6392H77.7501L78.4379 12.3013L79.0038 9.86018L79.5841 12.3013L80.2593 13.6392H85.7864V13.3795L82.3208 7.02499Z"
+						fill="#353535" />
+					<path
+						d="M100 0.60059H94.6896L93.9732 2.69788C93.495 1.94565 93.3768 1.33849 92.6962 0.885363C91.814 0.32674 90.7908 0.0310649 89.7466 0.0329681C88.7024 0.0348713 87.6804 0.334274 86.8002 0.896109C85.9171 1.50193 85.2225 2.34423 84.796 3.32653C84.2971 4.4787 84.0528 5.72496 84.0796 6.98022C84.0543 8.22897 84.2987 9.46848 84.796 10.6142C85.2196 11.5941 85.9096 12.4355 86.7876 13.0428C87.666 13.6258 88.7013 13.927 89.7553 13.9061C90.855 13.9061 92.0335 13.727 92.6837 13.0428C93.2908 12.4052 93.4556 12.0005 93.9248 11.2679L94.6896 13.6392H100L99.1958 7.10738L100 0.60059ZM91.3512 10.0464C90.1834 10.0464 89.2342 8.75333 89.2342 7.15932C89.2342 5.56531 90.1834 4.27398 91.3512 4.27398C93.3213 4.27398 93.9284 5.56531 93.9284 7.15932C93.9284 8.75333 93.2281 10.0464 91.3512 10.0464Z"
+						fill="#353535" />
 				</svg>
 			</a>
 
@@ -108,6 +136,7 @@
 
 	<div class="header__cosmetic-gradient"></div>
 
+
 	<div class="main__cosmetic">
 		<!-- gradient under the header -->
 
@@ -125,9 +154,9 @@
 			class="gradient-splash gradient-splash_orange main_content__gradient-splash_orange-2 gradient-splash_moving gradient-splash_moving gradient-splash_moving-fast-up">
 		</div>
 	</div>
-	<main class="main main_content">
-		<div
-			class="header header_desktop catalogue__header_desktop header_desktop__bottom-header catalogue__header_desktop__bottom-header">
+
+	<main class="main main_content progress__main">
+		<div class="header header_desktop catalogue__header_desktop header_desktop__bottom-header catalogue__header_desktop__bottom-header">
 			<div class="header_desktop__wrapper">
 				<nav class="header-desktop__nav">
 					<ul class="header-desktop__list list">
@@ -154,71 +183,111 @@
 		</div>
 
 		<div class="title-wrapper">
-			<h1 class="title">Избранное</h1>
+			<h1 class="title news__title">Ход строительства</h1>
 		</div>
 
-		<!-- catalog page -->
-		<div class="main__content-wrap">
-			<!-- favorite 404 body -->
-			<div class="content-wrapper content-wrapper__favorite-404">
-				<section class="results-wrap">
-					<h2 class="section-favorite-404__tittle">Тут пока ничего нет — выберите вашу идеальную квартиру</h2>
+		<!-- page content -->
 
-					<ul class="section-favorite-404-list">
-						<li class="section-favorite-404-item">
-							<span class="section-favorite-404-number">1</span>
+		<div class="main__content-wrap content-wrapper">
+			<ul class="news__year-selector year-selector scrollbar-hidden">
+				<li class="year-selector__item">
+					<input hidden class="year-selector-checkbox" type="checkbox" id="year-selector-checkbox-2024">
+					<label class="year-selector__item__label" for="year-selector-checkbox-2024">2024</label>
+				</li>
 
-							<span class="section-favorite-404-text"><span
-									class="section-favorite-404_green">Найдите</span> лучшие планировки в нашем
-								каталоге</span>
-						</li>
-						<li class="section-favorite-404-item">
-							<span class="section-favorite-404-number">2</span>
-							<span class="section-favorite-404-text">
-								Нажмите
-								<span class="section-favorite-404_fav-label">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path opacity="0.4"
-											d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z"
-											fill="#9D9D9D" />
-										<path
-											d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z"
-											fill="#193D23" />
-									</svg>
-								</span>
-								для добавления квартиры в избранное</span>
-						</li>
-						<li class="section-favorite-404-item">
-							<span class="section-favorite-404-number">3</span>
-							<span class="section-favorite-404-text">Перейдите в избранное для выбора варианта</span>
-						</li>
-					</ul>
+				<li class="year-selector__item">
+					<input hidden class="year-selector-checkbox" type="checkbox" id="year-selector-checkbox-2023">
+					<label class="year-selector__item__label" for="year-selector-checkbox-2023">2023</label>
+				</li>
 
-					<button class="button button_primary button_dark-green main-favorite-404__button">
-						<span class="button-wrap">
-							<span>Параметры выбора</span>
-							<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path d="M18.0001 5.83331L9.66675 5.83331" stroke="white" stroke-width="1.5"
-									stroke-linecap="round" stroke-linejoin="round" />
-								<path d="M6.55469 5.83331L3 5.83331" stroke="white" stroke-width="1.5"
-									stroke-linecap="round" stroke-linejoin="round" />
-								<circle cx="8.23429" cy="5.83335" r="1.43229" stroke="white" stroke-width="1.5" />
-								<path d="M2.99992 14.1667L11.3333 14.1667" stroke="white" stroke-width="1.5"
-									stroke-linecap="round" stroke-linejoin="round" />
-								<path d="M14.4453 14.1667L18 14.1667" stroke="white" stroke-width="1.5"
-									stroke-linecap="round" stroke-linejoin="round" />
-								<circle cx="1.43229" cy="1.43229" r="1.43229"
-									transform="matrix(-1 0 0 1 14.198 12.7344)" stroke="white" stroke-width="1.5" />
-							</svg>
-						</span>
-					</button>
-				</section>
+				<li class="year-selector__item">
+					<input hidden class="year-selector-checkbox" type="checkbox" id="year-selector-checkbox-2022">
+					<label class="year-selector__item__label" for="year-selector-checkbox-2022">2022</label>
+				</li>
+
+				<li class="year-selector__item">
+					<input hidden class="year-selector-checkbox" type="checkbox" id="year-selector-checkbox-2021">
+					<label class="year-selector__item__label" for="year-selector-checkbox-2021">2021</label>
+				</li>
+			</ul>
+
+			<div class="news__articles-wrapper">
+				<article class="news__article article">
+					<a href="progress-article.html">
+						<div class="news_img-wrapper">
+							<img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
+						</div>
+
+						<header class="news__header">
+							<h2 class="news__header__title progress__header__title">Январь</h2>
+							<span class="news__date date">15 фото</span>
+						</header>
+					</a>
+				</article>
+				<article class="news__article article">
+					<a href="progress-article.html">
+						<div class="news_img-wrapper">
+							<img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
+						</div>
+
+						<header class="news__header">
+							<h2 class="news__header__title progress__header__title">Январь</h2>
+							<span class="news__date date">15 фото</span>
+						</header>
+					</a>
+				</article>
+				<article class="news__article article">
+					<a href="progress-article.html">
+						<div class="news_img-wrapper">
+							<img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
+						</div>
+
+						<header class="news__header">
+							<h2 class="news__header__title progress__header__title">Январь</h2>
+							<span class="news__date date">15 фото</span>
+						</header>
+					</a>
+				</article>
+				<article class="news__article article">
+					<a href="progress-article.html">
+						<div class="news_img-wrapper">
+							<img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
+						</div>
+
+						<header class="news__header">
+							<h2 class="news__header__title progress__header__title">Январь</h2>
+							<span class="news__date date">15 фото</span>
+						</header>
+					</a>
+				</article>
+				<article class="news__article article">
+					<a href="progress-article.html">
+						<div class="news_img-wrapper">
+							<img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
+						</div>
+
+						<header class="news__header">
+							<h2 class="news__header__title progress__header__title">Январь</h2>
+							<span class="news__date date">15 фото</span>
+						</header>
+					</a>
+				</article>
+				<article class="news__article article">
+					<a href="progress-article.html">
+						<div class="news_img-wrapper">
+							<img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
+						</div>
+
+						<header class="news__header">
+							<h2 class="news__header__title progress__header__title">Январь</h2>
+							<span class="news__date date">15 фото</span>
+						</header>
+					</a>
+				</article>
 			</div>
 		</div>
 
-		<!-- menu pop-up -->
+		<!-- mobile/tablet only -->
 		<div class="main_catalogue-menu">
 			<div class="content-wrapper">
 				<ul class="menu nav-menu">
@@ -267,15 +336,18 @@
 				</ul>
 			</div>
 		</div>
+
+		<!-- desktop only -->
 	</main>
 
 	<footer class="footer footer-desktop">
+		<!-- mobile/tablet only -->
 		<nav class="menu-bottom">
 			<ul class="menu-bottom__list">
 				<li class="menu-bottom__item">
 					<a href="catalogue.html" class="menu-bottom__item-link">
 						<img class="footer_nav-menu__svg footer_nav-menu__appartments"
-							src="assets/img/icons/nav_menu_apartments_off.svg" alt="" />
+							src="assets/img/icons/nav_menu_apartments_off.svg" alt="">
 						Квартиры
 					</a>
 				</li>
@@ -283,15 +355,15 @@
 				<li class="menu-bottom__item">
 					<a href="catalogue-mortgage.html" class="menu-bottom__item-link">
 						<img class="footer_nav-menu__svg footer_nav-menu__mortgage"
-							src="assets/img/icons/nav_menu_mortgage_off.svg" alt="" />
+							src="assets/img/icons/nav_menu_mortgage_off.svg" alt="">
 						Ипотека
 					</a>
 				</li>
 
 				<li class="menu-bottom__item">
-					<a href="catalogue-favorite.html" class="menu-bottom__item-link menu-bottom__item-link_active">
+					<a href="catalogue-favorite.html" class="menu-bottom__item-link">
 						<img class="footer_nav-menu__svg footer_nav-menu__favorite"
-							src="assets/img/icons/nav_menu_favorite_off.svg" alt="" />
+							src="assets/img/icons/nav_menu_favorite_off.svg" alt="">
 						Избранное
 					</a>
 				</li>
@@ -300,13 +372,14 @@
 					<label for="body__is-nav-menu-visible-checkbox"
 						class="menu-bottom__item-link menu-bottom__item-link_menu">
 						<img class="footer_nav-menu__svg footer_nav-menu__menu"
-							src="assets/img/icons/nav_menu_menu_off.svg" alt="" />
+							src="assets/img/icons/nav_menu_menu_off.svg" alt="">
 						Меню
 					</label>
 				</li>
 			</ul>
 		</nav>
 
+		<!-- desktop only -->
 		<div class="content-wrapper footer-desktop__wrapper">
 			<!-- 1 1 -->
 			<div class="foooter-desktop__contacts contacts">
@@ -418,7 +491,7 @@
 					</a>
 
 					<div class="info-container__link__text-input-wrapper">
-						<input class="info-container__link__text-input" type="text" />
+						<input class="info-container__link__text-input" type="text">
 
 						<a href="#" class="info-container__link__text-input__link">
 							<svg class="info-container__link__text-input__svg" width="25" height="25"

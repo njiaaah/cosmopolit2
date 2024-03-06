@@ -324,10 +324,6 @@
     .calc-wrap {
         grid-template-columns: 1fr;
     }
-
-    .calc-input {
-        /* margin-bottom: 3rem; */
-    }
     
     .calc-input-wrap {
         grid-template-columns: repeat(2, 1fr);

@@ -53,19 +53,33 @@ function handleViewportChange() {
     }
 };
 
-// Hide menu elements on scroll
+// hide menu elements on scroll
 
 let lastScrollTop = 0;
 let timeout;
 
 $(window).scroll(function() {
     const currentScroll = $(this).scrollTop();
+    const windowHeight = $(this).height();
+    const documentHeight = $(document).height();
+    const sectionTop = $('.main__filter-result-wrapper').offset().top
 
-    // always visible if not scrolled 160px from top
-    // 160px - sticky header height + its distance from top
-    if (currentScroll > 160) {
+    // distance from the top where the elements should be visible
+    const threshold = 160;
+
+    if (currentScroll + windowHeight >= documentHeight) {
+        // scrolled to the bottom of the page
+        $('.section-filter-result__header-sticky').removeClass('hidden-above');
+        $('.menu-bottom').removeClass('hidden-below');
+    } else if (currentScroll > threshold) {
+        // scrolled past the threshold
         if (currentScroll != lastScrollTop) {
-            $('.section-filter-result__header-sticky').addClass('hidden-above');
+            // hide only if scrolled past element containing it
+            if(currentScroll > sectionTop) {
+                $('.section-filter-result__header-sticky').addClass('hidden-above');
+            } else {
+                $('.section-filter-result__header-sticky').removeClass('hidden-above');
+            }
             $('.menu-bottom').addClass('hidden-below');
         } else {
             $('.section-filter-result__header-sticky').removeClass('hidden-above');
@@ -75,8 +89,9 @@ $(window).scroll(function() {
         timeout = setTimeout(function() {
             $('.section-filter-result__header-sticky').removeClass('hidden-above');
             $('.menu-bottom').removeClass('hidden-below');
-        }, 1000); //timeout to toggle view
+        }, 800); // Timeout to toggle view
     } else {
+        // Not scrolled past the threshold, keep elements visible
         $('.section-filter-result__header-sticky').removeClass('hidden-above');
         $('.menu-bottom').removeClass('hidden-below');
     }
@@ -89,5 +104,4 @@ $(window).scroll(function() {
         $('.header').addClass('header_slide-down-anim')
         $('.header__cosmetic-gradient').addClass('header_slide-down-anim')
     }
-
 });

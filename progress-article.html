@@ -2,32 +2,30 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Результат поиска</title>
-  <base href="." />
+  <base href=".">
 
   <!-- lib -->
-  <link rel="stylesheet" href="assets/lib/nouislider.min.css" />
+  <link rel="stylesheet" href="assets/lib/nouislider.min.css">
   <script src="assets/lib/nouislider.min.js"></script>
   <script src="assets/lib/jquery.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/lib/dragscroll.js"></script>
 
   <!-- defaults -->
-  <link rel="stylesheet" href="assets/css/normalize.css" />
-  <link rel="stylesheet" href="assets/css/default.css" />
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/default.css">
   <script src="assets/script/sliders.js" defer></script>
 
   <!-- project -->
-  <link rel="stylesheet" href="assets/css/sliders.css" />
-  <link rel="stylesheet" href="assets/css/calc.css" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="assets/script/catalogue-mortgage.js" defer></script>
-  <script src="assets/script/lot.js" defer></script>
-  <script src="assets/script/calc.js" defer></script>
-
+  <link rel="stylesheet" href="assets/css/sliders.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/script/catalogue.js" defer></script>
   <script src="assets/script/view-change.js" defer></script>
+  <script src="assets/script/progress.js" defer></script>
   <script src="assets/script/back-to-top.js" defer></script>
 </head>
 
@@ -38,8 +36,9 @@
       <path d="M9.19922 44.7183L9.19922 2.2355" stroke="white" stroke-width="2" />
       <path d="M1.61279 9.31592L9.199 1.72971L16.7852 9.31592" stroke="white" stroke-width="2" />
     </svg>
-  </a> <input hidden type="checkbox" id="body__is-filter-visible-checkbox" />
-  <input hidden type="checkbox" id="body__is-nav-menu-visible-checkbox" />
+  </a> <input hidden type="checkbox" id="body__is-tower-desktop-view-visible" >
+  <input hidden type="checkbox" id="body__is-filter-visible-checkbox" >
+  <input hidden type="checkbox" id="body__is-nav-menu-visible-checkbox" >
 
   <header class="header">
     <div class="header-wrapper">
@@ -119,6 +118,8 @@
 
   <div class="header__cosmetic-gradient"></div>
 
+  <div class="header__cosmetic-gradient"></div>
+
   <div class="main__cosmetic">
     <!-- gradient under the header -->
 
@@ -136,7 +137,8 @@
       class="gradient-splash gradient-splash_orange main_content__gradient-splash_orange-2 gradient-splash_moving gradient-splash_moving gradient-splash_moving-fast-up">
     </div>
   </div>
-  <main class="main main_content">
+
+  <main class="main main_content progress__main">
     <div
       class="header header_desktop catalogue__header_desktop header_desktop__bottom-header catalogue__header_desktop__bottom-header">
       <div class="header_desktop__wrapper">
@@ -165,390 +167,179 @@
     </div>
 
     <!-- page content -->
-    <div class="main__lot-page-content content-wrapper">
-      <input hidden type="checkbox" id="header-sticky__view-toggle" />
 
-      <a class="back-link main_lot__back-link" href="/catalogue.html">
-        <svg class="back-link__icon" width="24" height="25" viewBox="0 0 24 25" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path opacity="0.4"
-            d="M13.2401 2.5C13.7201 2.5 14.1001 2.88 14.1001 3.36V21.65C14.1001 22.12 13.7201 22.51 13.2401 22.51C7.3501 22.51 3.2401 18.4 3.2401 12.51C3.2401 6.62 7.3601 2.5 13.2401 2.5Z"
-            fill="#292D32" />
-          <path
-            d="M8.10025 12.0399L10.9403 9.18991C11.2303 8.89991 11.7103 8.89991 12.0003 9.18991C12.2903 9.47991 12.2903 9.95991 12.0003 10.2499L10.4403 11.8099H20.0103C20.4203 11.8099 20.7603 12.1499 20.7603 12.5599C20.7603 12.9699 20.4203 13.3099 20.0103 13.3099H10.4403L12.0003 14.8799C12.2903 15.1699 12.2903 15.6499 12.0003 15.9399C11.8503 16.0899 11.6603 16.1599 11.4703 16.1599C11.2803 16.1599 11.0903 16.0899 10.9403 15.9399L8.10025 13.0899C7.80025 12.7999 7.80025 12.3299 8.10025 12.0399Z"
-            fill="#292D32" />
-        </svg>
+    <div class="main__content-wrap content-wrapper news-opened">
+      <article class="news__article article news__artcile-open">
+        <div class="news__article__back-button-wrapper">
+          <a href="news.html" class="news__article__back-button__link">
+            <svg class="news__article__back-button__svg" width="24" height="25" viewBox="0 0 24 25" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.4"
+                d="M13.2396 2.5C13.7196 2.5 14.0996 2.88 14.0996 3.36V21.65C14.0996 22.12 13.7196 22.51 13.2396 22.51C7.34961 22.51 3.23961 18.4 3.23961 12.51C3.23961 6.62 7.35961 2.5 13.2396 2.5Z"
+                fill="#292D32" />
+              <path
+                d="M8.09976 12.0399L10.9398 9.18991C11.2298 8.89991 11.7098 8.89991 11.9998 9.18991C12.2898 9.47991 12.2898 9.95991 11.9998 10.2499L10.4398 11.8099H20.0098C20.4198 11.8099 20.7598 12.1499 20.7598 12.5599C20.7598 12.9699 20.4198 13.3099 20.0098 13.3099H10.4398L11.9998 14.8799C12.2898 15.1699 12.2898 15.6499 11.9998 15.9399C11.8498 16.0899 11.6598 16.1599 11.4698 16.1599C11.2798 16.1599 11.0898 16.0899 10.9398 15.9399L8.09976 13.0899C7.79976 12.7999 7.79976 12.3299 8.09976 12.0399Z"
+                fill="#292D32" />
+            </svg>
 
-        <span class="back-link__text">Вернуться к выбору квартир</span>
-      </a>
-
-      <!-- card -->
-      <section class="lot-card-wrap">
-        <h3 hidden>Информация о квартире</h3>
-
-        <article class="card section-filter__card section-filter__card_promo lot__card_desktop-view">
-          <header class="card__header lot__card__header">
-            <h4 class="card__number lot__card__number">218</h4>
-
-            <span class="card__price card__price_promo-active lot__card__price">6 500 600 ₽</span>
-
-            <span class="card__old-price lot__card_old-price">16 500 600 ₽</span>
-          </header>
-
-          <div class="card__favorite-icon lot_favorite-icon">
-            <input hidden type="checkbox" class="card__favorite-checkbox" id="card__favorite-checkbox-001" />
-            <label for="card__favorite-checkbox-001" class="card__favorite-label">
-              <svg class="card__favorite_svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="card__favorite-checkbox-icon" opacity="0.4"
-                  d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z"
-                  fill="#292D32" />
-                <path
-                  d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z"
-                  fill="#193D23" />
-              </svg>
-            </label>
-          </div>
-
-          <div class="card__content lot__card__content">
-            <img class="card__plan-image" src="assets/img/catalogue/apart_plan/plan_001.webp" alt="План квартиры ага" />
-          </div>
-
-          <footer class="card__footer lot__card__footer">
-            <div class="card__info-wrap lot__card__info-wrap">
-              <span class="card__rooms">3 комнаты</span>
-              <span class="card__|">|</span>
-              <span class="card__square">150 м2</span>
-            </div>
-
-            <div class="card__info-wrap lot__card__info-wrap">
-              <span class="card__tower">башня Гонгконг</span>
-              <span class="card__|">|</span>
-              <span class="card__floor">18 этаж</span>
-            </div>
-          </footer>
-
-          <div class="card__swiper-wrapper lot__card__swiper-wrapper">
-            <div class="card__swiper-wrapper__pagination">
-              <a data-slide="0" class="swiper__pagination__link pagination__link__plan" href="#slide1">Планировка</a>
-              <a data-slide="1" class="swiper__pagination__link pagination__link_active" href="#slide1">На этаже</a>
-              <a data-slide="2" class="swiper__pagination__link" href="#slide1">На генплане</a>
-            </div>
-
-            <div class="swiper lot__swiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide lot__swiper__slide slide__plan-slide">
-                  <img class="lot__swiper__slide__img" src="assets/img/catalogue/apart_plan/plan_001.webp" alt="" />
-                </div>
-
-                <div class="swiper-slide lot__swiper__slide">
-                  <img class="lot__swiper__slide__img" src="assets/img/catalogue/apart_plan/floor_plan.webp" alt="" />
-                </div>
-                <div class="swiper-slide lot__swiper__slide">
-                  <img class="lot__swiper__slide__img" src="assets/img/catalogue/apart_plan/gen_plan.webp" alt="" />
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination card__swiper-pagination"></div>
-            </div>
-          </div>
-
-          <!-- desktop only card content -->
-
-          <div class="card__sidebar-links-wrapper">
-            <a href="#" class="card__sidebar-links-wrapper__link">
-              <svg class="card__sidebar-links-wrapper__svg" width="24" height="25" viewBox="0 0 24 25" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M18.7 5.38573H17H7H5.3C3.5 5.38573 2 6.88573 2 8.68573V15.3857C2 17.1857 3.5 18.6857 5.3 18.6857V17.8857V17.0857V13.7857C5.3 12.8857 6.1 12.0857 7 12.0857H17C17.9 12.0857 18.7 12.7857 18.7 13.7857V17.0857V17.8857V18.6857C20.5 18.6857 22 17.1857 22 15.3857V8.68573C22 6.88573 20.5 5.38573 18.7 5.38573Z"
-                  fill="#193D23" />
-                <path
-                  d="M17 2.88573C17 1.88573 16.2 1.18573 15.3 1.18573H8.7C7.8 1.18573 7 1.88573 7 2.88573V3.68573H17V2.88573Z"
-                  fill="#193D23" />
-                <path
-                  d="M7 16.9857V17.7857V18.5857V20.2857C7 21.6857 8.1 22.7857 9.5 22.7857H14.5C15.9 22.7857 17 21.6857 17 20.2857V18.5857V17.7857V16.9857V13.6857H7V16.9857Z"
-                  fill="#193D23" />
-                <path
-                  d="M18.7004 9.48573C19.1422 9.48573 19.5004 9.12755 19.5004 8.68573C19.5004 8.2439 19.1422 7.88573 18.7004 7.88573C18.2586 7.88573 17.9004 8.2439 17.9004 8.68573C17.9004 9.12755 18.2586 9.48573 18.7004 9.48573Z"
-                  fill="white" />
-              </svg>
-            </a>
-            <a href="#" class="card__sidebar-links-wrapper__link">
-              <svg class="card__sidebar-links-wrapper__svg" width="24" height="25" viewBox="0 0 24 25" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16.19 2.18622H7.81C4.17 2.18622 2 4.35622 2 7.99622V16.3662C2 20.0162 4.17 22.1862 7.81 22.1862H16.18C19.82 22.1862 21.99 20.0162 21.99 16.3762V7.99622C22 4.35622 19.83 2.18622 16.19 2.18622Z"
-                  fill="#193D23" />
-                <path
-                  d="M18.6904 5.89622C18.6104 5.71622 18.4704 5.56622 18.2804 5.48622C18.1904 5.45622 18.1004 5.43622 18.0004 5.43622H14.0004C13.5904 5.43622 13.2504 5.77622 13.2504 6.18622C13.2504 6.59622 13.5904 6.93622 14.0004 6.93622H16.1904L12.4704 10.6562C12.1804 10.9462 12.1804 11.4262 12.4704 11.7162C12.6204 11.8662 12.8104 11.9362 13.0004 11.9362C13.1904 11.9362 13.3804 11.8662 13.5304 11.7162L17.2504 7.99622V10.1862C17.2504 10.5962 17.5904 10.9362 18.0004 10.9362C18.4104 10.9362 18.7504 10.5962 18.7504 10.1862V6.18622C18.7504 6.08622 18.7304 5.99622 18.6904 5.89622Z"
-                  fill="white" />
-                <path
-                  d="M11.53 12.6557C11.24 12.3657 10.76 12.3657 10.47 12.6557L6.75 16.3757V14.1857C6.75 13.7757 6.41 13.4357 6 13.4357C5.59 13.4357 5.25 13.7757 5.25 14.1857V18.1857C5.25 18.2857 5.27 18.3757 5.31 18.4757C5.39 18.6557 5.53 18.8057 5.72 18.8857C5.8 18.9157 5.9 18.9357 6 18.9357H10C10.41 18.9357 10.75 18.5957 10.75 18.1857C10.75 17.7757 10.41 17.4357 10 17.4357H7.81L11.53 13.7157C11.82 13.4257 11.82 12.9457 11.53 12.6557Z"
-                  fill="white" />
-              </svg>
-            </a>
-            <a href="#" class="card__sidebar-links-wrapper__link">
-              <svg class="card__sidebar-links-wrapper__svg" width="24" height="25" viewBox="0 0 24 25" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M22 12.1862C22 17.6764 17.468 22.1862 11.9507 22.1862C6.72906 22.1862 2.49261 18.2646 2 13.1666H12.936L9.78325 16.4019C9.38916 16.7941 9.38916 17.3823 9.78325 17.7745C9.9803 17.9705 10.1773 18.0686 10.4729 18.0686C10.7685 18.0686 10.9655 17.9705 11.1626 17.7745L15.9901 12.8725C16.3842 12.4803 16.3842 11.8921 15.9901 11.4999L11.1626 6.59798C10.7685 6.20583 10.1773 6.20583 9.78325 6.59798C9.38916 6.99014 9.38916 7.57838 9.78325 7.97053L12.936 11.2058H2C2.49261 6.10779 6.82759 2.18622 11.9507 2.18622C17.468 2.18622 22 6.69602 22 12.1862Z"
-                  fill="#193D23" />
-              </svg>
-            </a>
-          </div>
-
-          <div class="card__buttons-wrapper">
-            <button class="card__button card__button_primary card__button_violet">
-              Записаться на встречу
-            </button>
-            <button class="card__button card__button_outline card__button_violet">
-              Рассчитать ипотеку
-            </button>
-          </div>
-
-          <div class="card__inside-links-wrapper">
-            <a href="#" class="card__inside-links-wrapper__link">
-              <span class="card__inside-links-wrapper__text">Похожие квартиры</span>
-              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.0244 5.41922L17.0827 10.4776L12.0244 15.5359" stroke="#9D9D9D" stroke-width="1.25"
-                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M2.91699 10.4776H16.942" stroke="#9D9D9D" stroke-width="1.25" stroke-miterlimit="10"
-                  stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </a>
-
-            <a href="#" class="card__inside-links-wrapper__link">
-              <span class="card__inside-links-wrapper__text">Кладовые и машиноместа</span>
-              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.0244 5.41922L17.0827 10.4776L12.0244 15.5359" stroke="#9D9D9D" stroke-width="1.25"
-                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M2.91699 10.4776H16.942" stroke="#9D9D9D" stroke-width="1.25" stroke-miterlimit="10"
-                  stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </a>
-          </div>
-
-          <div class="card__desktop-border card__desktop-border-promo">
-            <!-- i am border -->
-          </div>
-
-          <div class="card__gen-plan-wrapper">
-            <img class="card__gen-plan-wrapper__img" src="assets/img/catalogue/apart_plan/gen_plan_from-above.webp"
-              alt="" />
-          </div>
-
-          <div class="lot__card__advantages-wrapper">
-            <div class="lot__card__advantages-wrapper__item">
-              <img class="lot__card__advantages-wrapper__img" src="assets/img/lot/advent_001.svg" alt="" />
-              <span class="lot__card__advantages-wrapper__text">Эркерное остекление</span>
-            </div>
-
-            <div class="lot__card__advantages-wrapper__item">
-              <img class="lot__card__advantages-wrapper__img" src="assets/img/lot/advent_001.svg" alt="" />
-              <span class="lot__card__advantages-wrapper__text">Эркерное остекление</span>
-            </div>
-
-            <div class="lot__card__advantages-wrapper__item">
-              <img class="lot__card__advantages-wrapper__img" src="assets/img/lot/advent_001.svg" alt="" />
-              <span class="lot__card__advantages-wrapper__text">Эркерное остекление asdasdasda asd asd asdas asd asdasd
-                123123 qwe qwewq
-              </span>
-            </div>
-
-            <div class="lot__card__advantages-wrapper__item">
-              <img class="lot__card__advantages-wrapper__img" src="assets/img/lot/advent_001.svg" alt="" />
-              <span class="lot__card__advantages-wrapper__text">Эркерное остекление</span>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <!-- desktop-only content -->
-
-      <section class="section-filter-result">
-        <h1 class="title title_mortgage">Программы ипотеки</h1>
-
-        <div class="calc">
-          <div class="calc-wrap">
-            <div class="calc-input">
-              <div class="calc-input-wrap">
-                <div class="calc-programms-wrap">
-                  <h3 class="subtitle section-filter__subtitle section-mortgage__subtitle">
-                    Выберите программу
-                  </h3>
-                  <button class="calc-button-programms">
-                    Все программы<img id="calc-all-programms-arrow" src="assets/img/icons/calc_arrow.svg" alt="" />
-                  </button>
-                  <ul id="calc-programms-drop-down">
-                    <li class="program-name">Программа 1</li>
-                    <li class="program-name">Программа 2</li>
-                    <li class="program-name">Программа 3</li>
-                    <li class="program-name">Программа 4</li>
-                    <li class="program-name">Программа 5</li>
-                    <li class="program-name">Программа 6</li>
-                  </ul>
-                </div>
-
-                <div class="calc__slider-container">
-                  <!--  slider 1 fee -->
-
-                  <h3 class="subtitle section-filter__subtitle section-mortgage__subtitle">
-                    Первоначальный взнос, млн руб.
-                  </h3>
-
-                  <div id="slider1" class="double-slider section-mortgage__double-slider"></div>
-
-                  <div class="selected-values double-slider__values">
-                    <span class="double-slider__value double-slider__value-min" id="min-value1"></span><span
-                      class="double-slider__value double-slider__value-max" id="max-value1"></span>
-                  </div>
-                </div>
-
-                <div class="calc__slider-container">
-                  <!-- slider 2 price -->
-
-                  <h3 class="subtitle section-filter__subtitle section-mortgage__subtitle">
-                    Стоимость, млн руб.
-                  </h3>
-                  <div id="slider2" class="double-slider section-mortgage__double-slider"></div>
-
-                  <div class="selected-values double-slider__values">
-                    <span class="double-slider__value double-slider__value-min" id="min-value2"></span><span
-                      class="double-slider__value double-slider__value-max" id="max-value2"></span>
-                  </div>
-                </div>
-
-                <div class="calc__slider-container">
-                  <!-- slider 3 duration -->
-
-                  <h3 class="subtitle section-filter__subtitle section-mortgage__subtitle">
-                    Срок кредита
-                  </h3>
-
-                  <div id="slider3" class="double-slider section-mortgage__double-slider"></div>
-                  <div class="selected-values double-slider__values">
-                    <span class="double-slider__value double-slider__value-min" id="min-value3"></span><span
-                      class="double-slider__value double-slider__value-max" id="max-value3"></span>
-                  </div>
-                </div>
-              </div>
-
-              <button hidden class="calc-input-button-confirm">
-                Получить одобрение
-              </button>
-            </div>
-
-            <div class="calc-info">
-              <div class="calc-info-sort">
-                <div class="calc-info-sort-label">
-                  <span class="calc-sort-label" id="calc-sort-label">Сортировать</span>
-                </div>
-                <img class="calc-img-sort-img calc-img-hide" src="assets/img/icons/calc_arrow.svg" alt="" />
-                <ul class="calc-sort-list">
-                  <li class="calc-sort-list-item">Платеж по возрастанию</li>
-                  <li class="calc-sort-list-item">Платеж по убыванию</li>
-                  <li class="calc-sort-list-item">Ставка по возрастанию</li>
-                  <li class="calc-sort-list-item">Ставка по убыванию</li>
-                  <li class="calc-sort-list-item">Срок по возрастанию</li>
-                  <li class="calc-sort-list-item">Срок по убыванию</li>
-                </ul>
-              </div>
-
-              <div class="calc__result-item">
-                <header class="calc__bank-name">Сбербанк</header>
-
-                <div class="calc__bank-text-wrapper">
-                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.</span>
-                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
-                </div>
-              </div>
-
-              <div class="calc__result-item">
-                <header class="calc__bank-name">Сбербанк</header>
-
-                <div class="calc__bank-text-wrapper">
-                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
-                  </span>
-                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
-                </div>
-              </div>
-
-              <div class="calc__result-item">
-                <header class="calc__bank-name">Сбербанк</header>
-
-                <div class="calc__bank-text-wrapper">
-                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
-                  </span>
-                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
-                </div>
-              </div>
-
-              <div class="calc__result-item">
-                <header class="calc__bank-name">Сбербанк</header>
-
-                <div class="calc__bank-text-wrapper">
-                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
-                  </span>
-                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
-                </div>
-              </div>
-
-              <div class="calc__result-item">
-                <header class="calc__bank-name">Сбербанк</header>
-
-                <div class="calc__bank-text-wrapper">
-                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
-                  </span>
-                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
-                </div>
-              </div>
-
-              <div class="calc__result-item">
-                <header class="calc__bank-name">Сбербанк</header>
-
-                <div class="calc__bank-text-wrapper">
-                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
-                  </span>
-                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
-                </div>
-              </div>
-
-              <div class="calc__result-item">
-                <header class="calc__bank-name">Сбербанк</header>
-
-                <div class="calc__bank-text-wrapper">
-                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
-                  </span>
-                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
-                </div>
-              </div>
-
-              <div class="calc__result-item">
-                <header class="calc__bank-name">Сбербанк</header>
-
-                <div class="calc__bank-text-wrapper">
-                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
-                  </span>
-                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
-                </div>
-              </div>
-            </div>
-          </div>
+            Вернуться к списку новостей
+          </a>
         </div>
+
+        <div class="progress__article-opened-container">
+
+          <div class="swiper-wrapper">
+
+            <div class="news_img-wrapper progress_img-wrapper swiper-slide ">
+              <img class="article__img progress__article__img" src="assets/img/progress/progress-opened-001.webp" alt="">
+            </div>
+
+            <div class="news_img-wrapper progress_img-wrapper swiper-slide ">
+              <img class="article__img progress__article__img" src="assets/img/progress/progress-opened-001.webp" alt="">
+            </div>
+
+            <div class="news_img-wrapper progress_img-wrapper swiper-slide ">
+              <img class="article__img progress__article__img" src="assets/img/progress/progress-opened-001.webp" alt="">
+            </div>
+
+            <div class="news_img-wrapper progress_img-wrapper swiper-slide ">
+              <img class="article__img progress__article__img" src="assets/img/progress/progress-opened-001.webp" alt="">
+            </div>
+
+            <div class="news_img-wrapper progress_img-wrapper swiper-slide ">
+              <img class="article__img progress__article__img" src="assets/img/progress/progress-opened-001.webp" alt="">
+            </div>
+
+            <div class="news_img-wrapper progress_img-wrapper swiper-slide ">
+              <img class="article__img progress__article__img" src="assets/img/progress/progress-opened-001.webp" alt="">
+            </div>
+
+            <div class="news_img-wrapper progress_img-wrapper swiper-slide ">
+              <img class="article__img progress__article__img" src="assets/img/progress/progress-opened-001.webp" alt="">
+            </div>
+
+            <div class="news_img-wrapper progress_img-wrapper swiper-slide ">
+              <img class="article__img progress__article__img" src="assets/img/progress/progress-opened-001.webp" alt="">
+            </div>
+
+            
+          </div>
+
+          <div class="news__other-news-wrapper__pagination swiper-pagination"></div>
+
+        </div>
+
+        <header class="news__header news__content news__artcile-open__header">
+          <h2 class="news__header__title news__title_opened progress__header__title">
+            Февраль
+          </h2>
+          <span class="news__date date news__date_opened">15 фото</span>
+
+        </header>
+      </article>
+
+      <section class="progress__other-articles-container">
+
+        <h3 class="title title_other-news">К другим периодам</h3>
+
+        <div class="progress__other-articles-wrapper swiper-wrapper">
+          <article class="news__article article swiper-slide news__article_slide">
+            <a href="news-article.html">
+              <div class="news_img-wrapper">
+                <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
+              </div>
+
+              <header class="news__header">
+                <h2 class="news__header__title progress__header__title">
+                  Февраль
+                </h2>
+                <span class="news__date date">15 фото</span>
+
+              </header>
+            </a>
+          </article>
+          <article class="news__article article swiper-slide news__article_slide">
+            <a href="news-article.html">
+              <div class="news_img-wrapper">
+                <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
+              </div>
+
+              <header class="news__header">
+                <h2 class="news__header__title progress__header__title">
+                  Февраль
+                </h2>
+                <span class="news__date date">15 фото</span>
+
+              </header>
+            </a>
+          </article>
+          <article class="news__article article swiper-slide news__article_slide">
+            <a href="news-article.html">
+              <div class="news_img-wrapper">
+                <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
+              </div>
+
+              <header class="news__header">
+                <h2 class="news__header__title progress__header__title">
+                  Февраль
+                </h2>
+                <span class="news__date date">15 фото</span>
+
+              </header>
+            </a>
+          </article>
+          <article class="news__article article swiper-slide news__article_slide">
+            <a href="news-article.html">
+              <div class="news_img-wrapper">
+                <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
+              </div>
+
+              <header class="news__header">
+                <h2 class="news__header__title progress__header__title">
+                  Февраль
+                </h2>
+                <span class="news__date date">15 фото</span>
+
+              </header>
+            </a>
+          </article>
+          <article class="news__article article swiper-slide news__article_slide">
+            <a href="news-article.html">
+              <div class="news_img-wrapper">
+                <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
+              </div>
+
+              <header class="news__header">
+                <h2 class="news__header__title progress__header__title">
+                  Февраль
+                </h2>
+                <span class="news__date date">15 фото</span>
+
+              </header>
+            </a>
+          </article>
+          <article class="news__article article swiper-slide news__article_slide">
+            <a href="news-article.html">
+              <div class="news_img-wrapper">
+                <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
+              </div>
+
+              <header class="news__header">
+                <h2 class="news__header__title progress__header__title">
+                  Февраль
+                </h2>
+                <span class="news__date date">15 фото</span>
+
+              </header>
+            </a>
+          </article>
+        </div>
+
+        <div class="news__other-news-wrapper__pagination swiper-pagination"></div>
       </section>
     </div>
 
-    <!-- menu pop-up -->
+    <!-- mobile/tablet only -->
     <div class="main_catalogue-menu">
       <div class="content-wrapper">
         <ul class="menu nav-menu">
@@ -602,13 +393,13 @@
   </main>
 
   <footer class="footer footer-desktop">
-    <!-- bottom mobile/tablet only -->
+    <!-- mobile/tablet only -->
     <nav class="menu-bottom">
       <ul class="menu-bottom__list">
         <li class="menu-bottom__item">
-          <a href="catalogue.html" class="menu-bottom__item-link menu-bottom__item-link_active">
+          <a href="catalogue.html" class="menu-bottom__item-link">
             <img class="footer_nav-menu__svg footer_nav-menu__appartments"
-              src="assets/img/icons/nav_menu_apartments_on.svg" alt="" />
+              src="assets/img/icons/nav_menu_apartments_off.svg" alt="" >
             Квартиры
           </a>
         </li>
@@ -616,7 +407,7 @@
         <li class="menu-bottom__item">
           <a href="catalogue-mortgage.html" class="menu-bottom__item-link">
             <img class="footer_nav-menu__svg footer_nav-menu__mortgage" src="assets/img/icons/nav_menu_mortgage_off.svg"
-              alt="" />
+              alt="" >
             Ипотека
           </a>
         </li>
@@ -624,7 +415,7 @@
         <li class="menu-bottom__item">
           <a href="catalogue-favorite.html" class="menu-bottom__item-link">
             <img class="footer_nav-menu__svg footer_nav-menu__favorite" src="assets/img/icons/nav_menu_favorite_off.svg"
-              alt="" />
+              alt="" >
             Избранное
           </a>
         </li>
@@ -632,13 +423,14 @@
         <li class="menu-bottom__item">
           <label for="body__is-nav-menu-visible-checkbox" class="menu-bottom__item-link menu-bottom__item-link_menu">
             <img class="footer_nav-menu__svg footer_nav-menu__menu" src="assets/img/icons/nav_menu_menu_off.svg"
-              alt="" />
+              alt="" >
             Меню
           </label>
         </li>
       </ul>
     </nav>
 
+    <!-- desktop only -->
     <div class="content-wrapper footer-desktop__wrapper">
       <!-- 1 1 -->
       <div class="foooter-desktop__contacts contacts">
@@ -747,7 +539,7 @@
           </a>
 
           <div class="info-container__link__text-input-wrapper">
-            <input class="info-container__link__text-input" type="text" />
+            <input class="info-container__link__text-input" type="text">
 
             <a href="#" class="info-container__link__text-input__link">
               <svg class="info-container__link__text-input__svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
