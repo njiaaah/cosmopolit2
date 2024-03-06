@@ -2604,9 +2604,7 @@ body .header_dark-green {
   white-space: nowrap;
   position: relative;
 }
-.header-switcher__item:has(.header-switcher__checkbox:checked)::after {
-  scale: 1 1;
-}
+
 .header-switcher__item::after {
   content: '';
   display: block;
@@ -2625,6 +2623,10 @@ body .header_dark-green {
   -moz-transition: scale 300ms ease;
   -ms-transition: scale 300ms ease;
   -o-transition: scale 300ms ease;
+}
+.header-switcher__item:has(.header-switcher__checkbox:checked)::after {
+  content: '';
+  scale: 1 1;
 }
 .main__gallery, .main__callback {
   width: calc(100% - 46px);
@@ -2848,7 +2850,7 @@ body .header_dark-green {
 .hc-info__cosmetic-gradient-1 {
   top: -20%;
   right: -418px;
-  width: 600px;
+  width: 599px;
 }
 
 .hc-info__cosmetic-gradient-2 {
@@ -2874,7 +2876,7 @@ body .header_dark-green {
   inset: -100px -50px auto auto;
 }
 .section-filter__show-result-button {
-  display: none;
+  /* display: none; */
 }
 .mortgage-gradient-1 {
   display: block;
@@ -2906,6 +2908,43 @@ body .header_dark-green {
 .title {
   position: relative;
   z-index: 2;
+}
+.callback__button__input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--clr-primary-violet);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.progress__button {
+  width: 100%;
+  color: var(--primary-dark-green);
+  border: 1px solid var(--primary-dark-green);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  position: relative;
+  z-index: 2;
+}
+.callback__background-img {
+  transition: opacity 300ms;
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -ms-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+}
+#body__is-nav-menu-visible-checkbox:checked ~ .main .callback__background-img{
+  opacity: 0;
+}
+.section-filter__show-result-button {
+  display: none;
 }
 
 
@@ -3105,6 +3144,7 @@ body .header_dark-green {
     grid-column-start: 1;
     grid-column-end: 3;
     position: relative;
+    z-index: 2;
   }
   .filter-rooms__label {
     padding-inline: 0;
@@ -3498,7 +3538,9 @@ body .header_dark-green {
     filter: blur(10px);
     -webkit-filter: blur(10px);
   } 
-
+.filter-gradient-2 {
+  display: none;
+}
   
   
 
@@ -3535,8 +3577,11 @@ body .header_dark-green {
   .callback__button {
     min-width: 170px;
     width: 213px;
-
+    display: grid;
+    place-items: center;
+    text-align: center;
   }
+
   .callback__title-mobile {
     display: none;
   }
@@ -4937,7 +4982,9 @@ body .header_dark-green {
   background: radial-gradient(50% 50% at 50% 50%, rgba(91, 197, 242, 0.8) 11.5%, rgba(217, 217, 217, 0) 100%);
   inset: -100px -904px auto auto;
 } 
-
+.progress-gradient-1 {
+  display: none;
+}
 
 
 

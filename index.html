@@ -32,6 +32,7 @@
   <script src="assets/script/cookie.js" defer></script>
   <script src="assets/script/index.js" defer></script>
   <script src="assets/script/calc.js" defer></script>
+  <script src="assets/script/bottom-menu.js" defer></script>
 </head>
 
 <body>
@@ -1651,7 +1652,10 @@
           <label for="callback__phone-input" class="callback__label callback__item">Оставьте ваш номер телефона</label>
           <input type="tel" id="callback__phone-input" class="callback__input callback__item" >
 
-          <input type="submit" value="Перезвоните мне" class="button callback__button callback__item">
+          <div class="button callback__button callback__item">
+              <input type="submit" value="Перезвоните мне" class="callback__button__input">
+          </div>
+          
 
         </form>
 
@@ -1737,6 +1741,8 @@
 					</a>
 				</article>
 			</div>
+
+      <button class="button button-outline progress__button">Показать другие месяцы</button>
 		</section>
 
     <!-- mobile/tablet only -->
@@ -1744,10 +1750,10 @@
       <div class="content-wrapper">
         <ul class="menu nav-menu">
           <li class="menu__item catalogue__menu__item">
-            <a href="#" class="menu__item-link">О проекте</a>
+            <a href="#info" class="menu__item-link">О проекте</a>
           </li>
           <li class="menu__item catalogue__menu__item">
-            <a href="#" class="menu__item-link">Расположение</a>
+            <a href="#location" class="menu__item-link">Расположение</a>
           </li>
           <li class="menu__item catalogue__menu__item">
             <a href="#" class="menu__item-link">Купить</a>
@@ -1771,10 +1777,10 @@
           </li>
 
           <li class="menu__item catalogue__menu__item">
-            <a href="#" class="menu__item-link">Галерея</a>
+            <a href="#gallery" class="menu__item-link">Галерея</a>
           </li>
           <li class="menu__item catalogue__menu__item">
-            <a href="#" class="menu__item-link">Ход строительства</a>
+            <a href="#progress" class="menu__item-link">Ход строительства</a>
           </li>
           <li class="menu__item catalogue__menu__item">
             <a href="#" class="menu__item-link">О компании</a>
@@ -1868,7 +1874,7 @@
               <a class="foooter-desktop__menu__list-link" href="#">Расположение</a>
             </li>
             <li class="foooter-desktop__menu_list-item">
-              <a class="foooter-desktop__menu__list-link" href="#">Галерея</a>
+              <a class="foooter-desktop__menu__list-link" href="#gallery">Галерея</a>
             </li>
             <li class="foooter-desktop__menu_list-item">
               <a class="foooter-desktop__menu__list-link" href="#">Ход строительства</a>
