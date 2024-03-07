@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     if (document.querySelector('#map')) {
 
 
-let center = [55.754618, 37.524067];
+let center = [55.754, 37.524];
 let mark_home = [55.754618, 37.524067];
 
 function init() {

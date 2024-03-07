@@ -3045,24 +3045,24 @@ body .header_dark-green {
 .contacts-wrapper {
   flex: 1;
   display: grid;
-  grid-template-columns: [map-start card-start] 1fr [map-end card-end];
-  grid-template-rows: [map-start] 1fr [card-start] 3rem [map-end] auto [card-end] ;
-  
+  max-width: 100%;
 }
 .contacts__map {
   grid-column: map;
   grid-row: map;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   
 }
 .contacts__info  {
   grid-column: card;
   grid-row: card;
   z-index: 5;
-  transform: translate(0, -100%);
-  -webkit-transform: translate(0, -100%);
-  -moz-transform: translate(0, -100%);
-  -ms-transform: translate(0, -100%);
-  -o-transform: translate(0, -100%);
+  position: absolute;
+  bottom: 60px;
 }
 .contacts__info__header {
   display: flex;
@@ -3725,12 +3725,7 @@ body .header_dark-green {
     padding-inline: 27px;
   }
   .contacts__info {
-    padding-inline: 40px;
-    transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
+    position: static;
 }
   
     
