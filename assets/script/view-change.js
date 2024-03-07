@@ -62,7 +62,10 @@ $(window).scroll(function() {
     const currentScroll = $(this).scrollTop();
     const windowHeight = $(this).height();
     const documentHeight = $(document).height();
-    const sectionTop = $('.main__filter-result-wrapper').offset().top
+    if($('.main__filter-result-wrapper')) {
+        var sectionTop = $('.main__filter-result-wrapper').offset().top;
+    }
+
 
     // distance from the top where the elements should be visible
     const threshold = 160;
@@ -75,7 +78,7 @@ $(window).scroll(function() {
         // scrolled past the threshold
         if (currentScroll != lastScrollTop) {
             // hide only if scrolled past element containing it
-            if(currentScroll > sectionTop) {
+            if(sectionTop && currentScroll > sectionTop) {
                 $('.section-filter-result__header-sticky').addClass('hidden-above');
             } else {
                 $('.section-filter-result__header-sticky').removeClass('hidden-above');

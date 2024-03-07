@@ -1,12 +1,9 @@
 html,body {
-    max-height: 100dvh;
     overflow-x: clip;
     scroll-behavior: smooth;
 }
-:root {
-    --font-family: "Cousine", sans-serif;
-    --second-family: "Unbounded", sans-serif;
 
+body {    
     --primary-beige: #ebccc2;
 	--primary-violet: #6843f4;
 	--primary-dark-green: #193d23;
@@ -19,12 +16,8 @@ html,body {
 	--grayscale-000: #fff;
 	--grayscale-1000: #202020;
 	--grayscale-100: #ececec;
-    
 	--stroke-icon: #193d23;
-}
-body {
-    /* min-height: 100%; */
-    
+
     --clr-grayscale-1000: #202020;
     --clr-grayscale-800: #353535;
     --clr-grayscale-600: #9D9D9D;
@@ -33,7 +26,7 @@ body {
     --clr-grayscale-100: #ECECEC;
     --clr-grayscale-000: #ffffff;
 
-    --clr-primary-dark-green: #193D23;
+    --clr-primary-dark-green: #142D1F;
     --clr-primary-index-dark-green: #142D1F;
     --clr-primary-green: #338148;
     --clr-primary-violet: #6843F4;
@@ -43,6 +36,10 @@ body {
 
     overflow-x: clip;
     --max-content-width: 1120px;  
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 @font-face {
