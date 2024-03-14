@@ -5487,6 +5487,12 @@ body .header_dark-green {
   left: unset;
   right: -420px;
 }
+.foooter-desktop__logo {
+  margin-bottom: 1.5rem;
+}
+.info-container__link__text-input_download {
+  color: var(--clr-primary-beidge);
+}
 
 
 
