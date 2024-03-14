@@ -62,7 +62,7 @@ $(window).scroll(function() {
     const currentScroll = $(this).scrollTop();
     const windowHeight = $(this).height();
     const documentHeight = $(document).height();
-    if($('.main__filter-result-wrapper')) {
+    if($('.main__filter-result-wrapper').length > 0) {
         var sectionTop = $('.main__filter-result-wrapper').offset().top;
     }
 

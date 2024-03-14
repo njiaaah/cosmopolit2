@@ -2576,9 +2576,6 @@ body .header_dark-green {
 .hero__img-wrapper {
   margin-bottom: 2rem;
 }
-.header {
-  /* margin-bottom: 2rem; */
-}
 .header-index {
   margin-bottom: 0;
 }
@@ -2872,9 +2869,6 @@ body .header_dark-green {
   width: 460px;
   inset: -100px -50px auto auto;
 }
-.section-filter__show-result-button {
-  /* display: none; */
-}
 .mortgage-gradient-1 {
   display: block;
   width: 460px;
@@ -3081,7 +3075,7 @@ body .header_dark-green {
   pointer-events: none;
 }
 .ymaps-2-1-79-gototech {
-  display: none;
+  display: none !important;
 }
 
 
@@ -3091,9 +3085,6 @@ body .header_dark-green {
   :root {
     --header-height: 90px;
     --content-padding: 2rem;
-  }
-  .header {
-    /* margin-bottom: 3rem; */
   }
   .news__title {
     max-width: fit-content;
@@ -3842,8 +3833,8 @@ body .header_dark-green {
     -o-transition: none;
     height: fit-content;
   }
-  .main__lot-page-content {
-    padding-top: 24px;
+  .main__lot-page-content, .news-opened {
+    padding-top: 4rem;
   }
   .catalogue__header_desktop__top-header {
     border-bottom: 1px solid var(--clr-grayscale-100);
@@ -4359,6 +4350,8 @@ body .header_dark-green {
   }
   #body__is-tower-desktop-view-visible:checked ~ .main_content .main_catalogue-filter,
   #body__is-tower-desktop-view-visible:checked ~ .main_content .main__filter-result-wrapper,
+  #body__is-tower-desktop-view-visible:checked ~ .main_content .section-filter__results-wrap,
+  #body__is-tower-desktop-view-visible:checked ~ .main_content .section-filter__show-result-button,
   /* #body__is-tower-desktop-view-visible:checked ~ .main_content .main__content-wrap, */
   #body__is-tower-desktop-view-visible:checked ~ .main_content .main__result-wrapper {
     display: none;
@@ -5184,16 +5177,18 @@ body .header_dark-green {
 
 .contacts-wrapper {
   display: block;
-  min-height: 850px;
+  min-height: 750px;
   /* margin-top: 150px; */
   margin-bottom: 0 !important;
   position: relative;
 }
 .contacts__map {
-  min-height: 100%;
+  max-height: 100%;
+  height: 100%;
   width: 100%;
   position: absolute;
   inset: 0 0 auto auto;
+  
 }
 .contacts__info {
   margin-left: auto;
@@ -5241,6 +5236,7 @@ body .header_dark-green {
 
 .ymaps-2-1-79-zoom__scale,.ymaps-2-1-79-zoom__icon {
   opacity: 0;
+  pointer-events: none;
 }
 .ymaps-2-1-79-zoom {
   height: 10px;
@@ -5255,8 +5251,47 @@ body .header_dark-green {
   opacity: 1;
   pointer-events: all;
 }
-
-
+.ymaps-2-1-79-gototaxi {
+  display: block !important;
+  transform: translate(145%, -109%);
+  -webkit-transform: translate(145%, -109%);
+  -moz-transform: translate(145%, -109%);
+  -ms-transform: translate(145%, -109%);
+  -o-transform: translate(145%, -109%);
+  width: 135px;
+}
+.ymaps-2-1-79-gototaxi::after{
+  content: "Доехать на такси";
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.progress__other-articles-container .news__other-news-wrapper__pagination {
+  transform: translate(0, 30px);
+  -webkit-transform: translate(0, 30px);
+  -moz-transform: translate(0, 30px);
+  -ms-transform: translate(0, 30px);
+  -o-transform: translate(0, 30px);
+}
+.ymaps-2-1-79-zoom__button {
+  border: none !important;
+  padding: 0;
+  outline: 0;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
 
 
 
@@ -5298,6 +5333,7 @@ body .header_dark-green {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
   }
+
 
   
 
