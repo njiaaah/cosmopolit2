@@ -2,30 +2,31 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Результат поиска</title>
-  <base href=".">
+  <base href="." />
 
   <!-- lib -->
-  <link rel="stylesheet" href="assets/lib/nouislider.min.css">
+  <link rel="stylesheet" href="assets/lib/nouislider.min.css" />
   <script src="assets/lib/nouislider.min.js"></script>
   <script src="assets/lib/jquery.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/lib/dragscroll.js"></script>
 
   <!-- defaults -->
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link rel="stylesheet" href="assets/css/default.css">
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/default.css" />
   <script src="assets/script/sliders.js" defer></script>
 
   <!-- project -->
-  <link rel="stylesheet" href="assets/css/sliders.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/sliders.css" />
+  <link rel="stylesheet" href="style.css" />
   <script src="assets/script/catalogue.js" defer></script>
+  <script src="assets/script/tower-plan.js" defer></script>
+  <script src="assets/script/lot.js" defer></script>
   <script src="assets/script/view-change.js" defer></script>
-  <script src="assets/script/news.js" defer></script>
   <script src="assets/script/back-to-top.js" defer></script>
 </head>
 
@@ -36,9 +37,9 @@
       <path d="M9.19922 44.7183L9.19922 2.2355" stroke="white" stroke-width="2" />
       <path d="M1.61279 9.31592L9.199 1.72971L16.7852 9.31592" stroke="white" stroke-width="2" />
     </svg>
-  </a> <input hidden type="checkbox" id="body__is-tower-desktop-view-visible" >
-  <input hidden type="checkbox" id="body__is-filter-visible-checkbox" >
-  <input hidden type="checkbox" id="body__is-nav-menu-visible-checkbox" >
+  </a> <input hidden type="checkbox" id="body__is-tower-desktop-view-visible" />
+  <input hidden type="checkbox" id="body__is-filter-visible-checkbox" />
+  <input hidden type="checkbox" id="body__is-nav-menu-visible-checkbox" />
 
   <header class="header">
     <div class="header-wrapper">
@@ -118,7 +119,6 @@
 
   <div class="header__cosmetic-gradient"></div>
 
-
   <!-- <div class="main__cosmetic">
     <div
       class="gradient-splash gradient-splash_orange main_content__gradient-splash_orange gradient-splash_moving gradient-splash_moving gradient-splash_moving-fast-down">
@@ -132,8 +132,7 @@
   </div> -->
 
   <main class="main main_content">
-    <div
-      class="header header_desktop catalogue__header_desktop header_desktop__bottom-header catalogue__header_desktop__bottom-header">
+    <div class="header header_desktop catalogue__header_desktop header_desktop__bottom-header catalogue__header_desktop__bottom-header">
       <div class="header_desktop__wrapper">
         <nav class="header-desktop__nav">
           <ul class="header-desktop__list list">
@@ -159,11 +158,14 @@
       </div>
     </div>
 
+    <div class="title-wrapper documents__title-wrapper">
+      <h1 class="title documents__title">Документы</h1>
+    </div>
+
     <!-- page content -->
 
-    <div class="main__content-wrap content-wrapper news-opened">
+    <section class="main__content-wrap content-wrapper documents__content-wrap">
 
-      
       <div class="section__cosmetic-gradient-wrapper">
 
         <div class="cosmetic-gradient cosmetic-gradient-1"></div>
@@ -171,147 +173,228 @@
         <div class="cosmetic-gradient cosmetic-gradient-3"></div>
 
       </div>
-      
-      <article class="news__article article news__artcile-open">
-        <div class="news__article__back-button-wrapper">
-          <a href="news.html" class="news__article__back-button__link">
-            <svg class="news__article__back-button__svg" width="24" height="25" viewBox="0 0 24 25" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.4"
-                d="M13.2396 2.5C13.7196 2.5 14.0996 2.88 14.0996 3.36V21.65C14.0996 22.12 13.7196 22.51 13.2396 22.51C7.34961 22.51 3.23961 18.4 3.23961 12.51C3.23961 6.62 7.35961 2.5 13.2396 2.5Z"
-                fill="#292D32" />
-              <path
-                d="M8.09976 12.0399L10.9398 9.18991C11.2298 8.89991 11.7098 8.89991 11.9998 9.18991C12.2898 9.47991 12.2898 9.95991 11.9998 10.2499L10.4398 11.8099H20.0098C20.4198 11.8099 20.7598 12.1499 20.7598 12.5599C20.7598 12.9699 20.4198 13.3099 20.0098 13.3099H10.4398L11.9998 14.8799C12.2898 15.1699 12.2898 15.6499 11.9998 15.9399C11.8498 16.0899 11.6598 16.1599 11.4698 16.1599C11.2798 16.1599 11.0898 16.0899 10.9398 15.9399L8.09976 13.0899C7.79976 12.7999 7.79976 12.3299 8.09976 12.0399Z"
-                fill="#292D32" />
-            </svg>
 
-            Вернуться к списку новостей
-          </a>
-        </div>
 
-        <div class="news_img-wrapper">
-          <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
-        </div>
+      <article class="documrnts__info">
 
-        <header class="news__header news__content news__artcile-open__header">
-          <span class="news__date date news__date_opened">2 февраля 2023</span>
-          <h2 class="news__header__title news__title_opened">
-            Будущим жителям будет доступен ещё один мост
-          </h2>
-        </header>
+        <h3 class="documents__info__title">
+          РАСКРЫТИЕ ИНФОРМАЦИИ
+        </h3>
 
-        <div class="news__text-wrapper news__content">
-          <p class="news__text">
-            ​Велопешеходный мост через Яузу рядом с МГТУ им. Баумана введут в
-            следующем году, сообщил руководитель Департамента строительства
-            Москвы Рафик Загрутдинов.
-          </p>
+        <a href="" class="documents__info__link">
 
-          <p class="news__text">
-            Он отметил, что мэр столицы Сергей Собянин поставил задачу
-            синхронизировать сроки сдачи в эксплуатацию здания общежития
-            университета и велопешеходного моста.
-          </p>
-        </div>
+          <span>Наш.дом.рф</span>
+
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.0254 5.02759L17.0837 10.0859L12.0254 15.1443" stroke="#6843F4" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.91602 10.0859H16.941" stroke="#6843F4" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+            
+
+        </a>
+
+        <p class="documents__info__text">
+          Раскрытие информации, предусмотренной ФЗ от 30.12.2004 №214-ФЗ, осуществляется на сайте наш.дом.рф
+        </p>
+
       </article>
 
-      <section class="news__other-news-container">
+      <ul class="documents__list list">
+        <li class="documents__item">
+          <article class="documents__article article">
 
-        <h3 class="title title_other-news">К другим новостям</h3>
+            <header class="documents__article__header">
+              <h4 class="documents__article__title">Документы</h4>
+            </header>
 
-        <div class="news__other-news-wrapper swiper-wrapper">
-          <article class="news__article article swiper-slide news__article_slide">
-            <a href="news-article.html">
-              <div class="news_img-wrapper">
-                <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
-              </div>
+            <p class="documents__article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque tempora exercitationem quas laboriosam, accusamus a earum dolor deleniti commodi saepe ullam enim sapiente quibusdam!</p>
 
-              <header class="news__header">
-                <span class="news__date date">2 февраля 2023</span>
-                <h2 class="news__header__title">
-                  Будущим жителям будет доступен ещё один мост
-                </h2>
-              </header>
-            </a>
+            <footer class="documents__article__footer">
+              <a href="#" class="documents__article__link">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 11.5V17.5L11 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 17.5L7 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5V15.5C22 20.5 20 22.5 15 22.5H9C4 22.5 2 20.5 2 15.5V9.5C2 4.5 4 2.5 9 2.5H14" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5H18C15 10.5 14 9.5 14 6.5V2.5L22 10.5Z" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Скачать</span>
+                  
+              </a>
+            </footer>
+
           </article>
+        </li>
+        <li class="documents__item">
+          <article class="documents__article article">
 
-          <article class="news__article article swiper-slide news__article_slide">
-            <a href="news-article.html">
-              <div class="news_img-wrapper">
-                <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
-              </div>
+            <header class="documents__article__header">
+              <h4 class="documents__article__title">Документы</h4>
+            </header>
 
-              <header class="news__header">
-                <span class="news__date date">2 февраля 2023</span>
-                <h2 class="news__header__title">
-                  Будущим жителям будет доступен ещё один мост
-                </h2>
-              </header>
-            </a>
+            <p class="documents__article__text">Политика в области обработки и защиты персональных данных ОАО Мосреалстрой</p>
+
+            <footer class="documents__article__footer">
+              <a href="#" class="documents__article__link">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 11.5V17.5L11 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 17.5L7 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5V15.5C22 20.5 20 22.5 15 22.5H9C4 22.5 2 20.5 2 15.5V9.5C2 4.5 4 2.5 9 2.5H14" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5H18C15 10.5 14 9.5 14 6.5V2.5L22 10.5Z" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Скачать</span>
+                  
+              </a>
+            </footer>
+
           </article>
+        </li>
+        <li class="documents__item">
+          <article class="documents__article article">
 
-          <article class="news__article article swiper-slide news__article_slide">
-            <a href="news-article.html">
-              <div class="news_img-wrapper">
-                <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
-              </div>
+            <header class="documents__article__header">
+              <h4 class="documents__article__title">Документы</h4>
+            </header>
 
-              <header class="news__header">
-                <span class="news__date date">2 февраля 2023</span>
-                <h2 class="news__header__title">
-                  Будущим жителям будет доступен ещё один мост
-                </h2>
-              </header>
-            </a>
+            <p class="documents__article__text">Политика в области обработки и защиты персональных данных ОАО Мосреалстрой</p>
+
+            <footer class="documents__article__footer">
+              <a href="#" class="documents__article__link">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 11.5V17.5L11 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 17.5L7 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5V15.5C22 20.5 20 22.5 15 22.5H9C4 22.5 2 20.5 2 15.5V9.5C2 4.5 4 2.5 9 2.5H14" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5H18C15 10.5 14 9.5 14 6.5V2.5L22 10.5Z" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Скачать</span>
+                  
+              </a>
+            </footer>
+
           </article>
+        </li>
+        <li class="documents__item">
+          <article class="documents__article article">
 
-          <article class="news__article article swiper-slide news__article_slide">
-            <a href="news-article.html">
-              <div class="news_img-wrapper">
-                <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
-              </div>
+            <header class="documents__article__header">
+              <h4 class="documents__article__title">Документы</h4>
+            </header>
 
-              <header class="news__header">
-                <span class="news__date date">2 февраля 2023</span>
-                <h2 class="news__header__title">
-                  Будущим жителям будет доступен ещё один мост
-                </h2>
-              </header>
-            </a>
+            <p class="documents__article__text">Политика в области обработки и защиты персональных данных ОАО Мосреалстрой</p>
+
+            <footer class="documents__article__footer">
+              <a href="#" class="documents__article__link">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 11.5V17.5L11 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 17.5L7 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5V15.5C22 20.5 20 22.5 15 22.5H9C4 22.5 2 20.5 2 15.5V9.5C2 4.5 4 2.5 9 2.5H14" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5H18C15 10.5 14 9.5 14 6.5V2.5L22 10.5Z" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Скачать</span>
+                  
+              </a>
+            </footer>
+
           </article>
+        </li>
+        <li class="documents__item">
+          <article class="documents__article article">
 
-          <article class="news__article article swiper-slide news__article_slide">
-            <a href="news-article.html">
-              <div class="news_img-wrapper">
-                <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
-              </div>
+            <header class="documents__article__header">
+              <h4 class="documents__article__title">Документы</h4>
+            </header>
 
-              <header class="news__header">
-                <span class="news__date date">2 февраля 2023</span>
-                <h2 class="news__header__title">
-                  Будущим жителям будет доступен ещё один мост
-                </h2>
-              </header>
-            </a>
+            <p class="documents__article__text">Политика в области обработки и защиты персональных данных ОАО Мосреалстрой</p>
+
+            <footer class="documents__article__footer">
+              <a href="#" class="documents__article__link">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 11.5V17.5L11 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 17.5L7 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5V15.5C22 20.5 20 22.5 15 22.5H9C4 22.5 2 20.5 2 15.5V9.5C2 4.5 4 2.5 9 2.5H14" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5H18C15 10.5 14 9.5 14 6.5V2.5L22 10.5Z" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Скачать</span>
+                  
+              </a>
+            </footer>
+
           </article>
+        </li>
+        <li class="documents__item">
+          <article class="documents__article article">
 
-          <article class="news__article article swiper-slide news__article_slide">
-            <a href="news-article.html">
-              <div class="news_img-wrapper">
-                <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
-              </div>
+            <header class="documents__article__header">
+              <h4 class="documents__article__title">Документы</h4>
+            </header>
 
-              <header class="news__header">
-                <span class="news__date date">2 февраля 2023</span>
-                <h2 class="news__header__title">
-                  Будущим жителям будет доступен ещё один мост
-                </h2>
-              </header>
-            </a>
+            <p class="documents__article__text">Политика в области обработки и защиты персональных данных ОАО Мосреалстрой</p>
+
+            <footer class="documents__article__footer">
+              <a href="#" class="documents__article__link">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 11.5V17.5L11 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 17.5L7 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5V15.5C22 20.5 20 22.5 15 22.5H9C4 22.5 2 20.5 2 15.5V9.5C2 4.5 4 2.5 9 2.5H14" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5H18C15 10.5 14 9.5 14 6.5V2.5L22 10.5Z" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Скачать</span>
+                  
+              </a>
+            </footer>
+
           </article>
-        </div>
-      </section>
-    </div>
+        </li>
+        <li class="documents__item">
+          <article class="documents__article article">
+
+            <header class="documents__article__header">
+              <h4 class="documents__article__title">Документы</h4>
+            </header>
+
+            <p class="documents__article__text">Политика в области обработки и защиты персональных данных ОАО Мосреалстрой</p>
+
+            <footer class="documents__article__footer">
+              <a href="#" class="documents__article__link">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 11.5V17.5L11 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 17.5L7 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5V15.5C22 20.5 20 22.5 15 22.5H9C4 22.5 2 20.5 2 15.5V9.5C2 4.5 4 2.5 9 2.5H14" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5H18C15 10.5 14 9.5 14 6.5V2.5L22 10.5Z" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Скачать</span>
+                  
+              </a>
+            </footer>
+
+          </article>
+        </li>
+        <li class="documents__item">
+          <article class="documents__article article">
+
+            <header class="documents__article__header">
+              <h4 class="documents__article__title">Документы</h4>
+            </header>
+
+            <p class="documents__article__text">Политика в области обработки и защиты персональных данных ОАО Мосреалстрой</p>
+
+            <footer class="documents__article__footer">
+              <a href="#" class="documents__article__link">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 11.5V17.5L11 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 17.5L7 15.5" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5V15.5C22 20.5 20 22.5 15 22.5H9C4 22.5 2 20.5 2 15.5V9.5C2 4.5 4 2.5 9 2.5H14" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 10.5H18C15 10.5 14 9.5 14 6.5V2.5L22 10.5Z" stroke="#6843F4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Скачать</span>
+                  
+              </a>
+            </footer>
+
+          </article>
+        </li>
+
+      </ul>
+    </section>
 
     <!-- mobile/tablet only -->
     <div class="main_catalogue-menu">
@@ -379,7 +462,7 @@
         <li class="menu-bottom__item">
           <a href="catalogue.html" class="menu-bottom__item-link">
             <img class="footer_nav-menu__svg footer_nav-menu__appartments"
-              src="assets/img/icons/nav_menu_apartments_off.svg" alt="" >
+              src="assets/img/icons/nav_menu_apartments_off.svg" alt="" />
             Квартиры
           </a>
         </li>
@@ -387,7 +470,7 @@
         <li class="menu-bottom__item">
           <a href="catalogue-mortgage.html" class="menu-bottom__item-link">
             <img class="footer_nav-menu__svg footer_nav-menu__mortgage" src="assets/img/icons/nav_menu_mortgage_off.svg"
-              alt="" >
+              alt="" />
             Ипотека
           </a>
         </li>
@@ -395,7 +478,7 @@
         <li class="menu-bottom__item">
           <a href="catalogue-favorite.html" class="menu-bottom__item-link">
             <img class="footer_nav-menu__svg footer_nav-menu__favorite" src="assets/img/icons/nav_menu_favorite_off.svg"
-              alt="" >
+              alt="" />
             Избранное
           </a>
         </li>
@@ -403,7 +486,7 @@
         <li class="menu-bottom__item">
           <label for="body__is-nav-menu-visible-checkbox" class="menu-bottom__item-link menu-bottom__item-link_menu">
             <img class="footer_nav-menu__svg footer_nav-menu__menu" src="assets/img/icons/nav_menu_menu_off.svg"
-              alt="" >
+              alt="" />
             Меню
           </label>
         </li>
@@ -519,7 +602,7 @@
           </a>
 
           <div class="info-container__link__text-input-wrapper">
-            <input class="info-container__link__text-input" type="text">
+            <input class="info-container__link__text-input" type="text" />
 
             <a href="#" class="info-container__link__text-input__link">
               <svg class="info-container__link__text-input__svg" width="25" height="25" viewBox="0 0 25 25" fill="none"

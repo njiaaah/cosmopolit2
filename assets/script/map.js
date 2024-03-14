@@ -8,7 +8,7 @@ let mark_home = [55.754618, 37.524067];
 function init() {
   let map = new ymaps.Map('map', {
     center: center,
-    zoom: 17,
+    zoom: 16,
     controls: ['zoomControl']
   }, {
     zoomControlSize: 'auto'
