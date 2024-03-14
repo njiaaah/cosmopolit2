@@ -5960,6 +5960,7 @@ body .header_dark-green {
 .section-achivements__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
 }
 .section-main-office__title {
   width: var(--content-width);
@@ -5986,7 +5987,9 @@ body .header_dark-green {
   width: 486px;
   height: 486px;
 
-
+}
+.section-achivements__item {
+  width: 100%;
 }
 
 
