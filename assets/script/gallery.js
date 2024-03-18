@@ -6,7 +6,7 @@ const gallerySwiper001 = new Swiper('.gallery__swiper-001', {
         type: 'bullets',
         clickable: true
       },
-      spaceBetween: '8'
+      spaceBetween: '2'
   });
 const gallerySwiper002 = new Swiper('.gallery__swiper-002', {
     direction: 'horizontal',
@@ -16,7 +16,7 @@ const gallerySwiper002 = new Swiper('.gallery__swiper-002', {
         type: 'bullets',
         clickable: true
       },
-      spaceBetween: '8'
+      spaceBetween: '2'
   });
 const gallerySwiper003 = new Swiper('.gallery__swiper-003', {
     direction: 'horizontal',
@@ -26,5 +26,5 @@ const gallerySwiper003 = new Swiper('.gallery__swiper-003', {
         type: 'bullets',
         clickable: true
       },
-      spaceBetween: '8'
+      spaceBetween: '2'
   });
