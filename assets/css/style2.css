@@ -1,0 +1,524 @@
+.main__progress {
+  margin-bottom: 60px;
+}
+.promo__title {
+  color: var(--clr-primary-violet);
+  text-align: left;
+}
+.main__promo .swiper-slide {
+  width: 250px;
+  height: 332px;
+}
+.main__promo {
+  margin-bottom: 4rem;
+}
+.promo__article {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--clr-primary-violet);
+  padding: 43px 27px 48px 16px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.promo__article__header__text { 
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.5px;
+  color: var(--clr-primary-green);
+  margin-bottom: 8px;
+  max-height: 22.5px;
+  overflow: clip;
+}
+.promo__article__heading {
+  font-family: Unbounded;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  margin-bottom: 24px;
+  max-height: 50px;
+  max-width: 12ch;
+  overflow: clip;
+  text-transform: uppercase;
+}
+.promo__article__text {
+  font-family: Cousine;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  max-height: 68px;
+  overflow: clip;
+}
+.promo__swiper-pagination {
+  outline: 1px solid red;
+}
+.promo__article__button {
+  margin-top: auto;
+  background-color: var(--clr-primary-violet);
+  color: var(--clr-grayscale-000);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.13px;
+  letter-spacing: 0.02em;
+  border: 1px solid var(--clr-grayscale-000);
+}
+.promo__article_featured {
+  background-color: var(--clr-primary-violet);
+  color: var(--clr-grayscale-000);
+}
+.promo__article_featured .promo__article__header__text {
+  color: var(--clr-primary-beidge);
+}
+.calc {
+  margin-bottom: 24px;
+}
+.mortgage__text__paragraph {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  color: var(--clr-primary-violet);
+}
+.benefits__swiper .swiper-slide {
+  width: 256px;
+  height: 360px;
+}
+.benefits__article {
+  background-color: var(--clr-primary-violet);
+  width: 256px;
+  height: 360px;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  cursor: grab;
+}
+.benefits__article:active {
+  cursor: grabbing;
+}
+.benefits__heading {
+  font-family: Unbounded;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  max-width: 5ch;
+  text-transform: uppercase;
+  color: var(--clr-grayscale-000);
+}
+
+.benefits__mask-container {
+  position: relative;
+  width: 224px;
+  height: 224px;
+}
+.benefits__masked-image {
+  position: absolute;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 210px;
+      object-fit: cover; 
+      object-position: 50% 50%;
+      mask: url(#masked-rectangles);
+}
+.benefits__masked-rectangles__rect {
+  transform-origin: 50% 50%;
+  transform:  translate(27px, 32px) rotate(-23deg);
+  -webkit-transform:  translate(27px, 32px) rotate(-23deg);
+  -moz-transform:  translate(27px, 32px) rotate(-23deg);
+  -ms-transform:  translate(27px, 32px) rotate(-23deg);
+  -o-transform:  translate(27px, 32px) rotate(-23deg);
+}
+.benefits__masked-rectangles__rect-2 {
+  transform: translate(27px, 98px) rotate(-23deg);
+  -webkit-transform: translate(27px, 98px) rotate(-23deg);
+  -moz-transform: translate(27px, 98px) rotate(-23deg);
+  -ms-transform: translate(27px, 98px) rotate(-23deg);
+  -o-transform: translate(27px, 98px) rotate(-23deg);
+}
+.gallery__swiper-pagination_promo {
+  bottom: -36px !important;
+  position: absolute;
+  width: fit-content !important;
+  justify-content: flex-start;
+  display: none;
+}
+.swiper-pagination .swiper-pagination-bullet{
+  margin: 0 2px;
+  width: 7px;
+  height: 7px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  background-color: var(--clr-grayscale-400) !important ;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--clr-primary-violet) !important;
+}
+.benefits__title {
+  text-align: left;
+  margin-bottom: 15px;
+}
+.main__benefits {
+  margin-bottom: 60px;
+}
+.rare-formats__title {
+  margin-bottom: 21px;
+  text-align: center;
+}
+.header-switcher__checkbox:checked + label {
+  color: var(--clr-primary-violet) !important;
+}
+.header-switcher__item::after  {
+  height: 0px;
+}
+
+.rare-formats__article__image-wrapper {
+  width: 100%;
+  height: 313px;
+  margin: 0 auto;
+  object-fit:cover;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  margin-bottom: 40px;
+  display: block;
+  overflow: clip;
+
+}
+.rare-formats__article__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.rare-formats__article__image-1 {
+  object-position: 44% 100%;
+  transform: scale(1.25) translate(0, -20px);
+  -webkit-transform: scale(1.25) translate(0, -20px);
+  -moz-transform: scale(1.25) translate(0, -20px);
+  -ms-transform: scale(1.25) translate(0, -20px);
+  -o-transform: scale(1.25) translate(0, -20px);
+}
+
+.main__benefits__content-wrapper,
+.main__rare-formats__content-wrapper {
+  width: calc(100% - 3rem);
+}
+.rare-formats__article__text {
+  font-family: Cousine;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: center;
+  min-height: 87px;
+}
+.rare-formats__article {
+  opacity: 0;
+  transition: opacity 300ms linear 100ms;
+  -webkit-transition: opacity 300ms linear 100ms;
+  -moz-transition: opacity 300ms linear 100ms;
+  -ms-transition: opacity 300ms linear 100ms;
+  -o-transition: opacity 300ms linear 100ms;
+}
+.rare-formats__article-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.rare-formats__article-item {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.rare-formats__header-switcher:has(#header-switcher__checkbox_rare-formats-001:checked) ~ .rare-formats__article-list .rare-formats__article-item:nth-of-type(1) .rare-formats__article,
+.rare-formats__header-switcher:has(#header-switcher__checkbox_rare-formats-002:checked) ~ .rare-formats__article-list .rare-formats__article-item:nth-of-type(2) .rare-formats__article,
+.rare-formats__header-switcher:has(#header-switcher__checkbox_rare-formats-003:checked) ~ .rare-formats__article-list .rare-formats__article-item:nth-of-type(3) .rare-formats__article{
+ opacity: 1;
+}
+.rare-formats__article__button {
+  background-color: var(--clr-primary-violet);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 13px 24px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  color: var(--clr-grayscale-000);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.13px;
+  letter-spacing: 0.02em;
+}
+.main__rare-formats {
+  margin-bottom: 60px;
+}
+.rare-formats-gradient-1 {
+  opacity: 0;
+}
+.refinement__article-main__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: 80% 50%;
+  height: 412px;
+}
+.refinement__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.refinement__article {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  overflow: clip;
+  display: grid;
+  border: 1px solid var(--clr-primary-violet);
+  padding: 14px 16px;
+}
+.refinement__article-main {
+  border: none;
+  padding: 0px;
+  display: grid;
+}
+.refinement__article__text ,
+.refinement__article-main__text {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 2;
+}
+.refinement__article__image ,
+.refinement__article-main__image {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 1;
+  margin-left: auto;
+}
+.refinement__article__image {
+  width: 140.9px;
+  height: 117.11px;
+}
+.refinement__article__text {
+  font-family: Unbounded;
+  font-size: 17.76px;
+  font-weight: 400;
+  line-height: 20.42px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--clr-primary-violet);
+  text-transform: uppercase;
+  max-width: 5ch;
+}
+.refinement__article-main__text {
+  color: var(--clr-grayscale-000);
+  font-family: Unbounded;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.32px;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 32px 16px;
+  max-width: 18ch;
+}
+.main__refinement {
+  margin-bottom: 60px;
+}
+.refinement__article__image {
+  margin-top: auto;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  .gallery__swiper-pagination_promo {
+    display: block;
+  }
+  .mortgage__text__paragraph {
+    color: var(--clr-grayscale-800);
+  }
+  .mortgage__text__paragraph:has(+.mortgage__text__paragraph) {
+    margin-bottom: 20px;
+  }
+  .benefits__title {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  .rare-formats__article__image-1 {
+    object-position: 50% 50%;
+    transform: scale(2) translate(0px, -50px);
+    -webkit-transform: scale(2) translate(0px, -50px);
+    -moz-transform: scale(2) translate(0px, -50px);
+    -ms-transform: scale(2) translate(0px, -50px);
+    -o-transform: scale(2) translate(0px, -50px);
+}
+  .rare-formats__article {
+    width: 385px;
+    margin: 0 auto;
+  }
+  .rare-formats__header-switcher {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .main__rare-formats {
+    margin-bottom: 100px;
+  }
+  .main__refinement {
+    margin-bottom: 100px;
+  }
+  .rare-formats-gradient-1 {
+    opacity: 1;
+    width: 980.86px;
+    height: 980.86px;
+    left: 170.68px;
+    top: -160px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(104, 67, 244, 0.8) 11.5%, rgba(217, 217, 217, 0) 100%);
+  }
+  .refinement__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .refinement__item:nth-of-type(1) {
+    grid-column: 1/3;
+  }
+  .refinement__article__image {
+    height: 133.88px;
+    width: 133.88px;
+  }
+  .refinement__article-main__text {
+    font-size: 32px;
+    font-size: clamp(1.625rem, 0.5455rem + 1.8182vw, 2rem);
+    line-height: 35.2px;
+    letter-spacing: 0.02em;
+  }
+  .refinement__article__text {
+    font-size: 20px;
+    font-size: 16px;
+    font-size: clamp(1rem, 0.2803rem + 1.2121vw, 1.25rem);
+    line-height: 23px;
+    letter-spacing: 0.02em;
+  }
+
+
+}
+
+@media only screen and (min-width: 950px) {
+
+  .mortgage__text__paragraph {
+    width: 920px;
+    color: var(--clr-primary-violet);
+  }
+  .mortgage__text {
+    padding: 60px 0;
+  }
+  .mortgage__text__paragraph {
+    color: var(--clr-primary-violet);
+  }
+  .callback__background-img {
+    left: -23vw;
+  }
+  .rare-formats__title {
+    margin-bottom: 21px;
+    text-align: left;
+  }
+  .rare-formats__header-switcher {
+    width: 100%;
+  }
+  .main__rare-formats__content-wrapper {
+    width: 926px;
+  }
+  .rare-formats__article {
+    display: flex;
+    width: 100%;
+    gap: 94px;
+    height: 313px;
+  }
+  .rare-formats__article__image-wrapper {
+    min-width: 448px ;
+    width: 448px ;
+  }
+  .rare-formats__article__content {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .rare-formats__article__text {
+    text-align: left;
+  }
+  .rare-formats__article__button {
+    margin-left: 0px;
+  }
+  .main__rare-formats {
+    margin-bottom: 120px;
+  }
+  .rare-formats-gradient-1 {
+    opacity: 0;
+  }
+  .main__refinement {
+    margin-bottom: 120px;
+  }
+  .refinement__article__image {
+    width: 132.39px;
+    height: 131.88px;
+  }
+  .refinement__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+  .refinement__item:nth-of-type(1) {
+    grid-row: 1/3;
+  }
+  .refinement__item:nth-of-type(4) {
+    grid-column: 3/4;
+  }
+  .refinement__article {
+    height: 100%;
+  }
+
+
+}
+@media only screen and (min-width: 1200px) {
+  .benefits__article {
+    cursor: default;
+  }
+  .benefits__article:active {
+    cursor: default;
+  }
+}
+
+@media only screen and (min-width: 2020px) {
+  /* hide plant at wider screens */
+  /* on uglovaty */
+    .callback__background-img {
+      opacity: 0;
+    }
+}

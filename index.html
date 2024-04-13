@@ -23,11 +23,14 @@
   <link rel="stylesheet" href="assets/css/sliders.css" >
   <link rel="stylesheet" href="assets/css/calc.css" >
   <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="assets/css/style2.css" >
   <script src="assets/script/catalogue.js" defer></script>
   <script src="assets/script/tower-plan.js" defer></script>
   <script src="assets/script/lot.js" defer></script>
   <script src="assets/script/view-change.js" defer></script>
   <script src="assets/script/back-to-top.js" defer></script>
+  <script src="assets/script/benefits.js" defer></script>
+  <script src="assets/script/promo.js" defer></script>
   <script src="assets/script/gallery.js" defer></script>
   <script src="assets/script/cookie.js" defer></script>
   <script src="assets/script/index.js" defer></script>
@@ -428,8 +431,9 @@
     </section>
 
     <!-- location -->
-
     <section class="main__location main__content-wrap" id="location">
+
+
 
       <div class="section__cosmetic-gradient-wrapper">
 
@@ -549,13 +553,267 @@
 
         </div>
 
+        <div class="main__location__map">
+
+              {map will be here}
+
+        </div>
+
       </div>
+
+
 
       
 
     </section>
 
+    <!-- project's benefits -->
+    <section class="main__benefits main__content-wrap" id="benefits">
+
+      <div class="content-wrapper main__benefits__content-wrapper">
+        <h2 class="title benefits__title">Преимущества проекта</h2>
+
+        <div class="benefits__swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <article class="benefits__article">
+                <h3 class="benefits__heading">Одна очередь строительства</h3>
+  
+                <div class="benefits__mask-container">
+                  <svg width="224" height="224">
+   
+                    <mask class="benefits__masked-rectangles" id="masked-rectangles">
+  
+                      <rect class="benefits__masked-rectangles__rect" x="0" y="0" width="224" height="80" fill="white" rx="44" ry="44"/>
+  
+                      <rect class="benefits__masked-rectangles__rect benefits__masked-rectangles__rect-2" x="0" y="0" width="224" height="80" fill="white" rx="44" ry="44"/>
+                    </mask>
+                    
+                  </svg>
+                 <img class="benefits__masked-image" src="assets/img/index/benefits/1.webp" alt="">
+  
+  
+                </div>
+  
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="benefits__article">
+                <h3 class="benefits__heading">Престижный ПРЕСНЕНСКИЙ
+                  район</h3>
+  
+                <div class="benefits__mask-container">
+                  <svg width="224" height="224">
+   
+                    <mask class="benefits__masked-rectangles" id="masked-rectangles">
+  
+                      <rect class="benefits__masked-rectangles__rect" x="0" y="0" width="224" height="80" fill="white" rx="44" ry="44"/>
+  
+                      <rect class="benefits__masked-rectangles__rect benefits__masked-rectangles__rect-2" x="0" y="0" width="224" height="80" fill="white" rx="44" ry="44"/>
+                    </mask>
+                    
+                  </svg>
+                 <img class="benefits__masked-image" src="assets/img/index/benefits/2.webp" alt="">
+  
+  
+                </div>
+  
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="benefits__article">
+                <h3 class="benefits__heading">ОТЛИЧНАЯ транспортная доступность</h3>
+  
+                <div class="benefits__mask-container">
+                  <svg width="224" height="224">
+   
+                    <mask class="benefits__masked-rectangles" id="masked-rectangles">
+  
+                      <rect class="benefits__masked-rectangles__rect" x="0" y="0" width="224" height="80" fill="white" rx="44" ry="44"/>
+  
+                      <rect class="benefits__masked-rectangles__rect benefits__masked-rectangles__rect-2" x="0" y="0" width="224" height="80" fill="white" rx="44" ry="44"/>
+                    </mask>
+                    
+                  </svg>
+                 <img class="benefits__masked-image" src="assets/img/index/benefits/3.webp" alt="">
+  
+  
+                </div>
+  
+              </article>
+            </li>
+            <li class="swiper-slide">
+              <article class="benefits__article">
+                <h3 class="benefits__heading">Центр ДЕЛОВОЙ ЖИЗНИ</h3>
+  
+                <div class="benefits__mask-container">
+                  <svg width="224" height="224">
+   
+                    <mask class="benefits__masked-rectangles" id="masked-rectangles">
+  
+                      <rect class="benefits__masked-rectangles__rect" x="0" y="0" width="224" height="80" fill="white" rx="44" ry="44"/>
+  
+                      <rect class="benefits__masked-rectangles__rect benefits__masked-rectangles__rect-2" x="0" y="0" width="224" height="80" fill="white" rx="44" ry="44"/>
+                    </mask>
+                    
+                  </svg>
+                 <img class="benefits__masked-image" src="assets/img/index/benefits/4.webp" alt="">
+  
+  
+                </div>
+  
+              </article>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <!-- rare formats -->
+    <section class="main__rare-formats main__content-wrap" id="benefits">
+
+      <div class="content-wrapper main__rare-formats__content-wrapper">
+
+        <div class="section__cosmetic-gradient-wrapper">
+
+          <div class="cosmetic-gradient rare-formats-gradient-1"></div>
+  
+        </div>
+
+
+        <h2 class="title rare-formats__title">Редкие форматы</h2>
+
+        <header class="rare-formats__header-switcher gallery__header-switcher ">
+
+          <ul class="header-switcher__list scrollbar-hidden rare-formats__header-switcher">
+            
+            <li class="header-switcher__item">
+              <input hidden checked type="radio" class="header-switcher__checkbox" name="rare-formats__header-switcher__radio" id="header-switcher__checkbox_rare-formats-001">
+              <label for="header-switcher__checkbox_rare-formats-001">СТУДИИ</label>
+            </li>
+
+            <li class="header-switcher__item">
+              <input hidden type="radio" class="header-switcher__checkbox" name="rare-formats__header-switcher__radio" id="header-switcher__checkbox_rare-formats-002">
+              <label for="header-switcher__checkbox_rare-formats-002">КВАРТИРЫ С МАСТЕР-СПАЛЬНЯМИ</label>
+            </li>
+
+            <li class="header-switcher__item">
+              <input hidden type="radio" class="header-switcher__checkbox" name="rare-formats__header-switcher__radio" id="header-switcher__checkbox_rare-formats-003">
+              <label for="header-switcher__checkbox_rare-formats-003">ПЕНТХАУСЫ</label>
+            </li>
+          </ul>
+
+        </header>
+
+        <ul class="rare-formats__article-list">
+
+          <li class="rare-formats__article-item">
+            <article class="rare-formats__article">
+
+              <div class="rare-formats__article__image-wrapper">
+                <img class="rare-formats__article__image rare-formats__article__image-1" src="assets/img/index/rare/rare-01.webp" alt="">
+              </div>
+
+              <div class="rare-formats__article__content">
+                <p class="rare-formats__article__text">В жилом комплексе «Шелепиха» спроектированы функциональные квартиры-студии.</p>
+
+              <a class="rare-formats__article__button button" href="">Выбрать квартиру</a>              
+              </div>
+              
+            </article>
+          </li>
+
+          <li class="rare-formats__article-item">
+            <article class="rare-formats__article">
+              <div class="rare-formats__article__image-wrapper">
+                <img class="rare-formats__article__image rare-formats__article__image-3" src="assets/img/index/rare/rare-02.webp" alt="">
+              </div>
+
+              <div class="rare-formats__article__content">
+              <p class="rare-formats__article__text">В жилом комплексе «Шелепиха» также представлены квартиры с мастер-спальнями, имеющими свой собственный санузел и гардеробную комнату.</p>
+
+              <a class="rare-formats__article__button button" href="">Выбрать квартиру</a>              
+              </div>
+            </article>
+          </li>
+
+          <li class="rare-formats__article-item">
+            <article class="rare-formats__article">
+
+              <div class="rare-formats__article__image-wrapper">
+                <img class="rare-formats__article__image rare-formats__article__image-2" src="assets/img/index/rare/rare-03.webp" alt="">
+              </div>
+              <div class="rare-formats__article__content">
+              <p class="rare-formats__article__text">В жилом комплексе «Шелепиха» также представлены шикарные пентхаусы..</p>
+
+              <a class="rare-formats__article__button button" href="">Выбрать квартиру</a>              
+              </div>
+            </article>
+          </li>
+
+        </ul>
+
+
+
+      </div>
+
+
+    </section>
  
+    <!-- refinement -->
+    <section class="main__refinement main__content-wrap" id="benefits">
+
+      <div class="content-wrapper main__refinement__content-wrapper">
+
+
+
+
+        <h2 class="title refinement__title">Благоустройство</h2>
+
+
+        <ul class="refinement__list">
+          <li class="refinement__item">
+            <article class="refinement__article refinement__article-main">
+              <p class="refinement__article-main__text">КОНЦЕПЦИЯ внутреннего приватного двора от БЮРО UTRO</p>
+              <img class="refinement__article-main__image" src="assets/img/index/refinement/Blago_1.png" alt="">
+            </article>
+          </li>
+          <li class="refinement__item">
+            <article class="refinement__article">
+              <p class="refinement__article__text">Outdoor офис</p>
+              <img class="refinement__article__image" src="assets/img/index/refinement/Blago_21.webp" alt="">
+            </article>
+          </li>
+          <li class="refinement__item">
+            <article class="refinement__article">
+              <p class="refinement__article__text">WELLCOME ЗОНА</p>
+              <img class="refinement__article__image" src="assets/img/index/refinement/Blago_22.webp" alt="">
+            </article>
+          </li>
+          <li class="refinement__item">
+            <article class="refinement__article">
+              <p class="refinement__article__text">СПОРТИВНАЯ ПЛОЩАДКА </p>
+              <img class="refinement__article__image" src="assets/img/index/refinement/Blago_23.webp" alt="">
+            </article>
+          </li>
+          <li class="refinement__item">
+            <article class="refinement__article">
+              <p class="refinement__article__text">ДЕТСКОЕ ПРОСТРАНСТво</p>
+              <img class="refinement__article__image" src="assets/img/index/refinement/Blago_24.webp" alt="">
+            </article>
+          </li>
+        </ul>
+
+
+
+
+      </div>
+
+
+    </section>
     <!-- desktop only tower view -->
     <div class="main__title-and-tower-switch-wrap title-wrapper">
       <h2 class="title main__title-and-tower-switch-wrap__title main__title-and-tower-switch-wrap__title-index">Квартиры</h2>
@@ -812,10 +1070,12 @@
     <!-- catalog content -->
     <section class="main__content-wrap content-wrapper main__filter-result-wrapper">
 
+      <img class="callback__background-img" src="assets/img/index/leaves-002-modified.webp" alt="">
+
       <div class="section__cosmetic-gradient-wrapper">
 
         <div class="cosmetic-gradient filter-gradient-1"></div>
-        <div class="cosmetic-gradient filter-gradient-2"></div>
+        <!-- <div class="cosmetic-gradient filter-gradient-2"></div> -->
 
       </div>
 
@@ -1327,18 +1587,18 @@
       </div>
     </div>
 
-  <!-- morgage -->
+    <!-- mortgage -->
 
     <section class="main__content-wrap main__mortgage main_content content-wrapper" id="mortgage">
 
       <div class="section__cosmetic-gradient-wrapper">
 
-        <div class="cosmetic-gradient mortgage-gradient-1"></div>
+        <!-- <div class="cosmetic-gradient mortgage-gradient-1"></div> -->
 
       </div>
 
 
-      <h1 class="title title_mortgage">Программы ипотеки</h1>
+      <h2 class="title title_mortgage">Программы ипотеки</h2>
 
       <div class="calc">
         <div class="calc-wrap">
@@ -1515,7 +1775,17 @@
           </div>
         </div>
       </div>
+
+      <div class="mortgage__text">
+        <p class="mortgage__text__paragraph">
+          Квартиру в жилом комплексе «Шелепиха» можно приобрести за безналичный расчет. Для этого достаточно обратиться в офис продаж и выбрать интересующую вас квартиру.
+        </p>
+        <p class="mortgage__text__paragraph">
+          Необходимо время для принятия решения? Тогда вы можете забронировать понравившийся вариант, чтобы спокойно все взвесить. Срок бронирования — до 5 рабочих дней.
+        </p>
+      </div>
     </section>
+
     <!-- gallery -->
     <section class="main__gallery main__content-wrap content-wrapper" id="gallery">
 
@@ -1630,12 +1900,10 @@
     </section>
 
     <!-- callback form -->
-
     <section class="main__callback main__content-wrap">
 
       <div class="callback-wrapp content-wrapper">
 
-        <img class="callback__background-img" src="assets/img/index/leaves-002.webp" alt="">
         <img class="callback__towers-img" src="assets/img/index/callback-towers.webp" alt="">
 
         <h3 class="callback__title callback__title-mobile">ОСТАЛИСЬ ВОПРОСЫ? </h3>
@@ -1746,6 +2014,132 @@
 
       <button class="button button-outline progress__button">Показать другие месяцы</button>
 		</section>
+
+    <!-- promo -->
+    <section class="main__promo main__content-wrap content-wrapper" id="promo">
+
+      <h2 class="title promo__title">Акции</h2>
+
+      <div class="promo__swiper">
+
+        <ul class="swiper-wrapper">
+
+          <li class="swiper-slide">
+
+            <article class="promo__article">
+              <header class="promo__article__header">
+                <p class="promo__article__header__text">2 февраля 2023</p>
+              </header>
+
+              <h3 class="promo__article__heading">Выгода <br> до 2 млн руб.</h3>
+
+              <p class="promo__article__text">
+                Октябрь - пора вставить в этот параграфф неприлично-длинный текст. А вы знали что у кентавра две(2) грудные клетки?
+              </p>
+
+              <button class="promo__article__button button">Узнать подробнее</button>
+            </article>
+
+          </li>
+
+          <li class="swiper-slide">
+
+            <article class="promo__article promo__article_featured">
+              <header class="promo__article__header">
+                <p class="promo__article__header__text">2 февраля 2023</p>
+              </header>
+
+              <h3 class="promo__article__heading">Выгода до 2 млн руб.</h3>
+
+              <p class="promo__article__text">
+                Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей
+              </p>
+
+              <button class="promo__article__button button">Узнать подробнее</button>
+            </article>
+
+          </li>
+
+          <li class="swiper-slide">
+
+            <article class="promo__article">
+              <header class="promo__article__header">
+                <p class="promo__article__header__text">2 февраля 2023</p>
+              </header>
+
+              <h3 class="promo__article__heading">Выгода до 2 млн руб.</h3>
+
+              <p class="promo__article__text">
+                Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей
+              </p>
+
+              <button class="promo__article__button button">Узнать подробнее</button>
+            </article>
+
+          </li>
+
+          <li class="swiper-slide">
+
+            <article class="promo__article">
+              <header class="promo__article__header">
+                <p class="promo__article__header__text">2 февраля 2023</p>
+              </header>
+
+              <h3 class="promo__article__heading">Выгода до 2 млн руб.</h3>
+
+              <p class="promo__article__text">
+                Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей
+              </p>
+
+              <button class="promo__article__button button">Узнать подробнее</button>
+            </article>
+
+          </li>
+
+          <li class="swiper-slide">
+
+            <article class="promo__article">
+              <header class="promo__article__header">
+                <p class="promo__article__header__text">2 февраля 2023</p>
+              </header>
+
+              <h3 class="promo__article__heading">Выгода до 2 млн руб.</h3>
+
+              <p class="promo__article__text">
+                Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей
+              </p>
+
+              <button class="promo__article__button button">Узнать подробнее</button>
+            </article>
+
+          </li>
+
+          <li class="swiper-slide">
+
+            <article class="promo__article">
+              <header class="promo__article__header">
+                <p class="promo__article__header__text">2 февраля 2023</p>
+              </header>
+
+              <h3 class="promo__article__heading">Выгода до 2 млн руб.</h3>
+
+              <p class="promo__article__text">
+                Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей
+              </p>
+
+              <button class="promo__article__button button">Узнать подробнее</button>
+            </article>
+
+          </li>
+
+        </ul>
+
+        <div class="swiper-pagination gallery__swiper-pagination_promo "></div>
+
+
+      </div>
+
+    </section>
 
     <!-- mobile/tablet only -->
     <div class="main_catalogue-menu">
@@ -2009,6 +2403,7 @@
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>
