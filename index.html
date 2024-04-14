@@ -8,15 +8,15 @@
   <base href="." >
 
   <!-- lib -->
-  <link rel="stylesheet" href="assets/lib/nouislider.min.css" defer >
+  <link rel="stylesheet" href="assets/lib/nouislider.min.css" >
   <script src="assets/lib/nouislider.min.js"></script>
   <script src="assets/lib/jquery.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" defer >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- defaults -->
-  <link rel="stylesheet" href="assets/css/normalize.css" defer>
-  <link rel="stylesheet" href="assets/css/default.css" defer>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/default.css">
   <script src="assets/script/sliders.js" defer></script>
 
   <!-- project -->
@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="assets/css/calc.css" >
   <link rel="stylesheet" href="style.css" >
   <link rel="stylesheet" href="assets/css/style2.css" >
+  <link rel="stylesheet" href="assets/css/indexmap.css" >
+  <!-- <link rel="stylesheet" href="assets/css/indexmap.css"> -->
   <script src="assets/script/catalogue.js" defer></script>
   <script src="assets/script/tower-plan.js" defer></script>
   <script src="assets/script/lot.js" defer></script>
@@ -36,6 +38,8 @@
   <script src="assets/script/index.js" defer></script>
   <script src="assets/script/calc.js" defer></script>
   <script src="assets/script/bottom-menu.js" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="assets/script/indexmap.js" defer></script>
 </head>
 
 <body>
@@ -553,9 +557,9 @@
 
         </div>
 
-        <div class="main__location__map">
+        <div class="main__location__map" id="map">
 
-              {map will be here}
+              
 
         </div>
 
@@ -570,7 +574,16 @@
     <!-- project's benefits -->
     <section class="main__benefits main__content-wrap" id="benefits">
 
+
+
       <div class="content-wrapper main__benefits__content-wrapper">
+
+        <div class="section__benefits-gradient-wrapper">
+
+          <div class="cosmetic-gradient benefits-gradient-1"></div>
+  
+        </div>
+
         <h2 class="title benefits__title">Преимущества проекта</h2>
 
         <div class="benefits__swiper">
@@ -605,12 +618,7 @@
                 <div class="benefits__mask-container">
                   <svg width="224" height="224">
    
-                    <mask class="benefits__masked-rectangles" id="masked-rectangles">
-  
-                      <rect class="benefits__masked-rectangles__rect" x="0" y="0" width="224" height="80" fill="white" rx="44" ry="44"/>
-  
-                      <rect class="benefits__masked-rectangles__rect benefits__masked-rectangles__rect-2" x="0" y="0" width="224" height="80" fill="white" rx="44" ry="44"/>
-                    </mask>
+
                     
                   </svg>
                  <img class="benefits__masked-image" src="assets/img/index/benefits/2.webp" alt="">
@@ -626,13 +634,7 @@
   
                 <div class="benefits__mask-container">
                   <svg width="224" height="224">
-   
-                    <mask class="benefits__masked-rectangles" id="masked-rectangles">
-  
-                      <rect class="benefits__masked-rectangles__rect" x="0" y="0" width="224" height="80" fill="white" rx="44" ry="44"/>
-  
-                      <rect class="benefits__masked-rectangles__rect benefits__masked-rectangles__rect-2" x="0" y="0" width="224" height="80" fill="white" rx="44" ry="44"/>
-                    </mask>
+
                     
                   </svg>
                  <img class="benefits__masked-image" src="assets/img/index/benefits/3.webp" alt="">
@@ -647,16 +649,7 @@
                 <h3 class="benefits__heading">Центр ДЕЛОВОЙ ЖИЗНИ</h3>
   
                 <div class="benefits__mask-container">
-                  <svg width="224" height="224">
-   
-                    <mask class="benefits__masked-rectangles" id="masked-rectangles">
-  
-                      <rect class="benefits__masked-rectangles__rect" x="0" y="0" width="224" height="80" fill="white" rx="44" ry="44"/>
-  
-                      <rect class="benefits__masked-rectangles__rect benefits__masked-rectangles__rect-2" x="0" y="0" width="224" height="80" fill="white" rx="44" ry="44"/>
-                    </mask>
-                    
-                  </svg>
+
                  <img class="benefits__masked-image" src="assets/img/index/benefits/4.webp" alt="">
   
   
@@ -673,7 +666,7 @@
     </section>
 
     <!-- rare formats -->
-    <section class="main__rare-formats main__content-wrap" id="benefits">
+    <section class="main__rare-formats main__content-wrap" id="rareformats">
 
       <div class="content-wrapper main__rare-formats__content-wrapper">
 
@@ -712,6 +705,7 @@
 
           <li class="rare-formats__article-item">
             <article class="rare-formats__article">
+              <h2 hidden >Студии</h2>
 
               <div class="rare-formats__article__image-wrapper">
                 <img class="rare-formats__article__image rare-formats__article__image-1" src="assets/img/index/rare/rare-01.webp" alt="">
@@ -728,6 +722,7 @@
 
           <li class="rare-formats__article-item">
             <article class="rare-formats__article">
+              <h2 hidden >Квартиры с мастер-спальнями</h2>
               <div class="rare-formats__article__image-wrapper">
                 <img class="rare-formats__article__image rare-formats__article__image-3" src="assets/img/index/rare/rare-02.webp" alt="">
               </div>
@@ -742,6 +737,7 @@
 
           <li class="rare-formats__article-item">
             <article class="rare-formats__article">
+              <h2 hidden >пентхаусы</h2>
 
               <div class="rare-formats__article__image-wrapper">
                 <img class="rare-formats__article__image rare-formats__article__image-2" src="assets/img/index/rare/rare-03.webp" alt="">
@@ -764,7 +760,7 @@
     </section>
  
     <!-- refinement -->
-    <section class="main__refinement main__content-wrap" id="benefits">
+    <section class="main__refinement main__content-wrap" id="refinement">
 
       <div class="content-wrapper main__refinement__content-wrapper">
 
@@ -777,30 +773,35 @@
         <ul class="refinement__list">
           <li class="refinement__item">
             <article class="refinement__article refinement__article-main">
+              <h3 hidden>Внутренний двор</h3>
               <p class="refinement__article-main__text">КОНЦЕПЦИЯ внутреннего приватного двора от БЮРО UTRO</p>
               <img class="refinement__article-main__image" src="assets/img/index/refinement/Blago_1.png" alt="">
             </article>
           </li>
           <li class="refinement__item">
             <article class="refinement__article">
+              <h3 hidden>Outdoor офис</h3>
               <p class="refinement__article__text">Outdoor офис</p>
               <img class="refinement__article__image" src="assets/img/index/refinement/Blago_21.webp" alt="">
             </article>
           </li>
           <li class="refinement__item">
             <article class="refinement__article">
+              <h3 hidden>Welcome Зона</h3>
               <p class="refinement__article__text">WELLCOME ЗОНА</p>
               <img class="refinement__article__image" src="assets/img/index/refinement/Blago_22.webp" alt="">
             </article>
           </li>
           <li class="refinement__item">
             <article class="refinement__article">
+              <h3 hidden>Спортивная площадка</h3>
               <p class="refinement__article__text">СПОРТИВНАЯ ПЛОЩАДКА </p>
               <img class="refinement__article__image" src="assets/img/index/refinement/Blago_23.webp" alt="">
             </article>
           </li>
           <li class="refinement__item">
             <article class="refinement__article">
+              <h3 hidden>Детское пространство</h3>
               <p class="refinement__article__text">ДЕТСКОЕ ПРОСТРАНСТво</p>
               <img class="refinement__article__image" src="assets/img/index/refinement/Blago_24.webp" alt="">
             </article>
@@ -1834,7 +1835,6 @@
                 <img src="assets/img/gallery/gallery-001-001.webp" alt="">
               </li>
 
-              </li>
               <li class="swiper-slide gallery__swiper__img-wrap">
                 <img src="assets/img/gallery/gallery-001-001.webp" alt="">
               </li>

@@ -1,0 +1,45 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+
+		
+		{"type": "Feature", "id": 0, "geometry": {"type": "Point", "coordinates": [55.75625410183527,37.52231597088615]}, "properties": {"balloonContent": "Магазины",    "clusterCaption": "Магазины",    "hintContent": "Магазин", "iconCaption": "Магазин"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Shop.svg"}},
+		{"type": "Feature", "id": 1, "geometry": {"type": "Point", "coordinates": [55.758383698910045,37.52066373013297]}, "properties": {"balloonContent": "Кафе и рестораны", "clusterCaption": "Кафе и рестораны", "hintContent": "Кафе и рестораны", "iconCaption": "Кафе и рестораны"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Cafe.svg"}},
+		{"type": "Feature", "id": 2, "geometry": {"type": "Point", "coordinates": [55.756895413242795,37.527873507965005]}, "properties": {"balloonContent": "Салоны красоты", "clusterCaption": "Салоны красоты", "hintContent": "Салоны красоты", "iconCaption": "Салоны красоты"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Spa.svg"}},
+		{"type": "Feature", "id": 3, "geometry": {"type": "Point", "coordinates": [55.75344588527405,37.52274512432854]}, "properties": {"balloonContent": "Культура", "clusterCaption": "Культура", "hintContent": "Культура", "iconCaption": "Культура"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Culture.svg"}},
+
+        {"type": "Feature", "id": 13, "geometry": {"type": "Point", "coordinates": [55.75681071234312,37.52253054760733]}, "properties": {"balloonContent": "Парки", "clusterCaption": "Парки", "hintContent": "Парки", "iconCaption": "Парки"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Park.svg"}},
+		{"type": "Feature", "id": 14, "geometry": {"type": "Point", "coordinates": [55.757089014605505,37.518753997314356]}, "properties": {"balloonContent": "Парки", "clusterCaption": "Парки", "hintContent": "Парки", "iconCaption": "Парки"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Park.svg"}},
+		{"type": "Feature", "id": 15, "geometry": {"type": "Point", "coordinates": [55.75492304436041,37.52323865078728]}, "properties": {"balloonContent": "Парки", "clusterCaption": "Парки", "hintContent": "Парки", "iconCaption": "Парки"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Park.svg"}},
+		{"type": "Feature", "id": 16, "geometry": {"type": "Point", "coordinates": [55.759762311746066,37.5277662196044]}, "properties": {"balloonContent": "Парки", "clusterCaption": "Парки", "hintContent": "Парки", "iconCaption": "Парки"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Park.svg"}},
+			
+        {"type": "Feature", "id": 31, "geometry": {"type": "Point", "coordinates": [55.75534883645818,37.51518129490654]}, "properties": {"balloonContent": "Торговые центры", "clusterCaption": "Торговые центры", "hintContent": "Торговые центры", "iconCaption": "Торговые центры"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Supermarket.svg"}},
+		{"type": "Feature", "id": 32, "geometry": {"type": "Point", "coordinates": [55.75735748364804,37.51252054356377]}, "properties": {"balloonContent": "Торговые центры", "clusterCaption": "Торговые центры", "hintContent": "Торговые центры", "iconCaption": "Торговые центры"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Supermarket.svg"}},
+		
+        {"type": "Feature", "id": 20, "geometry": {"type": "Point", "coordinates": [55.754889011042785,37.53011583470147]}, "properties": {"balloonContent": "Спорт", "clusterCaption": "Спорт", "hintContent": "Спорт", "iconCaption": "Спорт"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Sport_map.svg"}},
+		{"type": "Feature", "id": 21, "geometry": {"type": "Point", "coordinates": [55.75929343081009,37.528055898178]}, "properties": {"balloonContent": "Спорт", "clusterCaption": "Спорт", "hintContent": "Спорт", "iconCaption": "Спорт"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Sport_map.svg"}},
+		{"type": "Feature", "id": 22, "geometry": {"type": "Point", "coordinates": [55.75675248036743,37.53543733738701]}, "properties": {"balloonContent": "Спорт", "clusterCaption": "Спорт", "hintContent": "Спорт", "iconCaption": "Спорт"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Sport_map.svg"}},
+
+		{"type": "Feature", "id": 41, "geometry": {"type": "Point", "coordinates": [55.75300124965552,37.52136110447684]}, "properties": {"balloonContent": "Медицина", "clusterCaption": "Медицина", "hintContent": "Медицина", "iconCaption": "Медицина"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Medicine_map.svg"}},
+	
+		{"type": "Feature", "id": 34, "geometry": {"type": "Point", "coordinates": [55.75454789682758,37.51956028608911]}, "properties": {"balloonContent": "Образование", "clusterCaption": "Образование", "hintContent": "Образование", "iconCaption": "Образование"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Education_map.svg"}},
+
+		{"type": "Feature", "id": 54, "geometry": {"type": "Point", "coordinates": []}, "properties": {"balloonContent": "ПОДРОБНЕЕ", "clusterCaption": "ПОДРОБНЕЕ", "hintContent": "ПОДРОБНЕЕ", "iconCaption": "ПОДРОБНЕЕ", "link": "https://yandex.ru"}, "options": {"iconLayout": "default#image", "iconImageHref": "assets/img/icons/map/Education_map.svg"}}
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    ]
+}
