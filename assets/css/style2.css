@@ -234,11 +234,11 @@
 }
 .rare-formats__article {
   opacity: 0;
-  transition: opacity 300ms linear 100ms;
-  -webkit-transition: opacity 300ms linear 100ms;
-  -moz-transition: opacity 300ms linear 100ms;
-  -ms-transition: opacity 300ms linear 100ms;
-  -o-transition: opacity 300ms linear 100ms;
+  transition: opacity 300ms ease-in-out;
+  -webkit-transition: opacity 300ms ease-in-out;
+  -moz-transition: opacity 300ms ease-in-out;
+  -ms-transition: opacity 300ms ease-in-out;
+  -o-transition: opacity 300ms ease-in-out;
 }
 .rare-formats__article-list {
   display: grid;
@@ -555,7 +555,7 @@
   }
 }
 
-@media only screen and (min-width: 2020px) {
+@media only screen and (min-width: 1800px) {
   /* hide plant at wider screens */
   /* on uglovaty */
     .callback__background-img {
