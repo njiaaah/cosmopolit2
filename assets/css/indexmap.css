@@ -27,12 +27,14 @@
     
 }
 
-[class*="listbox__list"] > ymaps:first-of-type > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+ [class*="listbox__list"] > ymaps > ymaps > ymaps > ymaps > ymaps > ymaps::before {
     background: url(../img/icons/map/Education_outline.svg) 50% 50% !important;
     background-repeat: no-repeat !important;
     background-size: 60% !important;
+    display: block !important;
+    opacity: 0;
 }
-
+/* 
 [class*="listbox__list"] > ymaps:nth-of-type(2) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
     background: url(../img/icons/map/Medicine_outline.svg) 50% 50% !important;
     background-repeat: no-repeat !important;
@@ -79,7 +81,77 @@
     background: url(../img/icons/map/Spa_outline.svg) 50% 50% !important;
     background-repeat: no-repeat !important;
     background-size: 60% !important;
+}  */
+
+.map__menu__label {
+    color: var(--primary-violet) !important;
+    position: relative;
 }
+.map__menu__label::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    background: var(--map-label-url) 50% 50% !important;
+    /*outline: 1px solid red;
+    */left: 12px;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+}
+.map__menu__label::before {
+    opacity: 0;
+}
+
+#map__menu__label-01::after {
+    --map-label-url: url(../img/icons/map/Education_outline.svg)
+}
+
+#map__menu__label-02::after {
+    --map-label-url: url(../img/icons/map/Medicine_outline.svg)
+}
+
+#map__menu__label-03::after {
+    --map-label-url: url(../img/icons/map/Sport_outline.svg)
+}
+
+#map__menu__label-04::after {
+    --map-label-url: url(../img/icons/map/Supermarket_outline.svg)
+}
+
+#map__menu__label-05::after {
+    --map-label-url: url(../img/icons/map/Park_outline.svg)
+}
+
+#map__menu__label-06::after {
+    --map-label-url: url(../img/icons/map/Culture_outline.svg)
+}
+
+#map__menu__label-07::after {
+    --map-label-url: url(../img/icons/map/Shop_outline.svg)
+}
+
+#map__menu__label-08::after {
+    --map-label-url: url(../img/icons/map/Cafe_outline.svg)
+}
+
+#map__menu__label-09::after {
+    --map-label-url: url(../img/icons/map/Spa_outline.svg)
+}
+
+.map__menu__label_hidden {
+    color: var(--greyscale-800) !important;
+}
+.map__menu__label_hidden::after {
+    opacity: .5;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
 
 /*кнопка подробнее */
 [class*="listbox__list"] > ymaps:nth-of-type(10) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
@@ -161,4 +233,8 @@
 }
 .ymaps-2-1-79-listbox__list_scrollable_yes {
     overflow: visible !important;
+}
+
+.ymaps-2-1-79-listbox__list-item-text::before {
+    display: block !important;
 }

@@ -40,6 +40,7 @@ $checkbox.on('change', function() {
 });
 
 
+
 // nav bar active class
 
 $(window).scroll(function() {

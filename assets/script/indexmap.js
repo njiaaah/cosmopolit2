@@ -1,20 +1,21 @@
 document.addEventListener('DOMContentLoaded', ()=>{
   if (document.querySelector('#map')) {
 
-let center = [55.755695, 37.523132];
-let mark_home = [55.755695, 37.523132];
+    let center = [55.755695, 37.523132];
+    let mark_home = [55.755695, 37.523132];
+    let mark_office = [55.754618, 37.524067];
 
-function init() {
-let map = new ymaps.Map('map', {
-  center: center,
-  zoom: 16,
-  controls: ['zoomControl'],  
-}, {
-  zoomControlPosition: { right: 50, top: 260 },
-  zoomControlSize: 'auto'
-});
+    function init() {
+    let map = new ymaps.Map('map', {
+    center: center,
+    zoom: 16,
+    controls: ['zoomControl'],  
+    }, {
+    zoomControlPosition: { right: 50, top: 260 },
+    zoomControlSize: 'auto'
+    });
 
-      objectManager = new ymaps.ObjectManager({
+        objectManager = new ymaps.ObjectManager({
           // Чтобы метки начали кластеризоваться, выставляем опцию.
          clusterize: true,
           // ObjectManager принимает те же опции, что и кластеризатор.
@@ -24,15 +25,22 @@ let map = new ymaps.Map('map', {
       });
   map.geoObjects.add(objectManager);
 
-
-
-
   let placemark_home = new ymaps.Placemark(mark_home, {
     hintContent: 'ЖК ШЕЛЕПИХА',
     balloonContent: 'ЖК ШЕЛЕПИХА'
   }, {
     iconLayout: "default#image",
     iconImageHref: "./assets/img/icons/map/metka.svg",
+    iconImageSize: [50, 31],
+    iconImageOffset: [-25, -27]
+  });
+
+  let placemark_office = new ymaps.Placemark(mark_office, {
+    hintContent: 'ОФИС ПРОДАЖ',
+    balloonContent: 'ОФИС ПРОДАЖ'
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "./assets/img/icons/map/office.svg",
     iconImageSize: [50, 31],
     iconImageOffset: [-25, -27]
   });
@@ -92,6 +100,7 @@ let map = new ymaps.Map('map', {
 
     map.geoObjects
       .add(placemark_home)
+      .add(placemark_office)
     
       
 
@@ -107,9 +116,38 @@ let map = new ymaps.Map('map', {
 }
 
 
-ymaps.ready(init);
+    ymaps.ready(init);
+
+    // add classes to map labels
+    // Define a function to add class and id to elements
+function addClassAndIdToElements() {
+    let parentElements = document.querySelectorAll('.ymaps-2-1-79-listbox__list');
+    if (parentElements.length > 0) {
+        parentElements.forEach(function(parentElement) {
+            let children = parentElement.children;
+            for (let i = 0; i < children.length; i++) {
+                children[i].classList.add('map__menu__label');
+                children[i].setAttribute('id', 'map__menu__label-' + (i + 1).toString().padStart(2, '0'));
+                // Add event listener to toggle class on click
+                children[i].addEventListener('click', function() {
+                    this.classList.toggle('map__menu__label_hidden');
+                });
+            }
+        });
+        // If elements are found, clear the interval to stop checking
+        clearInterval(intervalID);
+    }
+}
+
+// Run the function initially
+addClassAndIdToElements();
+
+// Set interval to check every 100ms
+var intervalID = setInterval(addClassAndIdToElements, 100);
 
   }
+
+  
 })
 
 
