@@ -119,33 +119,32 @@ document.addEventListener('DOMContentLoaded', ()=>{
     ymaps.ready(init);
 
     // add classes to map labels
-    // Define a function to add class and id to elements
-function addClassAndIdToElements() {
-    let parentElements = document.querySelectorAll('.ymaps-2-1-79-listbox__list');
-    if (parentElements.length > 0) {
-        parentElements.forEach(function(parentElement) {
-            let children = parentElement.children;
-            for (let i = 0; i < children.length; i++) {
-                children[i].classList.add('map__menu__label');
-                children[i].setAttribute('id', 'map__menu__label-' + (i + 1).toString().padStart(2, '0'));
-                // Add event listener to toggle class on click
-                children[i].addEventListener('click', function() {
-                    this.classList.toggle('map__menu__label_hidden');
-                });
-            }
-        });
-        // If elements are found, clear the interval to stop checking
-        clearInterval(intervalID);
+
+    function addClassAndIdToElements() {
+        let parentElements = document.querySelectorAll('.ymaps-2-1-79-listbox__list');
+        if (parentElements.length > 0) {
+            parentElements.forEach(function(parentElement) {
+                let children = parentElement.children;
+                for (let i = 0; i < children.length; i++) {
+                    children[i].classList.add('map__menu__label');
+                    children[i].setAttribute('id', 'map__menu__label-' + (i + 1).toString().padStart(2, '0'));
+                    children[i].addEventListener('click', function() {
+                        this.classList.toggle('map__menu__label_hidden');
+                    });
+                }
+            });
+
+            clearInterval(intervalID);
+        }
     }
-}
 
-// Run the function initially
-addClassAndIdToElements();
 
-// Set interval to check every 100ms
-var intervalID = setInterval(addClassAndIdToElements, 100);
+    addClassAndIdToElements();
 
-  }
+
+    var intervalID = setInterval(addClassAndIdToElements, 100);
+
+    }
 
   
 })
