@@ -1,0 +1,52 @@
+.card__old-price_hidden {
+    color: transparent;
+}
+.card__price {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.card__price_promo-active {
+    position: relative;
+}
+.card__plan-image {
+    object-fit: contain;
+}
+.section-filter__show-result-button {
+font-size: 16px;
+font-weight: 400;
+line-height: 18.13px;
+letter-spacing: 0.02em;
+text-align: left;
+}
+.section-filter__show-result-button {
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+
+@media only screen and (min-width: 950px) {
+    .main_catalogue-filter__content-wrapper .double-slider {
+        background-color: transparent;
+    }
+    .noUi-base {
+        width: calc(100% - 74px);
+        margin: 0 auto;
+        position: relative;
+        z-index: 50;
+        transform: translateY(2px) translateX(5px);
+    }
+    .noUi-touch-area {
+        cursor: pointer;
+        scale: 2;
+        display: grid;
+        place-items: center;
+    }
+    .double-slider__value {
+        width: fit-content;
+        height: fit-content;
+        width: 2.75rem;
+        text-align: center;
+    }
+}

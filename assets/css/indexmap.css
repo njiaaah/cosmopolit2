@@ -1,0 +1,240 @@
+[class*="ground-pane"] {
+	filter: grayscale(1) brightness(.9);
+	-webkit-filter: grayscale(1) brightness(.9);
+}
+
+.ymaps-2-1-79-inner-panes {
+    filter: grayscale(0) !important;
+    -webkit-filter: grayscale(0) !important;
+}
+
+[class*="zoom__scale"] {
+    display: none;
+}
+
+
+[class*="listbox__panel"] {
+    background-color: var(--grayscale-000) !important;
+    margin-top: 0 !important;
+    left: -11px !important;
+    top: -11px !important;
+    padding-left: 0.7rem !important;
+    padding-right: 1rem !important;
+    padding-top: 1rem !important;
+    position: absolute;
+    height: 500px;
+    box-shadow: none !important;
+    
+}
+
+ [class*="listbox__list"] > ymaps > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(../img/icons/map/Education_outline.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+    display: block !important;
+    opacity: 0;
+}
+/* 
+[class*="listbox__list"] > ymaps:nth-of-type(2) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(../img/icons/map/Medicine_outline.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(3) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(../img/icons/map/Sport_outline.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(4) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(../img/icons/map/Supermarket_outline.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(5) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(../img/icons/map/Park_outline.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(6) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(../img/icons/map/Culture_outline.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(7) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(../img/icons/map/Shop_outline.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(8) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(../img/icons/map/Cafe_outline.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(9) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: url(../img/icons/map/Spa_outline.svg) 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 60% !important;
+}  */
+
+.map__menu__label {
+    color: var(--primary-violet) !important;
+    position: relative;
+}
+.map__menu__label::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    background: var(--map-label-url) 50% 50% !important;
+    /*outline: 1px solid red;
+    */left: 12px;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+}
+.map__menu__label::before {
+    opacity: 0;
+}
+
+#map__menu__label-01::after {
+    --map-label-url: url(../img/icons/map/Education_outline.svg)
+}
+
+#map__menu__label-02::after {
+    --map-label-url: url(../img/icons/map/Medicine_outline.svg)
+}
+
+#map__menu__label-03::after {
+    --map-label-url: url(../img/icons/map/Sport_outline.svg)
+}
+
+#map__menu__label-04::after {
+    --map-label-url: url(../img/icons/map/Supermarket_outline.svg)
+}
+
+#map__menu__label-05::after {
+    --map-label-url: url(../img/icons/map/Park_outline.svg)
+}
+
+#map__menu__label-06::after {
+    --map-label-url: url(../img/icons/map/Culture_outline.svg)
+}
+
+#map__menu__label-07::after {
+    --map-label-url: url(../img/icons/map/Shop_outline.svg)
+}
+
+#map__menu__label-08::after {
+    --map-label-url: url(../img/icons/map/Cafe_outline.svg)
+}
+
+#map__menu__label-09::after {
+    --map-label-url: url(../img/icons/map/Spa_outline.svg)
+}
+
+.map__menu__label_hidden {
+    color: var(--greyscale-800) !important;
+}
+.map__menu__label_hidden::after {
+    opacity: .5;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+
+/*кнопка подробнее */
+[class*="listbox__list"] > ymaps:nth-of-type(10) > ymaps > ymaps > ymaps > ymaps > ymaps::before {
+    background: none !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(10) > ymaps > ymaps > ymaps > ymaps > ymaps {
+    color: white;
+    border: 1px solid white;
+    padding: 0.2rem 1.3rem !important;
+    margin-left: 0.5rem !important;
+    font-weight: 200 !important;
+}
+
+[class*="listbox__list"] > ymaps:nth-of-type(10) > ymaps > ymaps > ymaps > ymaps {
+    margin-top: 1rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+[class*="listbox__list"] > ymaps  ymaps  ymaps  ymaps  ymaps  ymaps {
+    padding-left: 3rem !important;
+}
+
+[class*="listbox__button"] {
+    display: none !important;
+}
+
+[class*="listbox__list"] {
+    font-size: clamp(0.5rem, 0.375rem + 0.625vw, 0.875rem);
+    color: var(--greyscale-800);
+    font-family: 'Geologica', sans-serif;
+}
+
+[class*="gototech"] {
+    display: none !important;
+}
+
+[class*="listbox__list"]:hover {
+    background: none !important;
+}
+
+/* firefox scrollbar be gone */
+
+#map {
+    scrollbar-width: none;
+}
+
+/* default bottom button */
+.ymaps-2-1-79-gototaxi__container,
+.ymaps-2-1-79-copyright__link,
+.ymaps-2-1-79-gotoymaps__container {
+    display: none !important;
+}
+.ymaps-2-1-79-zoom__minus {
+    transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+}
+.ymaps-2-1-79-listbox__panel {
+    background-color: var(--grayscale-200) !important;
+    overflow: visible;
+}
+
+.ymaps-2-1-79-listbox__list > ymaps > ymaps > ymaps> ymaps > ymaps > ymaps {
+    font-family: Cousine;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: left;
+}
+
+.ymaps-2-1-79-listbox__list > ymaps > ymaps > ymaps> ymaps > ymaps  {
+    padding: 14px 0 13px 0;
+}
+.ymaps-2-1-79-listbox__list > ymaps:last-of-type > ymaps > ymaps> ymaps > ymaps > ymaps {
+    display: none;
+}
+.ymaps-2-1-79-listbox__list_scrollable_yes {
+    overflow: visible !important;
+}
+
+.ymaps-2-1-79-listbox__list-item-text::before {
+    display: block !important;
+}

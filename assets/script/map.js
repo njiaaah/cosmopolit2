@@ -29,7 +29,7 @@ function init() {
 		
 
     map.geoObjects
-    // .add(placemark_home);
+    .add(placemark_home);
 }
 
 

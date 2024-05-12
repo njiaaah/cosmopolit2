@@ -1,0 +1,30 @@
+@media only screen and (min-width: 950px) {
+    .tower-plan-view__name {
+        transform: rotate(-90deg) translate(0px, 20px);
+        -webkit-transform: rotate(-90deg) translate(0px, 20px);
+        -moz-transform: rotate(-90deg) translate(0px, 20px);
+        -ms-transform: rotate(-90deg) translate(0px, 20px);
+        -o-transform: rotate(-90deg) translate(0px, 20px);
+        white-space: nowrap;
+        text-transform: uppercase;
+        color: #124147;
+        transform-origin: 0% 100%;
+}
+    #body__is-tower-desktop-view-visible:checked ~ .main {
+        background-color: var(--clr-grayscale-000) !important;
+    }
+
+    #tower-plan-view__is-appartment-selected_checkbox:not(:checked) ~ .tower-plan-view_card ,
+    #tower-plan-view__is-appartment-selected_checkbox:not(:checked) ~ .tower-plan-view__swiper-wrapper {
+        display: none;
+    }
+    #tower-plan-view__is-appartment-selected_checkbox:checked ~ .tower-plan-view__plan-img-wrapper {
+        display: none;
+    }
+    .tower-plan-view__tower {
+        height: fit-content;
+    }
+    .tower-plan-view__table__cell {
+        cursor: pointer;
+    }
+}
