@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="assets/css/indexmap.css" >
   <!-- <link rel="stylesheet" href="assets/css/indexmap.css"> -->
   <script src="assets/script/catalogue.js" defer></script>
-  <script src="assets/script/tower-plan.js" defer></script>
+  <script src="assets/script/tower-plan-index.js" defer></script>
   <script src="assets/script/lot.js" defer></script>
   <script src="assets/script/view-change.js" defer></script>
   <script src="assets/script/back-to-top.js" defer></script>
@@ -62,7 +62,7 @@
     </svg>
   </a>
 
-  <input hidden type="checkbox" id="body__is-tower-desktop-view-visible">
+  <input hidden checked type="checkbox" id="body__is-tower-desktop-view-visible">
   <input hidden type="checkbox" id="body__is-filter-visible-checkbox">
   <input hidden type="checkbox" id="body__is-nav-menu-visible-checkbox">
 
@@ -85,13 +85,13 @@
 
       </a>
 
-      <nav class="header-desktop__nav header_desktop__wrapper__item">
+      <nav class="header-desktop__nav header_desktop__wrapper__item header_desktop__wrapper__nav">
         <ul class="header-desktop__list list">
           <li class="header-desktop__list-item">
             <a class="header-desktop__list-link" href="">Команда проекта</a>
           </li>
           <li class="header-desktop__list-item">
-            <a class="header-desktop__list-link" href="progress.html"></a>
+            <a class="header-desktop__list-link" href="progress.html">Ход строительства</a>
           </li>
           <li class="header-desktop__list-item">
             <a class="header-desktop__list-link" href="contacts.html">Контакты</a>
@@ -102,7 +102,7 @@
       <div class="header-deskotp__icons-wrap header-deskotp__icons-wrap_favorite">
         <a class="header-desktop__favorite-icon header-desktop__icon header_desktop__wrapper__item"
           href="catalogue-favorite.html">
-          <svg class="header-desktop__icons__svg" width="37" height="37" viewBox="0 0 37 37" fill="none"
+          <svg class="header-desktop__icons__svg header-desktop__icons__svg-favorite" width="37" height="37" viewBox="0 0 37 37" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path class="header__svg__grey" opacity="0.4"
               d="M19.7413 9.49292H8.07123C5.50623 9.49292 3.40625 11.5929 3.40625 14.1579V31.1979C3.40625 33.3729 4.96625 34.3029 6.87125 33.2379L12.7662 29.9529C13.3962 29.6079 14.4163 29.6079 15.0312 29.9529L20.9262 33.2379C22.8312 34.3029 24.3912 33.3729 24.3912 31.1979V14.1579C24.4062 11.5929 22.3063 9.49292 19.7413 9.49292Z"
@@ -161,14 +161,14 @@
               <a class="header-desktop__list-link" href="#location">Расположение</a>
             </li>
             <li class="header-desktop__list-item">
-              <a class="header-desktop__list-link" href="#mortgage">Ипотека</a>
+              <a class="header-desktop__list-link" href="#filter">Квартиры</a>
             </li>
             <li class="header-desktop__list-item">
               <a class="header-desktop__list-link" href="#gallery">Галерея</a>
             </li>
-            <li class="header-desktop__list-item">
+            <!-- <li class="header-desktop__list-item">
               <a class="header-desktop__list-link" href="#progress">Ход строительства</a>
-            </li>
+            </li> -->
           </ul>
         </nav>
 
@@ -179,14 +179,14 @@
     <!-- hero -->
     <section class="main__hero main__content-wrap">
 
-      <div class="content-wrapper">
+      <div class="content-wrapper hero__content-wrapper">
               <div class="hero__img-wrapper">
         <img src="assets/img/index/hero-logo.webp" alt="" class="hero__img">
       </div>
 
       <div class="hero__content">
 
-        <h1 class="title hero__title">БИЗНЕС-КЛАСС <br> в 3 минутах от сити</h1>
+        <h1 class="title hero__title">БИЗНЕС-КЛАСС в 3 минутах от сити</h1>
 
         <p class="hero__price">
           от 304 000 руб/м²
@@ -643,7 +643,7 @@
 
       <div class="content-wrapper main__rare-formats__content-wrapper">
 
-        <div class="section__cosmetic-gradient-wrapper">
+        <div class="section__cosmetic-gradient-wrapper ">
 
           <div class="cosmetic-gradient rare-formats-gradient-1"></div>
   
@@ -735,15 +735,18 @@
     <!-- refinement -->
     <section class="main__refinement main__content-wrap" id="refinement">
 
+      
+      <div class="section__refinement-gradient-wrapper">
+
+        <div class="cosmetic-gradient refinement-gradient-1"></div>
+        <div class="cosmetic-gradient refinement-gradient-2"></div>
+        <div class="cosmetic-gradient refinement-gradient-3"></div>
+        <div class="cosmetic-gradient refinement-gradient-4"></div>
+
+      </div>
+
       <div class="content-wrapper main__refinement__content-wrapper">
 
-        <div class="section__refinement-gradient-wrapper">
-
-          <div class="cosmetic-gradient refinement-gradient-1"></div>
-          <div class="cosmetic-gradient refinement-gradient-2"></div>
-          <div class="cosmetic-gradient refinement-gradient-3"></div>
-  
-        </div>
 
         <h2 class="title">Современные решения</h2>
 
@@ -907,7 +910,10 @@
 
     </section>
     <!-- desktop only tower view -->
-    <div class="main__title-and-tower-switch-wrap title-wrapper">
+    <div class="main__title-and-tower-switch-wrap title-wrapper" id="filter">
+
+
+
       <h2 class="title main__title-and-tower-switch-wrap__title main__title-and-tower-switch-wrap__title-index">Квартиры</h2>
       <label for="body__is-tower-desktop-view-visible" class="tower-switch-wrapper__label">
         <span class="tower-switch-wrapper__text">На плане башни</span>
@@ -1560,7 +1566,15 @@
 
     <!-- tower plan desktop only -->
     <div class="main__tower-plan-view-wrap">
-      <div class="content-wrapper">
+
+
+      <div class="section__tower-plan-view-gradient-wrapper">
+
+        <div class="cosmetic-gradient tower-plan-view-gradient-1"></div>
+
+      </div>
+
+      <div class="content-wrapper ower-plan-view__content-wrapper">
 
         <!-- old -->
         <header style="display: none !important;" class="tower-plan-view__legend">
@@ -1893,15 +1907,27 @@
           </div>
 
 
-
+          
 
         </div>
+
+        
 
 
 
 
         
       </div>
+
+      <button class="button button-solid button-secondary tower-plan-view__button">Выбрать квартиру по параметрам
+
+        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.0254 5.54984L17.0837 10.6082L12.0254 15.6665" stroke="white" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.91602 10.6082H16.941" stroke="white" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          
+
+      </button>
     </div>
 
     <!-- mortgage -->
@@ -1915,198 +1941,250 @@
       </div>
 
 
-      <h2 class="title title_mortgage">Программы ипотеки</h2>
+      <h2 class="title title_mortgage">Как купить</h2>
 
-      <div class="calc">
-        <div class="calc-wrap">
-          <div class="calc-input">
-            <div class="calc-input-wrap">
-              <div class="calc-programms-wrap">
-                <h3 class="subtitle section-filter__subtitle section-mortgage__subtitle">
-                  Выберите программу
-                </h3>
-                <button class="calc-button-programms">
-                  Все программы<img id="calc-all-programms-arrow" src="assets/img/icons/calc_arrow.svg" alt="">
-                </button>
-                <ul id="calc-programms-drop-down">
-                  <li class="program-name">Программа 1</li>
-                  <li class="program-name">Программа 2</li>
-                  <li class="program-name">Программа 3</li>
-                  <li class="program-name">Программа 4</li>
-                  <li class="program-name">Программа 5</li>
-                  <li class="program-name">Программа 6</li>
+      <header class="mortgage__header-switcher ">
+
+        <ul class="header-switcher__list scrollbar-hidden">
+          
+          <li class="header-switcher__item">
+            <input hidden checked type="radio" class="header-switcher__checkbox" name="mortgage__header-switcher__radio" id="header-switcher__checkbox_mortgage-001">
+            <label for="header-switcher__checkbox_mortgage-001">Ипотека</label>
+          </li>
+
+          <li class="header-switcher__item">
+            <input hidden type="radio" class="header-switcher__checkbox" name="mortgage__header-switcher__radio" id="header-switcher__checkbox_mortgage-002">
+            <label for="header-switcher__checkbox_mortgage-002">100% Оплата</label>
+          </li>
+
+          <li class="header-switcher__item">
+            <input hidden type="radio" class="header-switcher__checkbox" name="mortgage__header-switcher__radio" id="header-switcher__checkbox_mortgage-003">
+            <label for="header-switcher__checkbox_mortgage-003">Рассрочка</label>
+          </li>
+        </ul>
+
+      </header>
+
+      <div class="mortgage__list-wrapper">
+
+        <!-- 1 -->
+        <div class="calc mortgage__list-item mortgage__list-item-01 ">
+          <div class="calc-wrap">
+            <div class="calc-input">
+              <div class="calc-input-wrap">
+                <div class="calc-programms-wrap">
+                  <h3 class="subtitle section-filter__subtitle section-mortgage__subtitle">
+                    Выберите программу
+                  </h3>
+                  <button class="calc-button-programms">
+                    Все программы<img id="calc-all-programms-arrow" src="assets/img/icons/calc_arrow.svg" alt="">
+                  </button>
+                  <ul id="calc-programms-drop-down">
+                    <li class="program-name">Программа 1</li>
+                    <li class="program-name">Программа 2</li>
+                    <li class="program-name">Программа 3</li>
+                    <li class="program-name">Программа 4</li>
+                    <li class="program-name">Программа 5</li>
+                    <li class="program-name">Программа 6</li>
+                  </ul>
+                </div>
+  
+                <div class="calc__slider-container">
+                  <!--  slider 1 fee -->
+  
+                  <h3 class="subtitle section-filter__subtitle section-mortgage__subtitle">
+                    Первоначальный взнос, млн руб.
+                  </h3>
+  
+                  <div id="mortgageSlider1" class="double-slider section-mortgage__double-slider"></div>
+  
+                  <div class="selected-values double-slider__values">
+                    <span class="double-slider__value double-slider__value-min" id="mortgageMin-value1"></span><span
+                      class="double-slider__value double-slider__value-max" id="mortgageMax-value1"></span>
+                  </div>
+                </div>
+  
+                <div class="calc__slider-container">
+                  <!-- slider 2 price -->
+  
+                  <h3 class="subtitle section-filter__subtitle section-mortgage__subtitle">
+                    Стоимость, млн руб.
+                  </h3>
+                  <div id="mortgageSlider2" class="double-slider section-mortgage__double-slider"></div>
+  
+                  <div class="selected-values double-slider__values">
+                    <span class="double-slider__value double-slider__value-min" id="mortgageMin-value2"></span><span
+                      class="double-slider__value double-slider__value-max" id="mortgageMax-value2"></span>
+                  </div>
+                </div>
+  
+                <div class="calc__slider-container">
+                  <!-- slider 3 duration -->
+  
+                  <h3 class="subtitle section-filter__subtitle section-mortgage__subtitle">
+                    Срок кредита
+                  </h3>
+  
+                  <div id="mortgageSlider3" class="double-slider section-mortgage__double-slider"></div>
+                  <div class="selected-values double-slider__values">
+                    <span class="double-slider__value double-slider__value-min" id="mortgageMin-value3"></span><span
+                      class="double-slider__value double-slider__value-max" id="mortgageMax-value3"></span>
+                  </div>
+                </div>
+              </div>
+  
+              <button hidden class="calc-input-button-confirm">
+                Получить одобрение
+              </button>
+            </div>
+  
+            <div class="calc-info">
+              <div class="calc-info-sort">
+                <div class="calc-info-sort-label">
+                  <span class="calc-sort-label" id="calc-sort-label">Сортировать</span>
+                </div>
+                <img class="calc-img-sort-img calc-img-hide" src="assets/img/icons/calc_arrow.svg" alt="">
+                <ul class="calc-sort-list">
+                  <li class="calc-sort-list-item">Платеж по возрастанию</li>
+                  <li class="calc-sort-list-item">Платеж по убыванию</li>
+                  <li class="calc-sort-list-item">Ставка по возрастанию</li>
+                  <li class="calc-sort-list-item">Ставка по убыванию</li>
+                  <li class="calc-sort-list-item">Срок по возрастанию</li>
+                  <li class="calc-sort-list-item">Срок по убыванию</li>
                 </ul>
               </div>
-
-              <div class="calc__slider-container">
-                <!--  slider 1 fee -->
-
-                <h3 class="subtitle section-filter__subtitle section-mortgage__subtitle">
-                  Первоначальный взнос, млн руб.
-                </h3>
-
-                <div id="mortgageSlider1" class="double-slider section-mortgage__double-slider"></div>
-
-                <div class="selected-values double-slider__values">
-                  <span class="double-slider__value double-slider__value-min" id="mortgageMin-value1"></span><span
-                    class="double-slider__value double-slider__value-max" id="mortgageMax-value1"></span>
+  
+              <div class="calc__result-item">
+                <header class="calc__bank-name">Сбербанк</header>
+  
+                <div class="calc__bank-text-wrapper">
+                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.</span>
+                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
                 </div>
               </div>
-
-              <div class="calc__slider-container">
-                <!-- slider 2 price -->
-
-                <h3 class="subtitle section-filter__subtitle section-mortgage__subtitle">
-                  Стоимость, млн руб.
-                </h3>
-                <div id="mortgageSlider2" class="double-slider section-mortgage__double-slider"></div>
-
-                <div class="selected-values double-slider__values">
-                  <span class="double-slider__value double-slider__value-min" id="mortgageMin-value2"></span><span
-                    class="double-slider__value double-slider__value-max" id="mortgageMax-value2"></span>
+  
+              <div class="calc__result-item">
+                <header class="calc__bank-name">Сбербанк</header>
+  
+                <div class="calc__bank-text-wrapper">
+                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
+                  </span>
+                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
                 </div>
               </div>
-
-              <div class="calc__slider-container">
-                <!-- slider 3 duration -->
-
-                <h3 class="subtitle section-filter__subtitle section-mortgage__subtitle">
-                  Срок кредита
-                </h3>
-
-                <div id="mortgageSlider3" class="double-slider section-mortgage__double-slider"></div>
-                <div class="selected-values double-slider__values">
-                  <span class="double-slider__value double-slider__value-min" id="mortgageMin-value3"></span><span
-                    class="double-slider__value double-slider__value-max" id="mortgageMax-value3"></span>
+  
+              <div class="calc__result-item">
+                <header class="calc__bank-name">Сбербанк</header>
+  
+                <div class="calc__bank-text-wrapper">
+                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
+                  </span>
+                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
                 </div>
               </div>
-            </div>
-
-            <button hidden class="calc-input-button-confirm">
-              Получить одобрение
-            </button>
-          </div>
-
-          <div class="calc-info">
-            <div class="calc-info-sort">
-              <div class="calc-info-sort-label">
-                <span class="calc-sort-label" id="calc-sort-label">Сортировать</span>
+  
+              <div class="calc__result-item">
+                <header class="calc__bank-name">Сбербанк</header>
+  
+                <div class="calc__bank-text-wrapper">
+                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
+                  </span>
+                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
+                </div>
               </div>
-              <img class="calc-img-sort-img calc-img-hide" src="assets/img/icons/calc_arrow.svg" alt="">
-              <ul class="calc-sort-list">
-                <li class="calc-sort-list-item">Платеж по возрастанию</li>
-                <li class="calc-sort-list-item">Платеж по убыванию</li>
-                <li class="calc-sort-list-item">Ставка по возрастанию</li>
-                <li class="calc-sort-list-item">Ставка по убыванию</li>
-                <li class="calc-sort-list-item">Срок по возрастанию</li>
-                <li class="calc-sort-list-item">Срок по убыванию</li>
-              </ul>
-            </div>
-
-            <div class="calc__result-item">
-              <header class="calc__bank-name">Сбербанк</header>
-
-              <div class="calc__bank-text-wrapper">
-                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.</span>
-                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
+  
+              <div class="calc__result-item">
+                <header class="calc__bank-name">Сбербанк</header>
+  
+                <div class="calc__bank-text-wrapper">
+                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
+                  </span>
+                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
+                </div>
               </div>
-            </div>
-
-            <div class="calc__result-item">
-              <header class="calc__bank-name">Сбербанк</header>
-
-              <div class="calc__bank-text-wrapper">
-                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
-                </span>
-                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
+  
+              <div class="calc__result-item">
+                <header class="calc__bank-name">Сбербанк</header>
+  
+                <div class="calc__bank-text-wrapper">
+                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
+                  </span>
+                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
+                </div>
               </div>
-            </div>
-
-            <div class="calc__result-item">
-              <header class="calc__bank-name">Сбербанк</header>
-
-              <div class="calc__bank-text-wrapper">
-                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
-                </span>
-                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
+  
+              <div class="calc__result-item">
+                <header class="calc__bank-name">Сбербанк</header>
+  
+                <div class="calc__bank-text-wrapper">
+                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
+                  </span>
+                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
+                </div>
               </div>
-            </div>
-
-            <div class="calc__result-item">
-              <header class="calc__bank-name">Сбербанк</header>
-
-              <div class="calc__bank-text-wrapper">
-                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
-                </span>
-                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
-              </div>
-            </div>
-
-            <div class="calc__result-item">
-              <header class="calc__bank-name">Сбербанк</header>
-
-              <div class="calc__bank-text-wrapper">
-                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
-                </span>
-                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
-              </div>
-            </div>
-
-            <div class="calc__result-item">
-              <header class="calc__bank-name">Сбербанк</header>
-
-              <div class="calc__bank-text-wrapper">
-                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
-                </span>
-                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
-              </div>
-            </div>
-
-            <div class="calc__result-item">
-              <header class="calc__bank-name">Сбербанк</header>
-
-              <div class="calc__bank-text-wrapper">
-                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
-                </span>
-                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
-              </div>
-            </div>
-
-            <div class="calc__result-item">
-              <header class="calc__bank-name">Сбербанк</header>
-
-              <div class="calc__bank-text-wrapper">
-                <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
-                </span>
-                <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
-                <span class="calc__bank-fee calc__bank-text">от 15 %</span>
+  
+              <div class="calc__result-item">
+                <header class="calc__bank-name">Сбербанк</header>
+  
+                <div class="calc__bank-text-wrapper">
+                  <span class="calc__bank-price calc__bank-text">от 50 000 руб./мес.
+                  </span>
+                  <span class="calc__bank-duration calc__bank-text">1-30 лет</span>
+                  <span class="calc__bank-fee calc__bank-text">от 15 %</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- 2 -->
+
+        <div class="mortgage__list-item mortgage__list__article mortgage__list-item-02">
+          <img class="mortgage__article__img" src="assets/img/index/mortgage/oplata.webp" alt="">
+
+          <p class="mortgage__article__text">Квартиру в жилом комплексе «Шелепиха» можно приобрести за безналичный расчет. Для этого достаточно обратиться в офис продаж и выбрать интересующую вас квартиру.
+          </p>
+
+          <p class="mortgage__article__text">
+            Необходимо время для принятия решения? Тогда вы можете забронировать понравившийся вариант, чтобы спокойно все взвесить. Срок бронирования — до 5 рабочих дней.
+          </p>
+        </div>  
+
+        <!-- 3 -->
+
+        <div class="mortgage__list-item mortgage__list__article mortgage__list-item-03">
+          <img class="mortgage__article__img" src="assets/img/index/mortgage/rassrochka.webp" alt="">  
+          <p class="mortgage__article__text">
+            Условия применения программы уточняйте у вашего менеджера в офисе продаж.
+          </p>
+        </div>
+
+
       </div>
 
-      <div class="mortgage__text">
+
+
+      <!-- <div class="mortgage__text">
         <p class="mortgage__text__paragraph">
           Квартиру в жилом комплексе «Шелепиха» можно приобрести за безналичный расчет. Для этого достаточно обратиться в офис продаж и выбрать интересующую вас квартиру.
         </p>
         <p class="mortgage__text__paragraph">
           Необходимо время для принятия решения? Тогда вы можете забронировать понравившийся вариант, чтобы спокойно все взвесить. Срок бронирования — до 5 рабочих дней.
         </p>
-      </div>
+      </div> -->
     </section>
 
     <!-- gallery -->
     <section class="main__gallery main__content-wrap content-wrapper" id="gallery">
 
-      <div class="section__cosmetic-gradient-wrapper">
+      <div class="section__cosmetic-gradient-wrapper gallery__cosmetic-gradient-wrapper">
 
         <div class="cosmetic-gradient gallery-gradient-1"></div>
 
@@ -2257,7 +2335,7 @@
 
 
     <!-- progress -->
-    <section class="main__content-wrap main__progress content-wrapper" id="progress">
+    <section class="main__content-wrap main__progress " id="progress">
 
       <div class="section__cosmetic-gradient-wrapper">
 
@@ -2265,193 +2343,208 @@
 
       </div>
 
-      <h2 class="title">Ход строительства</h2>
+      <div class="content-wrapper">
 
-			<ol class="news__year-selector year-selector scrollbar-hidden">
-				<li class="year-selector__item">
-					<input hidden class="year-selector-checkbox" type="checkbox" id="year-selector-checkbox-2024">
-					<label class="year-selector__item__label" for="year-selector-checkbox-2024">2024</label>
-				</li>
+        <h2 class="title">Ход строительства</h2>
 
-				<li class="year-selector__item">
-					<input hidden class="year-selector-checkbox" type="checkbox" id="year-selector-checkbox-2023">
-					<label class="year-selector__item__label" for="year-selector-checkbox-2023">2023</label>
-				</li>
+        <ol class="news__year-selector year-selector scrollbar-hidden">
+          <li class="year-selector__item">
+            <input hidden class="year-selector-checkbox" type="checkbox" id="year-selector-checkbox-2024">
+            <label class="year-selector__item__label" for="year-selector-checkbox-2024">2024</label>
+          </li>
 
-				<li class="year-selector__item">
-					<input hidden class="year-selector-checkbox" type="checkbox" id="year-selector-checkbox-2022">
-					<label class="year-selector__item__label" for="year-selector-checkbox-2022">2022</label>
-				</li>
+          <li class="year-selector__item">
+            <input hidden class="year-selector-checkbox" type="checkbox" id="year-selector-checkbox-2023">
+            <label class="year-selector__item__label" for="year-selector-checkbox-2023">2023</label>
+          </li>
 
-				<li class="year-selector__item">
-					<input hidden class="year-selector-checkbox" type="checkbox" id="year-selector-checkbox-2021">
-					<label class="year-selector__item__label" for="year-selector-checkbox-2021">2021</label>
-				</li>
-			</ol>
+          <li class="year-selector__item">
+            <input hidden class="year-selector-checkbox" type="checkbox" id="year-selector-checkbox-2022">
+            <label class="year-selector__item__label" for="year-selector-checkbox-2022">2022</label>
+          </li>
 
-			<div class="news__articles-wrapper">
-				<article class="news__article article">
-					<a href="progress-article.html">
-						<div class="news_img-wrapper">
-							<img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
-						</div>
+          <li class="year-selector__item">
+            <input hidden class="year-selector-checkbox" type="checkbox" id="year-selector-checkbox-2021">
+            <label class="year-selector__item__label" for="year-selector-checkbox-2021">2021</label>
+          </li>
+        </ol>
 
-						<header class="news__header">
-							<h2 class="news__header__title progress__header__title">Январь</h2>
-							<span class="news__date date">15 фото</span>
-						</header>
-					</a>
-				</article>
-				<article class="news__article article">
-					<a href="progress-article.html">
-						<div class="news_img-wrapper">
-							<img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
-						</div>
+        <div class="news__articles-wrapper">
+          <article class="news__article article">
+            <a href="progress-article.html">
+              <div class="news_img-wrapper">
+                <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
+              </div>
 
-						<header class="news__header">
-							<h2 class="news__header__title progress__header__title">Январь</h2>
-							<span class="news__date date">15 фото</span>
-						</header>
-					</a>
-				</article>
-				<article class="news__article article">
-					<a href="progress-article.html">
-						<div class="news_img-wrapper">
-							<img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
-						</div>
+              <header class="news__header">
+                <h2 class="news__header__title progress__header__title">Январь</h2>
+                <span class="news__date date">15 фото</span>
+              </header>
+            </a>
+          </article>
+          <article class="news__article article">
+            <a href="progress-article.html">
+              <div class="news_img-wrapper">
+                <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
+              </div>
 
-						<header class="news__header">
-							<h2 class="news__header__title progress__header__title">Январь</h2>
-							<span class="news__date date">15 фото</span>
-						</header>
-					</a>
-				</article>
-			</div>
+              <header class="news__header">
+                <h2 class="news__header__title progress__header__title">Январь</h2>
+                <span class="news__date date">15 фото</span>
+              </header>
+            </a>
+          </article>
+          <article class="news__article article">
+            <a href="progress-article.html">
+              <div class="news_img-wrapper">
+                <img src="assets/img/news/news_001.webp" alt="" class="news__article__img">
+              </div>
 
-      <button class="button button-outline progress__button">Показать другие месяцы</button>
+              <header class="news__header">
+                <h2 class="news__header__title progress__header__title">Январь</h2>
+                <span class="news__date date">15 фото</span>
+              </header>
+            </a>
+          </article>
+        </div>
+
+        <button class="button button-outline progress__button">Показать другие месяцы</button>
+
+      </div>
+
 		</section>
 
     <!-- promo -->
-    <section class="main__promo main__content-wrap content-wrapper" id="promo">
+    <section class="main__promo main__content-wrap" id="promo">
 
-      <h2 class="title promo__title">Акции</h2>
+      <div class="section__cosmetic-gradient-wrapper">
 
-      <div class="promo__swiper">
+        <div class="cosmetic-gradient promo-gradient-1"></div>
 
-        <ul class="swiper-wrapper">
+      </div>
 
-          <li class="swiper-slide">
+      <div class="content-wrapper">
 
-            <article class="promo__article">
-              <header class="promo__article__header">
-                <p class="promo__article__header__text">2 февраля 2023</p>
-              </header>
+        <h2 class="title promo__title">Акции</h2>
 
-              <h3 class="promo__article__heading">Выгода <br> до 2 млн руб.</h3>
+        <div class="promo__swiper">
 
-              <p class="promo__article__text">
-                Октябрь - пора вставить в этот параграфф неприлично-длинный текст. А вы знали что у кентавра две(2) грудные клетки?
-              </p>
+          <ul class="swiper-wrapper">
 
-              <button class="promo__article__button button">Узнать подробнее</button>
-            </article>
+            <li class="swiper-slide">
 
-          </li>
+              <article class="promo__article">
+                <header class="promo__article__header">
+                  <p class="promo__article__header__text">2 февраля 2023</p>
+                </header>
 
-          <li class="swiper-slide">
+                <h3 class="promo__article__heading">Выгода <br> до 2 млн руб.</h3>
 
-            <article class="promo__article promo__article_featured">
-              <header class="promo__article__header">
-                <p class="promo__article__header__text">2 февраля 2023</p>
-              </header>
+                <p class="promo__article__text">
+                  Октябрь - пора вставить в этот параграфф неприлично-длинный текст. А вы знали что у кентавра две(2) грудные клетки?
+                </p>
 
-              <h3 class="promo__article__heading">Выгода до 2 млн руб.</h3>
+                <button class="promo__article__button button">Узнать подробнее</button>
+              </article>
 
-              <p class="promo__article__text">
-                Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей
-              </p>
+            </li>
 
-              <button class="promo__article__button button">Узнать подробнее</button>
-            </article>
+            <li class="swiper-slide">
 
-          </li>
+              <article class="promo__article promo__article_featured">
+                <header class="promo__article__header">
+                  <p class="promo__article__header__text">2 февраля 2023</p>
+                </header>
 
-          <li class="swiper-slide">
+                <h3 class="promo__article__heading">Выгода до 2 млн руб.</h3>
 
-            <article class="promo__article">
-              <header class="promo__article__header">
-                <p class="promo__article__header__text">2 февраля 2023</p>
-              </header>
+                <p class="promo__article__text">
+                  Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей
+                </p>
 
-              <h3 class="promo__article__heading">Выгода до 2 млн руб.</h3>
+                <button class="promo__article__button button">Узнать подробнее</button>
+              </article>
 
-              <p class="promo__article__text">
-                Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей
-              </p>
+            </li>
 
-              <button class="promo__article__button button">Узнать подробнее</button>
-            </article>
+            <li class="swiper-slide">
 
-          </li>
+              <article class="promo__article">
+                <header class="promo__article__header">
+                  <p class="promo__article__header__text">2 февраля 2023</p>
+                </header>
 
-          <li class="swiper-slide">
+                <h3 class="promo__article__heading">Выгода до 2 млн руб.</h3>
 
-            <article class="promo__article">
-              <header class="promo__article__header">
-                <p class="promo__article__header__text">2 февраля 2023</p>
-              </header>
+                <p class="promo__article__text">
+                  Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей
+                </p>
 
-              <h3 class="promo__article__heading">Выгода до 2 млн руб.</h3>
+                <button class="promo__article__button button">Узнать подробнее</button>
+              </article>
 
-              <p class="promo__article__text">
-                Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей
-              </p>
+            </li>
 
-              <button class="promo__article__button button">Узнать подробнее</button>
-            </article>
+            <li class="swiper-slide">
 
-          </li>
+              <article class="promo__article">
+                <header class="promo__article__header">
+                  <p class="promo__article__header__text">2 февраля 2023</p>
+                </header>
 
-          <li class="swiper-slide">
+                <h3 class="promo__article__heading">Выгода до 2 млн руб.</h3>
 
-            <article class="promo__article">
-              <header class="promo__article__header">
-                <p class="promo__article__header__text">2 февраля 2023</p>
-              </header>
+                <p class="promo__article__text">
+                  Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей
+                </p>
 
-              <h3 class="promo__article__heading">Выгода до 2 млн руб.</h3>
+                <button class="promo__article__button button">Узнать подробнее</button>
+              </article>
 
-              <p class="promo__article__text">
-                Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей
-              </p>
+            </li>
 
-              <button class="promo__article__button button">Узнать подробнее</button>
-            </article>
+            <li class="swiper-slide">
 
-          </li>
+              <article class="promo__article">
+                <header class="promo__article__header">
+                  <p class="promo__article__header__text">2 февраля 2023</p>
+                </header>
 
-          <li class="swiper-slide">
+                <h3 class="promo__article__heading">Выгода до 2 млн руб.</h3>
 
-            <article class="promo__article">
-              <header class="promo__article__header">
-                <p class="promo__article__header__text">2 февраля 2023</p>
-              </header>
+                <p class="promo__article__text">
+                  Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей
+                </p>
 
-              <h3 class="promo__article__heading">Выгода до 2 млн руб.</h3>
+                <button class="promo__article__button button">Узнать подробнее</button>
+              </article>
 
-              <p class="promo__article__text">
-                Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей
-              </p>
+            </li>
 
-              <button class="promo__article__button button">Узнать подробнее</button>
-            </article>
+            <li class="swiper-slide">
 
-          </li>
+              <article class="promo__article">
+                <header class="promo__article__header">
+                  <p class="promo__article__header__text">2 февраля 2023</p>
+                </header>
 
-        </ul>
+                <h3 class="promo__article__heading">Выгода до 2 млн руб.</h3>
 
-        <div class="swiper-pagination gallery__swiper-pagination_promo "></div>
+                <p class="promo__article__text">
+                  Октябрь — лучший месяц для покупки квартиры с выгодой до 2 млн рублей
+                </p>
 
+                <button class="promo__article__button button">Узнать подробнее</button>
+              </article>
+
+            </li>
+
+          </ul>
+
+          <div class="swiper-pagination gallery__swiper-pagination_promo "></div>
+
+
+        </div>
 
       </div>
 

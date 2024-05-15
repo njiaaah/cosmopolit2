@@ -54,9 +54,6 @@
   max-height: 68px;
   overflow: clip;
 }
-.promo__swiper-pagination {
-  outline: 1px solid red;
-}
 .promo__article__button {
   margin-top: auto;
   background-color: var(--clr-primary-violet);
@@ -437,7 +434,65 @@
 .refinement__list-03 .refinement__article-main__image {
   object-position: 10% 50%;
 }
-
+.mortgage__list-item {
+  display: none;
+}
+.mortgage__header-switcher:has(#header-switcher__checkbox_mortgage-001:checked) ~ .mortgage__list-wrapper .mortgage__list-item-01 ,
+.mortgage__header-switcher:has(#header-switcher__checkbox_mortgage-002:checked) ~ .mortgage__list-wrapper .mortgage__list-item-02 ,
+.mortgage__header-switcher:has(#header-switcher__checkbox_mortgage-003:checked) ~ .mortgage__list-wrapper .mortgage__list-item-03 {
+  display: block;
+}
+.mortgage__article__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.5px;
+  text-align: center;
+  color: var(--clr-primary-violet);
+}
+.mortgage__article__text:has(+.mortgage__article__text) {
+  margin-bottom: 1rem;
+}
+.mortgage__list__article {
+  padding-top: 2rem;
+}
+.mortgage__article__img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  max-width: 80%;
+}
+.section__cosmetic-gradient-wrapper {
+  z-index: 0;
+}
+.tower-plan-view-gradient-1 {
+  display: none;
+}
+.promo-gradient-1 {
+  display: none;
+}
+.refinement-gradient-4 {
+  display: none;
+}
+.callback__form {
+  position: relative;
+}
+.callback__form__gradient {
+  left: 0;
+  transform: translate(-50%, -10%);
+  -webkit-transform: translate(-50%, -10%);
+  -moz-transform: translate(-50%, -10%);
+  -ms-transform: translate(-50%, -10%);
+  -o-transform: translate(-50%, -10%);
+}
+.button,.callback__button__input {
+  cursor: pointer;
+}
+.swiper-slide {
+  cursor: grab;
+}
+.swiper-slide:active {
+  cursor: grabbing;
+}
 
 @media only screen and (min-width: 600px) {
   .gallery__swiper-pagination_promo {
@@ -539,6 +594,13 @@
   .hc-info__img {
     height: 518px;
     width: 388px;
+  }
+  .hc-info__cosmetic-gradient-3 {
+    left: -200px;
+    top: 370px;
+  }
+  #gallery {
+    margin-bottom: 100px;
   }
   
 }
@@ -933,6 +995,146 @@
   .location__card {
     background-color: transparent;
   }
+  .mortgage__article__text {
+    font-size: 18px;
+    line-height: 22.5px;
+  }
+  .header-desktop__icons__svg-favorite {
+    width: 24px;
+    height: 24px;
+  }
+  /* for 1920 view */
+  body {
+    --max-content-width-plus: 1680px;  
+  }
+  .header-wrapper ,
+  .header_desktop__wrapper ,
+  .content-wrapper_index ,
+  .hero__content-wrapper {
+    max-width: var(--max-content-width-plus);
+
+  }
+  .header-deskotp__icons-wrap_favorite {
+    margin-left: auto;
+    margin-right: 104px;
+  }
+  .hero__img {
+    width: 100%;
+  }
+  .hero__title {
+    max-width: 100%;
+  }
+  .header_desktop__logo {
+    margin-right: clamp(0rem, -3.6727rem + 6.1856vw, 3.75rem);
+    margin-right: 60px;
+  }
+  .header-desktop__list-link {
+    white-space: nowrap;
+  }
+  .advatages__item__text {
+    font-size: clamp(0.875rem, 0rem + 1.0938vw, 1.3125rem);
+  }
+  .advantages__svg-icon {
+    width: clamp(2.25rem, 0rem + 2.8125vw, 3.375rem);
+    height: clamp(2.25rem, 0rem + 2.8125vw, 3.375rem);
+    
+  }
+  .advantages__item__backdrop__svg {
+    width: clamp(6rem, 0rem + 7.5vw, 9rem);
+    height: clamp(6rem, 0rem + 7.5vw, 9rem);
+    top: unset;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-30%);
+    -webkit-transform: translateX(-30%);
+    -moz-transform: translateX(-30%);
+    -ms-transform: translateX(-30%);
+    -o-transform: translateX(-30%);
+}
+.advantages__item {
+  padding: clamp(1.25rem, 0.75rem + 0.625vw, 1.5rem);
+}
+.hc-info__cosmetic-gradient-1 {
+  display: block;
+}
+.hc-info__cosmetic-gradient-3 {
+  display: none;
+}
+.hc-info__cosmetic-gradient-2 {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(135, 62, 208, 0.8) 11.5%, rgba(217, 217, 217, 0) 100%);
+  display: block;
+  top: 0px;
+  right: -170px;
+}
+.rare-formats-gradient-1 {
+    z-index: -2;
+    top: -900px;
+    opacity: .75;
+}
+.main__location__content-wrapper {
+  z-index: 2;
+  position: static;
+}
+.refinement-gradient-3 {
+  display: block;
+}
+.refinement-gradient-4 {
+  display: block;
+  width: 980.86px;
+  height: 980.86px;
+  right: -740px;
+  top: 280px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(235, 204, 194, 0.8) 11.5%, rgba(217, 217, 217, 0) 100%);
+}
+.content-wrapper {
+  margin-bottom: 80px;
+}
+.tower-plan-view__button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  padding: 21px 49px;
+}
+.gallery-gradient-1 {
+  width: 980.86px;
+  height: 980.86px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(104, 67, 244, 0.8) 11.5%, rgba(217, 217, 217, 0) 100%);
+  right: -1000px;
+  position: absolute;
+}
+.gallery__cosmetic-gradient-wrapper,.main__gallery  {
+  position: static;
+}
+.gallery__swiper__img-wrap img {
+  width: 560.06px;
+  height: 317px;
+}
+.promo__swiper {
+  overflow: clip;
+}
+.promo__article__button {
+  max-width: 200px;
+}
+.location__background-img-wrapper {
+  z-index: 0;
+}
+.callback__towers-img {
+  width: clamp(16.875rem, -30.625rem + 80vw, 21.875rem);
+}
+#gallery {
+  margin-bottom: 140px;
+}
+.main__location__map {
+  z-index: 2;
+  position: relative;
+}
+
+
 
 
 }
@@ -943,6 +1145,154 @@
   .benefits__article:active {
     cursor: default;
   }
+  .footer-desktop__wrapper {
+    max-width: var(--max-content-width-plus);
+    width: 87.5%;
+    min-width: unset;
+    grid-template-columns: auto 670px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .info-unit__title {
+    font-size: 27px;
+    line-height: 31.05px;
+    letter-spacing: 0.02em;
+  }
+  .info-unit__text {
+    font-size: 21px;
+    line-height: 25.2px;
+  }
+  .pricing-wrapper__title {
+    font-size: 30px;
+    line-height: 34.5px;   
+  }
+  .pricing-wrapper__list__text {
+    font-size: 21px;
+    line-height: 25.2px;
+  }
+  .hc-info__pricing-wrapper__button {
+    font-size: 21px;
+    line-height: 23.79px;
+  }
+  .hc-info__wrapper {
+    grid-template-columns: 
+                          [full-start] 1fr 
+                          [item-start card-start] 300px 
+                          [img-start item-end] 80px 
+                          [card-end] auto 
+                          [img-end list-start] 190px 
+                          [list-end] 1fr 
+                          [full-emd];
+    grid-template-rows: [img-start list-start] 84px [card-start] auto [card-end item-start] 88px [item-end list-end img-end];
+  }
+  .hc-info__img-wrapper {
+    width: 582px;
+    height: 714px;
+    margin-right: 123px;
+  }
+  .hc-info__img {
+    width: 582px;
+    height: 727px;
+  }
+  .hc-info__img_clouds {
+    width: 987px;
+    height: 668px;
+    transform: translate(50px, -50px);
+    -webkit-transform: translate(50px, -50px);
+    -moz-transform: translate(50px, -50px);
+    -ms-transform: translate(50px, -50px);
+    -o-transform: translate(50px, -50px);
+  }
+  .main__advantages {
+    margin-bottom: 140px;
+  }
+  .main__location__content-wrapper {
+    position: static;
+  }
+  .main__location {
+    position: relative;
+  }
+
+  .hc-info__cosmetic-gradient-3 {
+    display: block;
+    left: unset;
+    top: unset;
+    bottom: -200px;
+    right: -250px;
+  }
+  .location-gradient-1 {
+    opacity: 0;
+  }
+  .benefits-gradient-1 {
+    width: 980.86px;
+    height: 980.86px;
+    left: -1000px;
+  }
+  .rare-formats-gradient-1 {
+    z-index: 2;
+    top: -900px;
+    opacity: .75;
+  }
+  .main__location__content-wrapper {
+    position: static;
+  }
+  .location__background-img-wrapper {
+    right: -190px;
+    top: -200px;
+  }
+  .refinement-gradient-4 {
+    display: block;
+    width: 980.86px;
+    height: 980.86px;
+    right: calc(((100vw - var(--max-content-width)) * .5) - 400px);
+    /* right: -0; */
+    top: -150px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(235, 204, 194, 0.8) 11.5%, rgba(217, 217, 217, 0) 100%);
+    z-index: 0;
+  }
+  .refinement-gradient-3 {
+    top: -500px;
+  }
+
+  .refinement-gradient-1 {
+    display: block;
+    width: 980.86px;
+    height: 980.86px;
+    top: 616px;
+    left: -500px;
+  }
+  .tower-plan-view-gradient-1 {
+    display: block;
+    width: 659px;
+    height: 659px;
+    right: -340px;
+
+  }
+  .section__cosmetic-gradient-wrapper {
+    position: static;
+  }
+
+  .progress-gradient-1 {
+    top: -184px;
+    left: -437px;
+    display: block;
+    width: 659px;
+    height: 659px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(249, 93, 72, 0.8) 0%, rgba(217, 217, 217, 0) 100%);
+    z-index: 0;
+  }
+  .promo-gradient-1 {
+    display: block;
+    width: 659px;
+    height: 659px;
+    right: -421px;
+    top: -172px;
+  }
+  .promo__article {
+    padding-block: 42px 63px;
+  }
+
 }
 
 @media only screen and (min-width: 1800px) {
@@ -951,4 +1301,5 @@
     .callback__background-img {
       opacity: 0;
     }
+    
 }

@@ -21,9 +21,13 @@
 
   <!-- project -->
   <link rel="stylesheet" href="assets/css/sliders.css" >
-  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/catalogue.css" >
+  <link rel="stylesheet" href="assets/css/style2.css" >
+  <link rel="stylesheet" href="assets/css/filter.css" >
+
   <script src="assets/script/catalogue.js" defer></script>
-  <script src="assets/script/tower-plan.js" defer></script>
+  <script src="assets/script/tower-plan-catalogue.js" defer></script>
   <script src="assets/script/lot.js" defer></script>
   <script src="assets/script/view-change.js" defer></script>
   <script src="assets/script/back-to-top.js" defer></script>
@@ -265,12 +269,12 @@
           <div class="section-filter__tower-wrap">
             <input hidden type="checkbox" id="section-filter__tower-checkbox-1"
               class="section-filter__tower-checkbox">
-            <label for="section-filter__tower-checkbox-1" class="section-filter__tower-label">Гонгконг
+            <label for="section-filter__tower-checkbox-1" class="section-filter__tower-label">Башня А
             </label>
 
             <input hidden type="checkbox" id="section-filter__tower-checkbox-2"
               class="section-filter__tower-checkbox">
-            <label for="section-filter__tower-checkbox-2" class="section-filter__tower-label">Сингапур</label>
+            <label for="section-filter__tower-checkbox-2" class="section-filter__tower-label">Башня Б</label>
           </div>
         </section>
         <section class="section-filter__price section-filter__item section-filter__item_price">
@@ -651,6 +655,8 @@
                 <h4 class="card__number">218</h4>
 
                 <span class="card__price">6 500 600 ₽</span>
+
+                <span class="card__old-price card__old-price_hidden">16 500 600 ₽</span>
               </header>
 
               <div class="card__favorite-icon">
@@ -765,7 +771,7 @@
               <header class="card__header">
                 <h4 class="card__number">218</h4>
 
-                <span class="card__request-price">Цена по запросу</span>
+                <span class="card__request-price">По запросу</span>
               </header>
 
               <div class="card__favorite-icon">
@@ -1096,17 +1102,25 @@
           </div>
         </header>
 
+        <!-- plans itself -->
+
         <div class="tower-plan-view__container">
           <div class="tower-plan-view__tower tower-plan-view__tower_left">
             <!-- tower plan goes here -->
-            <span class="tower-plan-view__name">СИНГАПУР</span>
+            <span class="tower-plan-view__name">Башня А</span>
           </div>
           <div class="tower-plan-view__tower tower-plan-view__tower_right">
             <!-- tower plan goes here -->
-            <span class="tower-plan-view__name">ГОНКОНГ</span>
+            <span class="tower-plan-view__name">Башня Б</span>
           </div>
 
-          <!--  -->
+          <!-- tower rigth side panel -->
+
+          <input type="checkbox" name="" hidden id="tower-plan-view__is-appartment-selected_checkbox">
+
+          <div class="tower-plan-view__plan-img-wrapper">
+            <img src="assets/img/catalogue/tower_view/proba1.webp" alt="" class="tower-plan-view__plan-img">
+          </div>
 
           <article class="card tower-plan-view_card section-filter__card section-filter__card_promo">
             <header class="card__header">
@@ -1181,13 +1195,15 @@
                 </div>
 
                 <div class="swiper-slide lot__swiper__slide">
-                  <img class="lot__swiper__slide__img" src="assets/img/catalogue/apart_plan/gen_plan.webp" alt="" >
+                  <img class="lot__swiper__slide__img" src="assets/img/catalogue/tower_view/proba1.webp" alt="" >
                 </div>
               </div>
               <!-- If we need pagination -->
               <div class="swiper-pagination card__swiper-pagination"></div>
             </div>
           </div>
+
+
         </div>
       </div>
     </div>

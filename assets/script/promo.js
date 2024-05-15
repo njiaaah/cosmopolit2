@@ -6,7 +6,8 @@ const promoSwiper = new Swiper('.promo__swiper', {
             spaceBetween: 12
         },
         600: {
-            spaceBetween: 32
+            spaceBetween: 32,
+            slidesPerView: 3,
         }
     },
     pagination: {

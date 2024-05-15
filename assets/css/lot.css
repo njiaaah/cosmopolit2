@@ -1,0 +1,26 @@
+.lot__card__advantages-wrapper__img {
+    width: 54px;
+    aspect-ratio: 1;
+}
+.card__buttons-wrapper .card__button_outline {
+    background-color: transparent;
+}
+.lot-card-wrap .card__gen-plan-wrapper {
+    align-items: flex-start ;
+}
+.lot__swiper__slide_genplan {
+    height: auto;
+    display: grid;
+    place-items: center;
+
+}
+.lot__swiper__slide_genplan .lot__swiper__slide__img {
+    height: 368.77px;
+    object-fit: contain;
+}
+.card__plan-image{
+   object-fit: contain;
+}
+.lot__card__advantages-wrapper__text {
+    max-width: 10ch;
+}
