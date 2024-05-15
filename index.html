@@ -22,6 +22,7 @@
   <!-- project -->
   <link rel="stylesheet" href="assets/css/sliders.css" >
   <link rel="stylesheet" href="assets/css/calc.css" >
+  <link rel="stylesheet" href="assets/css/modal.css" >
   <link rel="stylesheet" href="style.css" >
   <link rel="stylesheet" href="assets/css/style2.css" >
   <link rel="stylesheet" href="assets/css/indexmap.css" >
@@ -40,11 +41,11 @@
   <script src="assets/script/bottom-menu.js" defer></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="assets/script/indexmap.js" defer></script>
+  <script src="assets/script/modal.js" defer></script>
 </head>
 
 <body>
   <!-- cookie -->
-
   <div class="cookie">
 
     <p class="cookie__text">
@@ -66,7 +67,74 @@
   <input hidden type="checkbox" id="body__is-filter-visible-checkbox">
   <input hidden type="checkbox" id="body__is-nav-menu-visible-checkbox">
 
+  <dialog class="modal">
 
+    <div class="modal__wrapper">
+
+
+      <header class="modal__header">
+
+        <span class="modal__header__title">ЗАПИСЬ НА ВСТРЕЧУ</span>
+  
+        <button class="modal__header__close-btn">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4C12.98 4 4 12.98 4 24C4 35.02 12.98 44 24 44C35.02 44 44 35.02 44 24C44 12.98 35.02 4 24 4ZM30.72 28.6C31.3 29.18 31.3 30.14 30.72 30.72C30.42 31.02 30.04 31.16 29.66 31.16C29.28 31.16 28.9 31.02 28.6 30.72L24 26.12L19.4 30.72C19.1 31.02 18.72 31.16 18.34 31.16C17.96 31.16 17.58 31.02 17.28 30.72C16.7 30.14 16.7 29.18 17.28 28.6L21.88 24L17.28 19.4C16.7 18.82 16.7 17.86 17.28 17.28C17.86 16.7 18.82 16.7 19.4 17.28L24 21.88L28.6 17.28C29.18 16.7 30.14 16.7 30.72 17.28C31.3 17.86 31.3 18.82 30.72 19.4L26.12 24L30.72 28.6Z" fill="#6843F4"/>
+            </svg>
+            
+        </button>
+  
+      </header>
+  
+      <div class="modal__content">
+  
+        <form class="modal__form" action="some-action.php">
+  
+          <label class="modal__input-label" for="modal__name-input">Ваше имя</label>
+          <input type="text" name="modal__form" id="modal__name-input" class="modal__input modal__input-name">
+          <label class="modal__input-label" for="modal__phone-input">Оставьте ваш номер телефона</label>
+          <input type="tel" name="modal__form" id="modal__phone-input" class="modal__input modal__input-phone">
+  
+          <input type="submit" value="Перезвоните мне!" class="modal__form__submit button button-solid">
+  
+        </form>
+
+        <div class="modal__submit-success-popup">
+
+
+          <svg class="modal__submit-success-popup__svg" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1.20352" y="1.20352" width="57.593" height="57.593" rx="18.7965" stroke="#7F4AFC" stroke-width="2.40704"/>
+            <g clip-path="url(#clip0_9872_47682)">
+            <path d="M14.5 32.2144L23.3576 41.072L45.5016 18.928" stroke="#7F4AFC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_9872_47682">
+            <rect x="3.42969" y="3.42725" width="53.1456" height="53.1456" rx="20" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>
+
+          <div class="modal__header__title">
+            Заявка успешно отправлена!
+          </div>
+
+
+            
+
+        </div>
+
+        <div class="modal__towers-img-wrapper">
+          <img class="modal__towers-img-wrapper__img" src="assets/img/modal/towers.webp" alt="">
+        </div>
+  
+      </div>  
+  
+      <span class="modal__small-text">
+        Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+      </span>
+    </div>
+
+
+  </dialog>
   
 
   <header class="header header-index header_dark-green header_desktop">
@@ -115,7 +183,7 @@
       </div>
 
       <div class="header-deskotp__icons-wrap header-deskotp__icons-wrap_snake-bottom">
-        <a class="header-desktop__favorite-icon header-desktop__icon header_desktop__wrapper__item animation_snake-bottom"
+        <a class="header-desktop__favorite-icon header-desktop__icon header_desktop__wrapper__item animation_snake-bottom callback-modal-opener"
           href="#">
           <svg class="header-desktop__icons__svg" width="37" height="37" viewBox="0 0 37 37" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +196,7 @@
           </svg>
         </a>
 
-        <a class="header-desktop__favorite-icon header-desktop__icon header_desktop__wrapper__item animation_snake-bottom"
+        <a class="header-desktop__favorite-icon header-desktop__icon header_desktop__wrapper__item animation_snake-bottom callback-modal-opener"
           href="#">
           <svg class="header-desktop__icons__svg" width="37" height="37" viewBox="0 0 37 37" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +214,6 @@
   </header>
 
   <div class="header__cosmetic-gradient"></div>
-
 
   <main class="main main_content main_index">
     <!-- 2nd sticky header -->
