@@ -9,6 +9,10 @@ body {
     margin-bottom: 20px;
     line-height: 125%;
 }
+.header__logo {
+    width: 161.24px;
+    height: 32.25px;
+}
 .main { 
     width: var(--content-width);
     margin: 0 auto;
@@ -90,15 +94,18 @@ body {
     display: grid;
     place-items: center;
 }
-.main__article__img {
-    min-height: 80%;
+.article__appart-img {
+    max-height: 285px;
 }
 
 .article__tower-plan-wrapper,
 .article__floor-plan-wrapper {
     height: 174px;
 }
-
+.article__plan-img,
+.article__floor-img {
+    max-height: 168px;
+}
 .footer { 
     width: var(--content-width);
     margin: 0 auto;
