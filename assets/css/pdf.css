@@ -1,0 +1,124 @@
+body {
+    --content-width: 495px;
+}
+
+.header { 
+    width: var(--content-width);
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 20px;
+    line-height: 125%;
+}
+.main { 
+    width: var(--content-width);
+    margin: 0 auto;
+    margin-bottom: 37px;
+}
+
+.article__item {
+    font-size: 18px;
+    line-height: 22.5px;
+ }
+.article__price-wrapper { 
+    display: flex;
+    gap: 10px;
+    margin-bottom: .5rem;
+}
+.article__price {
+    font-family: Unbounded;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.7px;
+    letter-spacing: 0.02em;
+}
+.article__promo {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14.3px;
+    text-align: center;
+    padding: 4px 8px;
+    display: block;
+    align-content: center;
+    background-color: var(--primary-violet);
+    color: var(--grayscale-000);
+    border-radius:  4px;
+    -webkit-border-radius:  4px;
+    -moz-border-radius:  4px;
+    -ms-border-radius:  4px;
+    -o-border-radius:  4px;
+}
+.article__old-price {
+    font-size: 14px;
+    line-height: 16.8px;
+    color: var(--grayscale-600);
+    margin-bottom: .5rem;
+ }
+.article__appart-info {
+    --_gap: 20px;
+    display: flex;  
+    gap: var(--_gap);
+ }
+ .article__info__item {
+    font-size: 11px;
+    line-height: 14.3px;
+    position: relative;
+    display: inline-block;
+ }
+.article__info__item:has(+ .article__info__item)::after {
+    content: '|';
+    position: absolute;
+    right: calc(-1 * (var(--_gap)) / 2);
+    transform: translate(50%,0);
+    -webkit-transform: translate(50%,0);
+    -moz-transform: translate(50%,0);
+    -ms-transform: translate(50%,0);
+    -o-transform: translate(50%,0);
+}
+
+.article__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.article__appart-plan-wrapper {
+    grid-column: 1/3;
+    height: 356px;
+}
+
+.main__article__img-wrapper {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.main__article__img {
+    min-height: 80%;
+}
+
+.article__tower-plan-wrapper,
+.article__floor-plan-wrapper {
+    height: 174px;
+}
+
+.footer { 
+    width: var(--content-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__title { 
+    font-family: Unbounded;
+    font-size: 14px;
+    line-height: 16.1px;
+    letter-spacing: 0.01em;
+    color: var(--primary-dark-green);
+    text-transform: uppercase;
+}
+
+.footer__article__text {
+    font-family: Cousine;
+    font-size: 11px;
+    line-height: 14.3px;
+    text-align: left;
+    color: var(--primary-dark-green);
+}
